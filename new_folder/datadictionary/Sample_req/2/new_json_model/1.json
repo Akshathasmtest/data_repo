@@ -1,0 +1,1 @@
+{"new_json_model":{"type":"object","properties":{"name":{"example":"ad","$ref":"#/definitions/string"},"new_boolean":{"type":"boolean","default":"","format":""}}},"definitions":{}}
