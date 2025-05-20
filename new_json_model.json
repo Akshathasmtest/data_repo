@@ -6,14 +6,7 @@
   "disable_keep_alives" : false,
   "disable_rest" : false,
   "echo_endpoint" : false,
-  "extra_config" : {
-    "modifier/response-headers" : {
-      "add" : { },
-      "replace" : { },
-      "delete" : [ "67", "" ],
-      "rename" : { }
-    }
-  },
+  "extra_config" : { },
   "listen_ip" : "0.0.0.0",
   "max_header_bytes" : 0,
   "max_idle_connections" : 0,
