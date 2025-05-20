@@ -12,10 +12,10 @@
     },
     "auth/revoker" : {
       "P" : 1,
-      "revoke_server_api_key" : "2",
+      "revoke_server_api_key" : "T",
       "revoke_server_max_workers" : 1,
-      "revoke_server_ping_interval" : "2s",
-      "token_keys" : [ "" ],
+      "revoke_server_ping_interval" : "5s",
+      "token_keys" : [ "H", "" ],
       "port" : 1,
       "revoke_server_ping_url" : "URL.IO",
       "TTL" : 1,
