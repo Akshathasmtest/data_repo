@@ -8,10 +8,10 @@
   "echo_endpoint" : false,
   "extra_config" : {
     "modifier/lua-endpoint" : {
-      "pre" : "123",
+      "pre" : "12376",
       "allow_open_libs" : true,
-      "sources" : [ "123", "" ],
-      "skip_next" : true,
+      "sources" : [ "123yt", "" ],
+      "skip_next" : false,
       "live" : true,
       "md5" : { }
     }
