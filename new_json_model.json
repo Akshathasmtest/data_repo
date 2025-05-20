@@ -7,11 +7,13 @@
   "disable_rest" : false,
   "echo_endpoint" : false,
   "extra_config" : {
-    "modifier/response-headers" : {
-      "add" : { },
-      "replace" : { },
-      "delete" : [ "67", "" ],
-      "rename" : { }
+    "modifier/lua-endpoint" : {
+      "pre" : "123",
+      "allow_open_libs" : true,
+      "sources" : [ "2", "" ],
+      "skip_next" : true,
+      "live" : true,
+      "md5" : { }
     }
   },
   "listen_ip" : "0.0.0.0",
@@ -19,7 +21,7 @@
   "max_idle_connections" : 0,
   "max_idle_connections_per_host" : 0,
   "version" : 0,
-  "name" : "KarkenD_WithToken_Git_Con",
+  "name" : "NEW_GITHUB",
   "output_encoding" : "json",
   "sequential_start" : false,
   "timeout" : "2s",
