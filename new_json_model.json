@@ -7,6 +7,12 @@
   "disable_rest" : false,
   "echo_endpoint" : false,
   "extra_config" : {
+    "modifier/response-headers" : {
+      "add" : { },
+      "replace" : { },
+      "delete" : [ "123", "" ],
+      "rename" : { }
+    },
     "modifier/lua-endpoint" : {
       "pre" : "123",
       "allow_open_libs" : true,
