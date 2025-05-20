@@ -7,6 +7,21 @@
   "disable_rest" : false,
   "echo_endpoint" : false,
   "extra_config" : {
+    "security/cors" : {
+      "max_age" : "3s",
+      "allow_headers" : [ "1", "" ],
+      "allow_methods" : [ {
+        "label" : "GET",
+        "value" : "GET"
+      } ],
+      "debug" : true,
+      "options_passthrough" : true,
+      "allow_credentials" : true,
+      "allow_origins" : [ "2", "" ],
+      "expose_headers" : [ "3", "" ],
+      "allow_private_network" : true,
+      "options_success_status" : { }
+    },
     "modifier/response-headers" : {
       "add" : { },
       "replace" : { },
