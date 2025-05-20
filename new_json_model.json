@@ -10,6 +10,19 @@
     "auth/validator" : {
       "shared_cache_duration" : 1
     },
+    "auth/revoker" : {
+      "P" : 1,
+      "revoke_server_api_key" : "123",
+      "revoke_server_max_workers" : 1,
+      "revoke_server_ping_interval" : "43s",
+      "token_keys" : [ "123", "" ],
+      "port" : 1,
+      "revoke_server_ping_url" : "url.io",
+      "TTL" : 1,
+      "hash_name" : "optimal",
+      "revoke_server_max_retries" : 1,
+      "N" : 1
+    },
     "security/cors" : {
       "max_age" : "3s",
       "allow_headers" : [ "1", "" ],
