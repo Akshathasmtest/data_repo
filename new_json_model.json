@@ -6,7 +6,48 @@
   "disable_keep_alives" : false,
   "disable_rest" : false,
   "echo_endpoint" : false,
-  "endpoints" : [ ],
+  "endpoints" : [ {
+    "backend" : [ {
+      "allow" : [ "123" ],
+      "deny" : [ "123" ],
+      "backendEncoding" : "json",
+      "group" : "backend1",
+      "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
+      "mapping" : {
+        "agent_krakend" : "agent_assign_krakend"
+      },
+      "method" : "GET",
+      "sd" : "static",
+      "target" : "target",
+      "disable_host_sanitize" : false,
+      "extra_config" : {
+        "validation/response-json-schema" : {
+          "error" : "status",
+          "schema" : {
+            "message" : "validation response successfull"
+          }
+        }
+      },
+      "input_headers" : [ "header" ],
+      "input_query_strings" : [ "query" ],
+      "is_collection" : true,
+      "sd_scheme" : "http",
+      "url_pattern" : "hfgdj"
+    } ],
+    "cache_ttl" : "0ms",
+    "concurrent_calls" : 1,
+    "endpoint" : "/delivery/assign_agent",
+    "extra_config" : {
+      "modifier/jmespath" : {
+        "expr" : "gf"
+      }
+    },
+    "input_headers" : [ ],
+    "input_query_strings" : [ ],
+    "method" : "POST",
+    "output_encoding" : "json",
+    "timeout" : "2s"
+  } ],
   "extra_config" : {
     "auth/validator" : {
       "shared_cache_duration" : 1
