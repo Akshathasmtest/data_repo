@@ -6,16 +6,7 @@
   "disable_keep_alives" : false,
   "disable_rest" : false,
   "echo_endpoint" : false,
-  "extra_config" : {
-    "modifier/lua-endpoint" : {
-      "pre" : "12376",
-      "allow_open_libs" : true,
-      "sources" : [ "123yt", "" ],
-      "skip_next" : false,
-      "live" : true,
-      "md5" : { }
-    }
-  },
+  "extra_config" : { },
   "listen_ip" : "0.0.0.0",
   "max_header_bytes" : 0,
   "max_idle_connections" : 0,
