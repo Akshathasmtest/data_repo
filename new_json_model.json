@@ -28,6 +28,25 @@
       "delete" : [ "123", "" ],
       "rename" : { }
     },
+    "security/http" : {
+      "custom_frame_options_value" : "3",
+      "referrer_policy" : "R",
+      "browser_xss_filter" : true,
+      "frame_deny" : true,
+      "content_security_policy" : "2",
+      "ssl_redirect" : true,
+      "sts_include_subdomains" : true,
+      "ssl_proxy_headers" : { },
+      "sts_seconds" : 1,
+      "ssl_host" : "ER",
+      "hpkp_public_key" : "R",
+      "content_type_nosniff" : true,
+      "allowed_hosts_are_regex" : true,
+      "allowed_hosts" : [ "1", "" ],
+      "host_proxy_headers" : [ "2", "" ],
+      "force_sts_header" : true,
+      "is_development" : true
+    },
     "modifier/lua-endpoint" : {
       "pre" : "123",
       "allow_open_libs" : true,
