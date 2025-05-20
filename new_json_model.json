@@ -72,6 +72,7 @@
       "md5" : { }
     }
   },
+  "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
   "listen_ip" : "0.0.0.0",
   "max_header_bytes" : 0,
   "max_idle_connections" : 0,
