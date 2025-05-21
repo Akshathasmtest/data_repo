@@ -65,108 +65,22 @@
   "disable_rest" : false,
   "echo_endpoint" : false,
   "endpoints" : [ {
-    "backend" : [ {
-      "allow" : [ "123" ],
-      "deny" : [ "123" ],
-      "backendEncoding" : "json",
-      "group" : "backend1",
-      "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
-      "mapping" : {
-        "agent_krakend" : "agent_assign_krakend"
-      },
-      "method" : "GET",
-      "sd" : "static",
-      "target" : "target",
-      "disable_host_sanitize" : false,
-      "extra_config" : {
-        "validation/response-json-schema" : {
-          "error" : "status",
-          "schema" : {
-            "message" : "validation response successfull"
-          }
-        }
-      },
-      "input_headers" : [ "header" ],
-      "input_query_strings" : [ "query" ],
-      "is_collection" : true,
-      "sd_scheme" : "http",
-      "url_pattern" : "hfgdj"
-    } ],
+    "backend" : [ ],
     "cache_ttl" : "0ms",
     "concurrent_calls" : 1,
-    "endpoint" : "/delivery/assign_agent",
-    "extra_config" : {
-      "modifier/jmespath" : {
-        "expr" : "gf"
-      }
-    },
-    "input_headers" : [ ],
+    "endpoint" : "/common/auth/{customerAuth}",
+    "extra_config" : { },
+    "input_headers" : [ "x-v", "participant-id", "contentType", "accept" ],
     "input_query_strings" : [ ],
     "method" : "POST",
     "output_encoding" : "json",
     "timeout" : "2s"
   } ],
   "extra_config" : {
-    "auth/validator" : {
-      "shared_cache_duration" : 1
-    },
-    "auth/revoker" : {
-      "P" : 1,
-      "revoke_server_api_key" : "r",
-      "revoke_server_max_workers" : 1,
-      "revoke_server_ping_interval" : "1s",
-      "token_keys" : [ "2wq", "" ],
-      "port" : 1,
-      "revoke_server_ping_url" : "uel.io",
-      "TTL" : 1,
-      "hash_name" : "default",
-      "revoke_server_max_retries" : 1,
-      "N" : 1
-    },
-    "security/cors" : {
-      "max_age" : "3s",
-      "allow_headers" : [ "1", "" ],
-      "allow_methods" : [ {
-        "label" : "GET",
-        "value" : "GET"
-      } ],
-      "debug" : true,
-      "options_passthrough" : true,
-      "allow_credentials" : true,
-      "allow_origins" : [ "2", "" ],
-      "expose_headers" : [ "3", "" ],
-      "allow_private_network" : true,
-      "options_success_status" : { }
-    },
-    "modifier/response-headers" : {
-      "add" : { },
-      "replace" : { },
-      "delete" : [ "123", "" ],
-      "rename" : { }
-    },
-    "security/http" : {
-      "custom_frame_options_value" : "3",
-      "referrer_policy" : "R",
-      "browser_xss_filter" : true,
-      "frame_deny" : true,
-      "content_security_policy" : "2",
-      "ssl_redirect" : true,
-      "sts_include_subdomains" : true,
-      "ssl_proxy_headers" : { },
-      "sts_seconds" : 1,
-      "ssl_host" : "ER",
-      "hpkp_public_key" : "R",
-      "content_type_nosniff" : true,
-      "allowed_hosts_are_regex" : true,
-      "allowed_hosts" : [ "1", "" ],
-      "host_proxy_headers" : [ "2", "" ],
-      "force_sts_header" : true,
-      "is_development" : true
-    },
     "modifier/lua-endpoint" : {
       "pre" : "123",
       "allow_open_libs" : true,
-      "sources" : [ "123", "" ],
+      "sources" : [ "2", "" ],
       "skip_next" : true,
       "live" : true,
       "md5" : { }
@@ -178,7 +92,7 @@
   "max_idle_connections" : 0,
   "max_idle_connections_per_host" : 0,
   "version" : 0,
-  "name" : "KarkenD_WithToken_Git_Con",
+  "name" : "NEW_GITHUB",
   "output_encoding" : "json",
   "sequential_start" : false,
   "timeout" : "2s",
