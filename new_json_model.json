@@ -143,7 +143,7 @@
   "max_idle_connections" : 0,
   "max_idle_connections_per_host" : 0,
   "version" : 0,
-  "name" : "KarkenD_WithToken_Git_Con",
+  "name" : "test-trisha",
   "output_encoding" : "json",
   "sequential_start" : false,
   "timeout" : "2s",
