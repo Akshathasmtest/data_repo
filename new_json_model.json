@@ -66,47 +66,6 @@
   "echo_endpoint" : false,
   "endpoints" : [ {
     "backend" : [ {
-      "allow" : [ "123" ],
-      "deny" : [ "123" ],
-      "backendEncoding" : "json",
-      "group" : "backend1",
-      "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
-      "mapping" : {
-        "agent_krakend" : "agent_assign_krakend"
-      },
-      "method" : "GET",
-      "sd" : "static",
-      "target" : "target",
-      "disable_host_sanitize" : false,
-      "extra_config" : {
-        "validation/response-json-schema" : {
-          "error" : "status",
-          "schema" : {
-            "message" : "validation response successfull"
-          }
-        }
-      },
-      "input_headers" : [ "header" ],
-      "input_query_strings" : [ "query" ],
-      "is_collection" : true,
-      "sd_scheme" : "http",
-      "url_pattern" : "hfgdj"
-    } ],
-    "cache_ttl" : "0ms",
-    "concurrent_calls" : 1,
-    "endpoint" : "/delivery/assign_agent",
-    "extra_config" : {
-      "modifier/jmespath" : {
-        "expr" : "gf"
-      }
-    },
-    "input_headers" : [ ],
-    "input_query_strings" : [ ],
-    "method" : "POST",
-    "output_encoding" : "json",
-    "timeout" : "2s"
-  }, {
-    "backend" : [ {
       "allow" : [ ],
       "deny" : [ ],
       "backendEncoding" : "json",
@@ -124,15 +83,15 @@
       "input_query_strings" : [ ],
       "is_collection" : true,
       "sd_scheme" : "http",
-      "url_pattern" : "gm"
+      "url_pattern" : "/"
     } ],
     "cache_ttl" : "0ms",
     "concurrent_calls" : 1,
-    "endpoint" : "/gch",
+    "endpoint" : "/checkver",
     "extra_config" : { },
     "input_headers" : [ ],
     "input_query_strings" : [ ],
-    "method" : "GET",
+    "method" : "POST",
     "output_encoding" : "json",
     "timeout" : "2s"
   } ],
@@ -143,7 +102,7 @@
   "max_idle_connections" : 0,
   "max_idle_connections_per_host" : 0,
   "version" : 0,
-  "name" : "test-trisha",
+  "name" : "KarkenD_WithToken_Git_Con",
   "output_encoding" : "json",
   "sequential_start" : false,
   "timeout" : "2s",
