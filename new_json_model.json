@@ -136,7 +136,11 @@
     "output_encoding" : "json",
     "timeout" : "2s"
   } ],
-  "extra_config" : { },
+  "extra_config" : {
+    "auth/validator" : {
+      "shared_cache_duration" : 3
+    }
+  },
   "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
   "listen_ip" : "0.0.0.0",
   "max_header_bytes" : 0,
