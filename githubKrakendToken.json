@@ -36,6 +36,36 @@
     "method" : "GET",
     "output_encoding" : "json",
     "timeout" : "2s"
+  }, {
+    "backend" : [ {
+      "allow" : [ ],
+      "deny" : [ ],
+      "backendEncoding" : "json",
+      "group" : "backend1",
+      "host" : [ "GIthub_token" ],
+      "mapping" : {
+        "key" : "renamedkey"
+      },
+      "method" : "GET",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : { },
+      "input_headers" : [ ],
+      "input_query_strings" : [ ],
+      "is_collection" : false,
+      "sd_scheme" : "http",
+      "url_pattern" : "/v1/krakend/local"
+    } ],
+    "cache_ttl" : "20ms",
+    "concurrent_calls" : 1,
+    "endpoint" : "/v1/keyValue",
+    "extra_config" : { },
+    "input_headers" : [ "*" ],
+    "input_query_strings" : [ "*" ],
+    "method" : "GET",
+    "output_encoding" : "json",
+    "timeout" : "20s"
   } ],
   "listen_ip" : "0.0.0.0",
   "max_header_bytes" : 0,
