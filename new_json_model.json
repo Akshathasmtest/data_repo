@@ -128,7 +128,7 @@
     "cipher_suites" : [ 4865, 4866, 4867 ],
     "curve_preferences" : [ 23, 24, 25 ],
     "disable_system_ca_pool" : false,
-    "disabled" : true,
+    "disabled" : false,
     "enable_mtls" : false,
     "keys" : [ {
       "private_key" : null,
