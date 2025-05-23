@@ -81,12 +81,8 @@
       "target" : "",
       "disable_host_sanitize" : false,
       "extra_config" : {
-        "modifier/response-body" : {
-          "expr" : [ {
-            "upper" : {
-              "field" : "order_id"
-            }
-          } ]
+        "modifier/jmespath" : {
+          "expr" : "hotel_address.country == 'India' && delivery_address.country == 'India' && @"
         }
       },
       "input_headers" : [ ],
