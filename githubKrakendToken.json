@@ -80,7 +80,15 @@
       "sd" : "static",
       "target" : "",
       "disable_host_sanitize" : false,
-      "extra_config" : { },
+      "extra_config" : {
+        "modifier/response-body" : {
+          "expr" : [ {
+            "upper" : {
+              "field" : "order_id"
+            }
+          } ]
+        }
+      },
       "input_headers" : [ ],
       "input_query_strings" : [ ],
       "is_collection" : true,
