@@ -114,7 +114,7 @@
   "max_header_bytes" : 0,
   "max_idle_connections" : 0,
   "max_idle_connections_per_host" : 0,
-  "version" : 0,
+  "version" : 3,
   "name" : "test-trisha",
   "output_encoding" : "json",
   "plugin" : {
