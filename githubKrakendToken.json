@@ -113,13 +113,6 @@
       "extra_config" : {
         "modifier/jmespath" : {
           "expr" : "hotel_address.country == 'India' && delivery_address.country == 'India' && @"
-        },
-        "modifier/response-body" : {
-          "expr" : [ {
-            "upper" : {
-              "field" : "message"
-            }
-          } ]
         }
       },
       "input_headers" : [ ],
