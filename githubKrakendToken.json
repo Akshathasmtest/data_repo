@@ -42,7 +42,7 @@
       "deny" : [ ],
       "backendEncoding" : "json",
       "group" : "backend1",
-      "host" : [ "GIthub_token" ],
+      "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
       "mapping" : {
         "key" : "renamedkey"
       },
