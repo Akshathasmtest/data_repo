@@ -37,6 +37,20 @@
     "output_encoding" : "json",
     "timeout" : "20s"
   } ],
+  "extra_config" : {
+    "modifier/response-headers" : {
+      "add" : { },
+      "replace" : { },
+      "delete" : [ "g", "" ],
+      "rename" : [ {
+        "key" : "fg",
+        "roles" : [ ]
+      }, {
+        "key" : "",
+        "roles" : [ ]
+      } ]
+    }
+  },
   "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
   "listen_ip" : "0.0.0.0",
   "max_header_bytes" : 0,
