@@ -128,7 +128,7 @@
     "input_headers" : [ ],
     "input_query_strings" : [ "new_param", "param" ],
     "method" : "GET",
-    "output_encoding" : "json",
+    "output_encoding" : "no-op",
     "timeout" : "2s"
   } ],
   "extra_config" : {
