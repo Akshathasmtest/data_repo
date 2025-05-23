@@ -63,10 +63,7 @@
     "allow_insecure_connections" : false,
     "ca_certs" : [ ],
     "cipher_suites" : [ 4865, 4866, 4867 ],
-    "client_certs" : [ {
-      "certificate" : "",
-      "private_key" : ""
-    } ],
+    "client_certs" : [ ],
     "curve_preferences" : [ 23, 24, 25 ],
     "disable_system_ca_pool" : false,
     "max_version" : "TLS13",
