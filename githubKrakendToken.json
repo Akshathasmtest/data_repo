@@ -100,6 +100,36 @@
     "method" : "POST",
     "output_encoding" : "no-op",
     "timeout" : "2s"
+  }, {
+    "backend" : [ {
+      "allow" : [ ],
+      "deny" : [ ],
+      "backendEncoding" : "json",
+      "group" : "backend1",
+      "host" : [ "apisandbox.apiwiz.local:7080" ],
+      "mapping" : {
+        "" : ""
+      },
+      "method" : "GET",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : { },
+      "input_headers" : [ ],
+      "input_query_strings" : [ "new_param", "param" ],
+      "is_collection" : true,
+      "sd_scheme" : "http",
+      "url_pattern" : "/orders/{orderId}"
+    } ],
+    "cache_ttl" : "0ms",
+    "concurrent_calls" : 1,
+    "endpoint" : "/orders/{orderId}",
+    "extra_config" : { },
+    "input_headers" : [ ],
+    "input_query_strings" : [ "new_param", "param" ],
+    "method" : "GET",
+    "output_encoding" : "json",
+    "timeout" : "2s"
   } ],
   "extra_config" : {
     "modifier/response-headers" : {
