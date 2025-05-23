@@ -60,8 +60,8 @@
   } ],
   "cache_ttl" : "0s",
   "client_tls" : {
-    "allow_insecure_connections" : true,
-    "ca_certs" : [ "iugugefefhw efu", "jbjhfbhef", "BHBVHJBDJ", "" ],
+    "allow_insecure_connections" : false,
+    "ca_certs" : [ "" ],
     "cipher_suites" : [ 4865, 4866, 4867 ],
     "client_certs" : [ {
       "certificate" : "",
