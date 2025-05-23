@@ -59,6 +59,19 @@
     }
   } ],
   "cache_ttl" : "0s",
+  "client_tls" : {
+    "allow_insecure_connections" : false,
+    "ca_certs" : [ "" ],
+    "cipher_suites" : [ 4865, 4866, 4867 ],
+    "client_certs" : [ {
+      "certificate" : "",
+      "private_key" : ""
+    } ],
+    "curve_preferences" : [ 23, 24, 25 ],
+    "disable_system_ca_pool" : false,
+    "max_version" : "TLS13",
+    "min_version" : "TLS13"
+  },
   "debug_endpoint" : false,
   "disable_compression" : false,
   "disable_keep_alives" : false,
@@ -102,9 +115,27 @@
   "max_idle_connections" : 0,
   "max_idle_connections_per_host" : 0,
   "version" : 0,
-  "name" : "GITHUB_TOKEN",
+  "name" : "test-trisha",
   "output_encoding" : "json",
+  "plugin" : {
+    "pattern" : ".so",
+    "folder" : ""
+  },
   "sequential_start" : false,
   "timeout" : "2s",
+  "tls" : {
+    "ca_certs" : [ "" ],
+    "cipher_suites" : [ 4865, 4866, 4867 ],
+    "curve_preferences" : [ 23, 24, 25 ],
+    "disable_system_ca_pool" : false,
+    "disabled" : true,
+    "enable_mtls" : false,
+    "keys" : [ {
+      "private_key" : null,
+      "public_key" : null
+    } ],
+    "max_version" : "TLS13",
+    "min_version" : "TLS13"
+  },
   "use_h2c" : false
 }
