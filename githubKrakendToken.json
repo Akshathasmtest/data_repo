@@ -114,7 +114,7 @@
         "modifier/response-body" : {
           "expr" : [ {
             "upper" : {
-              "field" : "message"
+              "field" : "hotel_id"
             }
           } ]
         }
