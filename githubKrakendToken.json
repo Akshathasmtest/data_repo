@@ -41,9 +41,9 @@
     "modifier/response-headers" : {
       "add" : { },
       "replace" : { },
-      "delete" : [ "g", "" ],
+      "delete" : [ "header", "" ],
       "rename" : [ {
-        "key" : "fg",
+        "key" : "key",
         "roles" : [ ]
       }, {
         "key" : "",
