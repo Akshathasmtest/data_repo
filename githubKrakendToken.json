@@ -106,7 +106,7 @@
       "deny" : [ ],
       "backendEncoding" : "json",
       "group" : "backend1",
-      "host" : [ "apisandbox.apiwiz.local:7080" ],
+      "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
       "mapping" : {
         "" : ""
       },
