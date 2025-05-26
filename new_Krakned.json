@@ -62,7 +62,7 @@
     "endpoint" : "/deliverys/agents",
     "extra_config" : { },
     "input_headers" : [ ],
-    "input_query_strings" : [ "560024" ],
+    "input_query_strings" : [ "zipcode" ],
     "method" : "GET",
     "output_encoding" : "json",
     "timeout" : "6s"
