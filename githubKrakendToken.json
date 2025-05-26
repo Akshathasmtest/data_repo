@@ -111,8 +111,14 @@
       "target" : "",
       "disable_host_sanitize" : false,
       "extra_config" : {
-        "modifier/jmespath" : {
-          "expr" : "hotel_address.country == 'India' && delivery_address.country == 'India'"
+        "modifier/response-body" : {
+          "expr" : [ {
+            "literal" : {
+              "field" : "city",
+              "find" : "Bangalore",
+              "replace" : "mysore"
+            }
+          } ]
         }
       },
       "input_headers" : [ ],
