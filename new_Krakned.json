@@ -40,7 +40,7 @@
     "backend" : [ {
       "allow" : [ "agent" ],
       "deny" : [ "availability" ],
-      "backendEncoding" : "json",
+      "backendEncoding" : "no-op",
       "group" : "backend1",
       "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
       "mapping" : {
