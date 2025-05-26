@@ -36,6 +36,44 @@
     "method" : "GET",
     "output_encoding" : "json",
     "timeout" : "6s"
+  }, {
+    "backend" : [ {
+      "allow" : [ ],
+      "deny" : [ ],
+      "backendEncoding" : "json",
+      "group" : "",
+      "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
+      "mapping" : {
+        "" : ""
+      },
+      "method" : "GET",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : {
+        "modifier/response-body" : {
+          "expr" : [ {
+            "upper" : {
+              "field" : "agent_id_8"
+            }
+          } ]
+        }
+      },
+      "input_headers" : [ "jsessionid" ],
+      "input_query_strings" : [ ],
+      "is_collection" : false,
+      "sd_scheme" : "https",
+      "url_pattern" : "/deliverys/agents/{zipcode}"
+    } ],
+    "cache_ttl" : "6ms",
+    "concurrent_calls" : 6,
+    "endpoint" : "/deliverys/agents/{zipcode}",
+    "extra_config" : { },
+    "input_headers" : [ "jsessionid" ],
+    "input_query_strings" : [ ],
+    "method" : "GET",
+    "output_encoding" : "json",
+    "timeout" : "6s"
   } ],
   "listen_ip" : "0.0.0.0",
   "max_header_bytes" : 0,
