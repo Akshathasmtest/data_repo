@@ -79,32 +79,13 @@
   "dns_cache_ttl" : "30s",
   "echo_endpoint" : false,
   "endpoints" : [ {
-    "backend" : [ {
-      "allow" : [ ],
-      "deny" : [ ],
-      "backendEncoding" : "json",
-      "group" : "backend1",
-      "host" : [ "https://petstore.swagger.io" ],
-      "mapping" : {
-        "" : ""
-      },
-      "method" : "GET",
-      "sd" : "static",
-      "target" : "",
-      "disable_host_sanitize" : false,
-      "extra_config" : { },
-      "input_headers" : [ ],
-      "input_query_strings" : [ "status" ],
-      "is_collection" : true,
-      "sd_scheme" : "http",
-      "url_pattern" : "/pet/findByStatus"
-    } ],
+    "backend" : [ ],
     "cache_ttl" : "0ms",
     "concurrent_calls" : 1,
-    "endpoint" : "/pet/findByStatus",
+    "endpoint" : "/get",
     "extra_config" : { },
     "input_headers" : [ ],
-    "input_query_strings" : [ "status" ],
+    "input_query_strings" : [ ],
     "method" : "GET",
     "output_encoding" : "json",
     "timeout" : "2s"
@@ -115,12 +96,12 @@
   "idle_connection_timeout" : "0s",
   "idle_timeout" : "0s",
   "listen_ip" : "0.0.0.0",
-  "max_header_bytes" : 0,
+  "max_header_bytes" : 1000000,
   "max_idle_connections" : 0,
-  "max_idle_connections_per_host" : 0,
-  "version" : 0,
-  "name" : "KarkenD_WithToken_Git_Con",
-  "output_encoding" : "json",
+  "max_idle_connections_per_host" : 250,
+  "version" : 3,
+  "name" : "KrakenD configuration at MyCompany",
+  "output_encoding" : "JSON",
   "plugin" : {
     "pattern" : ".so",
     "folder" : ""
