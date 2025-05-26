@@ -59,10 +59,10 @@
     } ],
     "cache_ttl" : "6ms",
     "concurrent_calls" : 6,
-    "endpoint" : "/deliverys/agents/{zipcode}",
+    "endpoint" : "/deliverys/agents",
     "extra_config" : { },
     "input_headers" : [ ],
-    "input_query_strings" : [ ],
+    "input_query_strings" : [ "560024" ],
     "method" : "GET",
     "output_encoding" : "json",
     "timeout" : "6s"
