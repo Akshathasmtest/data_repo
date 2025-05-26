@@ -113,10 +113,10 @@
       "extra_config" : {
         "modifier/response-body" : {
           "expr" : [ {
-            "literal" : {
-              "field" : "city",
-              "find" : "Bangalore",
-              "replace" : "mysore"
+            "regexp" : {
+              "field" : "phonenumber",
+              "find" : "(^\\d{4})\\d{6}",
+              "replace" : "${1}395381"
             }
           } ]
         }
