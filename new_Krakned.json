@@ -96,42 +96,6 @@
     "method" : "GET",
     "output_encoding" : "json",
     "timeout" : "2s"
-  }, {
-    "backend" : [ {
-      "allow" : [ ],
-      "deny" : [ ],
-      "backendEncoding" : "json",
-      "group" : "backend1",
-      "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
-      "mapping" : { },
-      "method" : "POST",
-      "sd" : "static",
-      "target" : "",
-      "disable_host_sanitize" : false,
-      "extra_config" : {
-        "auth/client-credentials" : {
-          "endpoint_params" : "",
-          "client_secret" : "elrVrTht3YjmrHXLPFscnzet0cBkfh3Y",
-          "scopes" : [ "" ],
-          "token_url" : "https://test1-kong-apiproxy.apiwiz.io/oauth2/token",
-          "client_id" : "O9Zifb24hoq9iAHjF90yrl6twZTNl6fW"
-        }
-      },
-      "input_headers" : [ ],
-      "input_query_strings" : [ ],
-      "is_collection" : true,
-      "sd_scheme" : "http",
-      "url_pattern" : "/v1/server/hotel/placeorder"
-    } ],
-    "cache_ttl" : "0ms",
-    "concurrent_calls" : 1,
-    "endpoint" : "/hotel/placeorder",
-    "extra_config" : { },
-    "input_headers" : [ ],
-    "input_query_strings" : [ ],
-    "method" : "POST",
-    "output_encoding" : "json",
-    "timeout" : "2s"
   } ],
   "extra_config" : {
     "modifier/response-headers" : {
