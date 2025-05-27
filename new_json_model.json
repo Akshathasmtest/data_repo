@@ -78,52 +78,7 @@
   "disable_rest" : false,
   "dns_cache_ttl" : "30s",
   "echo_endpoint" : false,
-  "endpoints" : [ {
-    "backend" : [ {
-      "allow" : [ ],
-      "deny" : [ ],
-      "backendEncoding" : "json",
-      "group" : "backend1",
-      "host" : [ "https://stage-data-lkgc.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
-      "method" : "GET",
-      "sd" : "static",
-      "target" : "",
-      "disable_host_sanitize" : false,
-      "extra_config" : {
-        "backend/amqp/consumer" : {
-          "durable" : { },
-          "max_retries" : { },
-          "prefetch_count" : { },
-          "name" : "Queue-1",
-          "exclusive" : { },
-          "backoff_strategy" : { },
-          "exchange" : "test-exchange",
-          "no_local" : { },
-          "no_wait" : { },
-          "routing_key" : [ "test-routing-key", "" ],
-          "delete" : { },
-          "auto_ack" : { }
-        }
-      },
-      "input_headers" : [ ],
-      "input_query_strings" : [ ],
-      "is_collection" : true,
-      "sd_scheme" : "https",
-      "url_pattern" : "/student-details"
-    } ],
-    "cache_ttl" : "0ms",
-    "concurrent_calls" : 1,
-    "endpoint" : "/student-details",
-    "extra_config" : { },
-    "input_headers" : [ ],
-    "input_query_strings" : [ ],
-    "method" : "GET",
-    "output_encoding" : "json",
-    "timeout" : "4s"
-  } ],
+  "endpoints" : [ ],
   "expect_continue_timeout" : "0s",
   "extra_config" : { },
   "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
