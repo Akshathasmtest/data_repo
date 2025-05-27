@@ -70,6 +70,18 @@
   "extra_config" : {
     "auth/validator" : {
       "shared_cache_duration" : 60
+    },
+    "modifier/response-headers" : {
+      "add" : {
+        "X-Test-Add\t" : [ ]
+      },
+      "replace" : {
+        "X-Test-Add\t" : [ ]
+      },
+      "delete" : [ "X-Remove-Me", "" ],
+      "rename" : {
+        "Content-Type\t" : "X-Renamed-Type"
+      }
     }
   },
   "listen_ip" : "0.0.0.0",
