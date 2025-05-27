@@ -67,6 +67,11 @@
     "output_encoding" : "no-op",
     "timeout" : "2s"
   } ],
+  "extra_config" : {
+    "auth/validator" : {
+      "shared_cache_duration" : 600
+    }
+  },
   "listen_ip" : "0.0.0.0",
   "max_header_bytes" : 0,
   "max_idle_connections" : 0,
