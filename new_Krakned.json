@@ -78,6 +78,36 @@
     "method" : "GET",
     "output_encoding" : "json",
     "timeout" : "2s"
+  }, {
+    "backend" : [ {
+      "allow" : [ ],
+      "deny" : [ ],
+      "backendEncoding" : "no-op",
+      "group" : "backend1",
+      "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
+      "mapping" : {
+        "" : ""
+      },
+      "method" : "GET",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : { },
+      "input_headers" : [ ],
+      "input_query_strings" : [ ],
+      "is_collection" : true,
+      "sd_scheme" : "https",
+      "url_pattern" : "/v1/payments/transactions/{transaction_id}"
+    } ],
+    "cache_ttl" : "8ms",
+    "concurrent_calls" : 6,
+    "endpoint" : "/transactions/{transaction_id}",
+    "extra_config" : { },
+    "input_headers" : [ ],
+    "input_query_strings" : [ ],
+    "method" : "GET",
+    "output_encoding" : "no-op",
+    "timeout" : "2s"
   } ],
   "listen_ip" : "0.0.0.0",
   "max_header_bytes" : 0,
