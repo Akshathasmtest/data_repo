@@ -68,19 +68,16 @@
     "timeout" : "2s"
   } ],
   "extra_config" : {
-    "auth/validator" : {
-      "shared_cache_duration" : 60
-    },
     "modifier/response-headers" : {
       "add" : {
-        "X-Test-Add\t" : [ ]
+        "X-Test-Add" : [ ]
       },
       "replace" : {
-        "X-Test-Add\t" : [ ]
+        "X-Test-Add" : [ ]
       },
       "delete" : [ "X-Remove-Me", "" ],
       "rename" : {
-        "Content-Type\t" : "X-Renamed-Type"
+        "Content-Type" : "X-Renamed-Type"
       }
     }
   },
