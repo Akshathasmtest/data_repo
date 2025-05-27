@@ -40,47 +40,6 @@
     "backend" : [ {
       "allow" : [ ],
       "deny" : [ ],
-      "backendEncoding" : "json",
-      "group" : "backend1",
-      "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
-      "method" : "POST",
-      "sd" : "static",
-      "target" : "",
-      "disable_host_sanitize" : false,
-      "extra_config" : {
-        "proxy" : {
-          "shadow" : { },
-          "flatmap_filter" : [ {
-            "type" : "move",
-            "args" : [ "accounts.*.name_at_bank", "accounts.*.customer_name", "" ]
-          }, {
-            "type" : "del",
-            "args" : [ "accounts.*.success", "" ]
-          } ]
-        }
-      },
-      "input_headers" : [ ],
-      "input_query_strings" : [ ],
-      "is_collection" : false,
-      "sd_scheme" : "https",
-      "url_pattern" : "/hotel/placeorder"
-    } ],
-    "cache_ttl" : "10ms",
-    "concurrent_calls" : 1,
-    "endpoint" : "/hotel/placeorder",
-    "extra_config" : { },
-    "input_headers" : [ ],
-    "input_query_strings" : [ ],
-    "method" : "POST",
-    "output_encoding" : "no-op",
-    "timeout" : "7s"
-  }, {
-    "backend" : [ {
-      "allow" : [ ],
-      "deny" : [ ],
       "backendEncoding" : "no-op",
       "group" : "backend1",
       "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
