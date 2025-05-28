@@ -109,14 +109,14 @@
   "extra_config" : {
     "modifier/response-headers" : {
       "add" : {
-        "X-Test-Add" : [ ]
+        "X-New-Header" : [ ]
       },
       "replace" : {
-        "X-Test-Add" : [ ]
+        "X-Replace-Header" : [ ]
       },
-      "delete" : [ "X-Remove-Me", "" ],
+      "delete" : [ "X-Powered-By", "" ],
       "rename" : {
-        "Content-Type" : "X-Renamed-Type"
+        "Old-Header" : "Renamed-Header"
       }
     }
   },
