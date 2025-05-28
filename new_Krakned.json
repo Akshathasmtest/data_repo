@@ -143,7 +143,35 @@
     "output_encoding" : "no-op",
     "timeout" : "2s"
   } ],
-  "extra_config" : { },
+  "extra_config" : {
+    "security/cors" : {
+      "max_age" : "4320s",
+      "allow_headers" : [ "Content-Type", "Authorization", "" ],
+      "allow_methods" : [ {
+        "label" : "GET",
+        "value" : "GET"
+      }, {
+        "label" : "POST",
+        "value" : "POST"
+      }, {
+        "label" : "PUT",
+        "value" : "PUT"
+      }, {
+        "label" : "DELETE",
+        "value" : "DELETE"
+      }, {
+        "label" : "OPTIONS",
+        "value" : "OPTIONS"
+      } ],
+      "debug" : true,
+      "options_passthrough" : { },
+      "allow_credentials" : true,
+      "allow_origins" : [ "http://localhost:3000", "" ],
+      "expose_headers" : [ "X-Custom-Header", "" ],
+      "allow_private_network" : { },
+      "options_success_status" : 200
+    }
+  },
   "listen_ip" : "0.0.0.0",
   "max_header_bytes" : 0,
   "max_idle_connections" : 0,
