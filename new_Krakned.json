@@ -105,46 +105,6 @@
     "method" : "GET",
     "output_encoding" : "json",
     "timeout" : "2s"
-  }, {
-    "backend" : [ {
-      "allow" : [ ],
-      "deny" : [ ],
-      "backendEncoding" : "json",
-      "group" : "backend1",
-      "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
-      "method" : "POST",
-      "sd" : "static",
-      "target" : "",
-      "disable_host_sanitize" : false,
-      "extra_config" : {
-        "auth/client-credentials" : {
-          "endpoint_params" : {
-            "grant_type" : [ "client_credentials" ]
-          },
-          "client_secret" : "AOCRn0iaH3v9A7fM8VK01UVND4i5ZuBM",
-          "scopes" : [ "" ],
-          "token_url" : "https://test1-kong-apiproxy.apiwiz.io/",
-          "client_id" : "VKlsfNPAohFk8QN0i1rtO3nm8RxrjDpk"
-        }
-      },
-      "input_headers" : [ ],
-      "input_query_strings" : [ ],
-      "is_collection" : false,
-      "sd_scheme" : "http",
-      "url_pattern" : "/v1/server/hotel/placeorder"
-    } ],
-    "cache_ttl" : "0ms",
-    "concurrent_calls" : 1,
-    "endpoint" : "/hotel/placeorder",
-    "extra_config" : { },
-    "input_headers" : [ ],
-    "input_query_strings" : [ ],
-    "method" : "POST",
-    "output_encoding" : "no-op",
-    "timeout" : "2s"
   } ],
   "extra_config" : {
     "modifier/response-headers" : {
