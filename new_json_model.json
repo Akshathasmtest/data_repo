@@ -1,60 +1,33 @@
 {
   "port" : 8080,
   "async_agent" : [ {
-    "name" : "new_user_agent",
+    "name" : "Async Agent",
     "consumer" : {
-      "topic" : "toassigntask",
-      "max_rate" : 35,
-      "timeout" : "1ms",
-      "workers" : 10
+      "topic" : "test-exchange",
+      "max_rate" : 0,
+      "timeout" : "0s",
+      "workers" : 1
     },
-    "backend" : [ {
-      "allow" : [ "1", "1" ],
-      "deny" : [ "1" ],
-      "backendEncoding" : "json",
-      "group" : "backend_group",
-      "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
-      "mapping" : {
-        "original object" : "original object"
-      },
-      "method" : "GET",
-      "sd" : "static",
-      "target" : "backend_target",
-      "disable_host_sanitize" : true,
-      "extra_config" : {
-        "auth/client-credentials" : {
-          "endpoint_params" : "",
-          "client_secret" : "elrVrTht3YjmrHXLPFscnzet0cBkfh3Y",
-          "scopes" : [ "1", "" ],
-          "token_url" : "url.io",
-          "client_id" : "O9Zifb24hoq9iAHjF90yrl6twZTNl6fW"
-        }
-      },
-      "input_headers" : [ "content-type" ],
-      "input_query_strings" : [ "id" ],
-      "is_collection" : true,
-      "sd_scheme" : "http",
-      "url_pattern" : "http://url.io"
-    } ],
+    "backend" : [ ],
     "connection" : {
-      "backoff_strategy" : "linear",
+      "backoff_strategy" : "fallback",
       "health_interval" : "1s",
       "max_retries" : 0
     },
     "backendEncoding" : "json",
     "extra_config" : {
       "async/amqp" : {
-        "auto_ack" : true,
-        "delete" : true,
-        "durable" : true,
-        "exchange" : "123",
-        "exclusive" : true,
-        "host" : "url.io",
-        "name" : "new",
-        "no_local" : true,
-        "no_wait" : true,
-        "prefetch_count" : 1,
-        "prefetch_size" : 1
+        "auto_ack" : false,
+        "delete" : false,
+        "durable" : false,
+        "exchange" : "test-exchange",
+        "exclusive" : false,
+        "host" : "amqp://guest:guest@localhost:5672",
+        "name" : "test-queue",
+        "no_local" : false,
+        "no_wait" : false,
+        "prefetch_count" : 10,
+        "prefetch_size" : 0
       }
     }
   } ],
