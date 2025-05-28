@@ -143,20 +143,7 @@
     "output_encoding" : "no-op",
     "timeout" : "2s"
   } ],
-  "extra_config" : {
-    "modifier/response-headers" : {
-      "add" : {
-        "X-New-Header" : [ "HeaderValue" ]
-      },
-      "replace" : {
-        "X-Replace-Header" : [ "Renamed-Header" ]
-      },
-      "delete" : [ "X-Powered-By", "" ],
-      "rename" : {
-        "Old-Header" : "Renamed-Header"
-      }
-    }
-  },
+  "extra_config" : { },
   "listen_ip" : "0.0.0.0",
   "max_header_bytes" : 0,
   "max_idle_connections" : 0,
