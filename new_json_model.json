@@ -65,7 +65,19 @@
     "timeout" : "2s"
   } ],
   "expect_continue_timeout" : "0s",
-  "extra_config" : { },
+  "extra_config" : {
+    "auth/api-keys" : {
+      "identifier" : "Authorization",
+      "salt" : "",
+      "strategy" : "header",
+      "propagate_role" : "",
+      "hash" : "plain",
+      "keys" : [ {
+        "key" : "test123",
+        "roles" : [ "admin", "" ]
+      } ]
+    }
+  },
   "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
   "idle_connection_timeout" : "0s",
   "idle_timeout" : "0s",
