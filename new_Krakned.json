@@ -1,5 +1,36 @@
 {
   "port" : 8080,
+  "async_agent" : [ {
+    "name" : "a",
+    "consumer" : {
+      "topic" : "a",
+      "max_rate" : 0,
+      "timeout" : "0s",
+      "workers" : 1
+    },
+    "backend" : [ ],
+    "connection" : {
+      "backoff_strategy" : "fallback",
+      "health_interval" : "1s",
+      "max_retries" : 0
+    },
+    "backendEncoding" : "json",
+    "extra_config" : {
+      "async/amqp" : {
+        "auto_ack" : false,
+        "delete" : false,
+        "durable" : true,
+        "exchange" : "a",
+        "exclusive" : false,
+        "host" : "a",
+        "name" : "a",
+        "no_local" : false,
+        "no_wait" : false,
+        "prefetch_count" : 10,
+        "prefetch_size" : 0
+      }
+    }
+  } ],
   "cache_ttl" : "0s",
   "debug_endpoint" : false,
   "disable_compression" : false,
