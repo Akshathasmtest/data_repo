@@ -23,12 +23,7 @@
   "echo_endpoint" : false,
   "endpoints" : [ ],
   "expect_continue_timeout" : "0s",
-  "extra_config" : {
-    "auth/basic" : {
-      "users" : { },
-      "htpasswd_path" : ""
-    }
-  },
+  "extra_config" : { },
   "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
   "idle_connection_timeout" : "0s",
   "idle_timeout" : "0s",
