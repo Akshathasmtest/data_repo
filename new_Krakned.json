@@ -184,7 +184,7 @@
       "debug" : false,
       "options_passthrough" : false,
       "allow_credentials" : true,
-      "allow_origins" : [ "*" ],
+      "allow_origins" : [ "http://localhost:3000", "" ],
       "expose_headers" : [ "Content-Length", "Content-Type" ],
       "allow_private_network" : false,
       "options_success_status" : 204
