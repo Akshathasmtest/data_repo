@@ -166,8 +166,8 @@
   } ],
   "extra_config" : {
     "security/cors" : {
-      "max_age" : "4320s",
-      "allow_headers" : [ "Content-Type", "Authorization", "" ],
+      "max_age" : "0h",
+      "allow_headers" : [ ],
       "allow_methods" : [ {
         "label" : "GET",
         "value" : "GET"
@@ -180,17 +180,14 @@
       }, {
         "label" : "DELETE",
         "value" : "DELETE"
-      }, {
-        "label" : "OPTIONS",
-        "value" : "OPTIONS"
       } ],
-      "debug" : true,
-      "options_passthrough" : { },
+      "debug" : false,
+      "options_passthrough" : false,
       "allow_credentials" : true,
-      "allow_origins" : [ "http://localhost:3000", "" ],
-      "expose_headers" : [ "X-Custom-Header", "" ],
-      "allow_private_network" : { },
-      "options_success_status" : 200
+      "allow_origins" : [ "*" ],
+      "expose_headers" : [ "Content-Length", "Content-Type" ],
+      "allow_private_network" : false,
+      "options_success_status" : 204
     }
   },
   "listen_ip" : "0.0.0.0",
