@@ -127,10 +127,8 @@
   "expect_continue_timeout" : "0s",
   "extra_config" : {
     "auth/basic" : {
-      "users" : {
-        "admin" : ""
-      },
-      "htpasswd_path" : "/Users/deepaksatuluri/Apiwiz/Krackend/basic_auth_password.htpasswd"
+      "users" : { },
+      "htpasswd_path" : ""
     },
     "auth/api-keys" : {
       "identifier" : "Authorization",
