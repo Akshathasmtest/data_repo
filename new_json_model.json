@@ -1,5 +1,5 @@
 {
-  "port" : 8080,
+  "port" : 0,
   "async_agent" : [ {
     "name" : "Async Agent",
     "consumer" : {
@@ -50,7 +50,7 @@
       }
     }
   } ],
-  "cache_ttl" : "0s",
+  "cache_ttl" : "3000s",
   "client_tls" : {
     "allow_insecure_connections" : false,
     "ca_certs" : [ ],
@@ -145,16 +145,9 @@
   } ],
   "expect_continue_timeout" : "0s",
   "extra_config" : {
-    "auth/api-keys" : {
-      "identifier" : "Authorization",
-      "salt" : "",
-      "strategy" : "header",
-      "propagate_role" : "",
-      "hash" : "plain",
-      "keys" : [ {
-        "key" : "test123",
-        "roles" : [ "admin", "" ]
-      } ]
+    "auth/basic" : {
+      "users" : { },
+      "htpasswd_path" : { }
     }
   },
   "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
@@ -164,7 +157,7 @@
   "max_header_bytes" : 0,
   "max_idle_connections" : 0,
   "max_idle_connections_per_host" : 0,
-  "version" : 0,
+  "version" : 3,
   "name" : "KarkenD_WithToken_Git_Con",
   "output_encoding" : "json",
   "plugin" : {
