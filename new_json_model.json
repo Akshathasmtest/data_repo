@@ -1,36 +1,6 @@
 {
   "port" : 8080,
-  "async_agent" : [ {
-    "name" : "Async Agent",
-    "consumer" : {
-      "topic" : "test-exchange",
-      "max_rate" : 0,
-      "timeout" : "0s",
-      "workers" : 1
-    },
-    "backend" : [ ],
-    "connection" : {
-      "backoff_strategy" : "fallback",
-      "health_interval" : "1s",
-      "max_retries" : 0
-    },
-    "backendEncoding" : "json",
-    "extra_config" : {
-      "async/amqp" : {
-        "auto_ack" : false,
-        "delete" : false,
-        "durable" : false,
-        "exchange" : "test-exchange",
-        "exclusive" : false,
-        "host" : "amqp://guest:guest@localhost:5672",
-        "name" : "test-queue",
-        "no_local" : false,
-        "no_wait" : false,
-        "prefetch_count" : 10,
-        "prefetch_size" : 0
-      }
-    }
-  } ],
+  "async_agent" : [ ],
   "cache_ttl" : "0s",
   "client_tls" : {
     "allow_insecure_connections" : false,
