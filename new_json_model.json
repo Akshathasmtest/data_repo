@@ -1,5 +1,5 @@
 {
-  "port" : 0,
+  "port" : 8080,
   "async_agent" : [ {
     "name" : "Async Agent",
     "consumer" : {
@@ -50,7 +50,7 @@
       }
     }
   } ],
-  "cache_ttl" : "3000s",
+  "cache_ttl" : "0s",
   "client_tls" : {
     "allow_insecure_connections" : false,
     "ca_certs" : [ ],
@@ -142,10 +142,66 @@
     "method" : "GET",
     "output_encoding" : "json",
     "timeout" : "2s"
+  }, {
+    "backend" : [ {
+      "allow" : [ ],
+      "deny" : [ ],
+      "backendEncoding" : "json",
+      "group" : "",
+      "host" : [ "https://stage-data-lkgc.apiwiz.io" ],
+      "mapping" : {
+        "" : ""
+      },
+      "method" : "GET",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : { },
+      "input_headers" : [ ],
+      "input_query_strings" : [ ],
+      "is_collection" : false,
+      "sd_scheme" : "http",
+      "url_pattern" : "/student-details"
+    } ],
+    "cache_ttl" : "0ms",
+    "concurrent_calls" : 1,
+    "endpoint" : "/secure",
+    "extra_config" : {
+      "auth/validator" : {
+        "roles_key_is_nested" : false,
+        "audience" : [ "531408126240-ai19krfqvhltb96khig609smj17kjg9k.apps.googleusercontent.com" ],
+        "cache" : true,
+        "leeway" : "1s",
+        "issuer" : "https://accounts.google.com",
+        "operation_debug" : true,
+        "scopes_key" : "scope",
+        "scopes_matcher" : "any",
+        "disable_jwk_security" : false,
+        "cache_duration" : 900,
+        "jwk_url" : "https://www.googleapis.com/oauth2/v3/certs",
+        "alg" : "RS256",
+        "cookie_key" : "auth_token"
+      }
+    },
+    "input_headers" : [ ],
+    "input_query_strings" : [ ],
+    "method" : "GET",
+    "output_encoding" : "json",
+    "timeout" : "2s"
   } ],
   "expect_continue_timeout" : "0s",
   "extra_config" : {
-    "auth/basic" : { }
+    "auth/api-keys" : {
+      "identifier" : "Authorization",
+      "salt" : "",
+      "strategy" : "header",
+      "propagate_role" : "",
+      "hash" : "plain",
+      "keys" : [ {
+        "key" : "test123",
+        "roles" : [ "admin", "" ]
+      } ]
+    }
   },
   "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
   "idle_connection_timeout" : "0s",
@@ -154,7 +210,7 @@
   "max_header_bytes" : 0,
   "max_idle_connections" : 0,
   "max_idle_connections_per_host" : 0,
-  "version" : 3,
+  "version" : 0,
   "name" : "KarkenD_WithToken_Git_Con",
   "output_encoding" : "json",
   "plugin" : {
