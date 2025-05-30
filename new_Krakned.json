@@ -299,20 +299,7 @@
     "output_encoding" : "json",
     "timeout" : "2s"
   } ],
-  "extra_config" : {
-    "security/cors" : {
-      "max_age" : "0h",
-      "allow_headers" : [ ],
-      "allow_methods" : [ "GET", "POST", "PUT", "DELETE", "OPTIONS" ],
-      "debug" : false,
-      "options_passthrough" : false,
-      "allow_credentials" : true,
-      "allow_origins" : [ "http://localhost:3000" ],
-      "expose_headers" : [ "Content-Length", "Content-Type" ],
-      "allow_private_network" : false,
-      "options_success_status" : 204
-    }
-  },
+  "extra_config" : { },
   "listen_ip" : "0.0.0.0",
   "max_header_bytes" : 0,
   "max_idle_connections" : 0,
