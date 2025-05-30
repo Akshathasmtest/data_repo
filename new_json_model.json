@@ -145,10 +145,7 @@
   } ],
   "expect_continue_timeout" : "0s",
   "extra_config" : {
-    "auth/basic" : {
-      "users" : { },
-      "htpasswd_path" : { }
-    }
+    "auth/basic" : { }
   },
   "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
   "idle_connection_timeout" : "0s",
