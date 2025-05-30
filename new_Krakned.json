@@ -240,6 +240,65 @@
     "method" : "GET",
     "output_encoding" : "json",
     "timeout" : "2s"
+  }, {
+    "backend" : [ {
+      "allow" : [ ],
+      "deny" : [ ],
+      "backendEncoding" : "json",
+      "group" : "backend1",
+      "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
+      "mapping" : {
+        "" : ""
+      },
+      "method" : "POST",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : { },
+      "input_headers" : [ ],
+      "input_query_strings" : [ ],
+      "is_collection" : false,
+      "sd_scheme" : "http",
+      "url_pattern" : "/v1/server/hotel/placeorder"
+    } ],
+    "cache_ttl" : "0ms",
+    "concurrent_calls" : 1,
+    "endpoint" : "/hotel/placeorder",
+    "extra_config" : {
+      "modifier/response-body" : {
+        "expr" : [ {
+          "upper" : {
+            "field" : "name"
+          }
+        }, {
+          "lower" : {
+            "field" : "name_at_bank"
+          }
+        }, {
+          "literal" : {
+            "field" : "account_number",
+            "find" : "1234",
+            "replace" : "7760"
+          }
+        }, {
+          "regexp" : {
+            "field" : "name",
+            "find" : "(^..).*",
+            "replace" : "${1}XX"
+          }
+        }, {
+          "trim" : {
+            "field" : "message",
+            "find" : "¡!"
+          }
+        } ]
+      }
+    },
+    "input_headers" : [ ],
+    "input_query_strings" : [ ],
+    "method" : "POST",
+    "output_encoding" : "json",
+    "timeout" : "13s"
   } ],
   "extra_config" : {
     "security/cors" : {
