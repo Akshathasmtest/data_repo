@@ -275,50 +275,6 @@
     "method" : "POST",
     "output_encoding" : "json",
     "timeout" : "2s"
-  }, {
-    "backend" : [ {
-      "allow" : [ ],
-      "deny" : [ ],
-      "backendEncoding" : "json",
-      "group" : "backend1",
-      "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
-      "method" : "GET",
-      "sd" : "static",
-      "target" : "",
-      "disable_host_sanitize" : false,
-      "extra_config" : { },
-      "input_headers" : [ ],
-      "input_query_strings" : [ ],
-      "is_collection" : true,
-      "sd_scheme" : "https",
-      "url_pattern" : "/start-krakend"
-    } ],
-    "cache_ttl" : "0ms",
-    "concurrent_calls" : 1,
-    "endpoint" : "/start-krakend",
-    "extra_config" : {
-      "modifier/lua-proxy" : {
-        "pre" : "\"print('Lua proxy post modifier'); local r = response.load(); r:headers('X-from-lua-POST', '1234');\"",
-        "allow_open_libs" : false,
-        "post" : "\"print('Lua proxy pre modifier'); local r = request.load(); r:headers('X-from-lua-PRE', '1234');\",",
-        "skip_next" : false,
-        "live" : false
-      },
-      "modifier/lua-endpoint" : {
-        "pre" : "\"print('Modifies the HTTP request'); local c = ctx.load(); c:headers('X-from-lua-endpoint', '1234');\"",
-        "allow_open_libs" : false,
-        "skip_next" : false,
-        "live" : false
-      }
-    },
-    "input_headers" : [ ],
-    "input_query_strings" : [ ],
-    "method" : "GET",
-    "output_encoding" : "json",
-    "timeout" : "2s"
   } ],
   "extra_config" : { },
   "listen_ip" : "0.0.0.0",
