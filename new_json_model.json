@@ -188,6 +188,46 @@
     "method" : "GET",
     "output_encoding" : "json",
     "timeout" : "2s"
+  }, {
+    "backend" : [ {
+      "allow" : [ ],
+      "deny" : [ ],
+      "backendEncoding" : "json",
+      "group" : "",
+      "host" : [ "https://stage-data-lkgc.apiwiz.io" ],
+      "mapping" : {
+        "" : ""
+      },
+      "method" : "GET",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : { },
+      "input_headers" : [ ],
+      "input_query_strings" : [ ],
+      "is_collection" : false,
+      "sd_scheme" : "https",
+      "url_pattern" : "/v1/krakend/jwt-signer"
+    } ],
+    "cache_ttl" : "0ms",
+    "concurrent_calls" : 1,
+    "endpoint" : "/jwt-signer",
+    "extra_config" : {
+      "auth/signer" : {
+        "jwk_local_path" : "/etc/krakend/private.json",
+        "disable_jwk_security" : true,
+        "Kid" : [ "sim2" ],
+        "leeway" : "1s",
+        "alg" : "HS256",
+        "keys_to_sign" : [ "access_token", "refresh_token" ],
+        "full" : false
+      }
+    },
+    "input_headers" : [ ],
+    "input_query_strings" : [ ],
+    "method" : "POST",
+    "output_encoding" : "json",
+    "timeout" : "2s"
   } ],
   "expect_continue_timeout" : "0s",
   "extra_config" : {
