@@ -239,6 +239,53 @@
     "method" : "GET",
     "output_encoding" : "json",
     "timeout" : "2s"
+  }, {
+    "backend" : [ {
+      "allow" : [ ],
+      "deny" : [ ],
+      "backendEncoding" : "json",
+      "group" : "",
+      "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
+      "mapping" : {
+        "" : ""
+      },
+      "method" : "POST",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : { },
+      "input_headers" : [ ],
+      "input_query_strings" : [ ],
+      "is_collection" : false,
+      "sd_scheme" : "http",
+      "url_pattern" : "/v1/server/hotel/placeorder"
+    } ],
+    "cache_ttl" : "0ms",
+    "concurrent_calls" : 1,
+    "endpoint" : "/hotel/placeorder",
+    "extra_config" : {
+      "security/policies" : {
+        "custom_frame_options_value" : "sample_example",
+        "browser_xss_filter" : false,
+        "frame_deny" : false,
+        "content_security_policy" : "default-src 'self'; script-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'self';",
+        "ssl_redirect" : false,
+        "sts_include_subdomains" : false,
+        "sts_preload" : false,
+        "ssl_host" : "qa-dev-lmxz.apiwiz.io",
+        "content_type_nosniff" : false,
+        "allowed_hosts_are_regex" : false,
+        "allowed_hosts" : [ "qa-dev-lmxz.apiwiz.io" ],
+        "host_proxy_headers" : [ "header_proxy", "" ],
+        "force_sts_header" : false,
+        "is_development" : false
+      }
+    },
+    "input_headers" : [ ],
+    "input_query_strings" : [ ],
+    "method" : "POST",
+    "output_encoding" : "json",
+    "timeout" : "13s"
   } ],
   "extra_config" : { },
   "listen_ip" : "0.0.0.0",
