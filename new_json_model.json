@@ -231,6 +231,9 @@
   } ],
   "expect_continue_timeout" : "0s",
   "extra_config" : {
+    "auth/validator" : {
+      "shared_cache_duration" : 900
+    },
     "auth/api-keys" : {
       "identifier" : "Authorization",
       "salt" : "",
