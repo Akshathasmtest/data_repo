@@ -320,6 +320,58 @@
     "method" : "GET",
     "output_encoding" : "json",
     "timeout" : "2s"
+  }, {
+    "backend" : [ {
+      "allow" : [ ],
+      "deny" : [ ],
+      "backendEncoding" : "json",
+      "group" : "backend1",
+      "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
+      "mapping" : {
+        "" : ""
+      },
+      "method" : "POST",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : { },
+      "input_headers" : [ "E5KAHRATn8kjWZbdAVaXTD7FVtCsdXuijm9dRpatlBLJ4gOplbGSMWSOlcn8x1lwyJLgzug1UVfmF%2FduXtk1oa9oG5%2BS6iDGA9zWpTjafpy4U0OT9kBiA5r%2FnDb55MzE4qfKfWXlpAqtEZrDiwtOlR1tjjzdCTEYmqPEfjYgQr7%2FWjIUBU2UQdB6zg2oQUWKBbPf1NY%2BF%2BTZiVcbhbwHibM7%2ByTSeLydksCElDo84GEb06QyoHxkXbB%2BQLWBdw9PvShGJr1e3xnIcf1MupyIPDVfB1WjwqNPSUD%2BKKqtKI%2FOSjQGR4x%2F6ov8zESd1nGQAiEKCvAW5%2FuhF5uVv0A70w%3D%3D" ],
+      "input_query_strings" : [ ],
+      "is_collection" : false,
+      "sd_scheme" : "http",
+      "url_pattern" : "/krakend"
+    } ],
+    "cache_ttl" : "0ms",
+    "concurrent_calls" : 1,
+    "endpoint" : "/krakend",
+    "extra_config" : {
+      "modifier/lua-proxy" : {
+        "pre" : "\"print('Lua proxy post modifier'); local r = response.load(); r:headers('X-from-lua-POST', '1234');\"",
+        "allow_open_libs" : false,
+        "post" : "\"print('Lua proxy pre modifier'); local r = request.load(); r:headers('X-from-lua-PRE', '1234');\",",
+        "skip_next" : false,
+        "live" : false
+      },
+      "modifier/lua-backend" : {
+        "pre" : "print('Hi from pre!'); proxy_pre(request)",
+        "allow_open_libs" : false,
+        "post" : "print('Hi from post!'); proxy_post(response)",
+        "sources" : [ "/Users/sujithkumar/Downloads/demo/src/main/java/com/example/demo/demo.lua" ],
+        "skip_next" : false,
+        "live" : false
+      },
+      "modifier/lua-endpoint" : {
+        "pre" : "print('Modifies the HTTP request');  local c = ctx.load();  c:headers('X-from-lua-endpoint', '1234');",
+        "allow_open_libs" : false,
+        "skip_next" : false,
+        "live" : false
+      }
+    },
+    "input_headers" : [ "x-apikey" ],
+    "input_query_strings" : [ ],
+    "method" : "POST",
+    "output_encoding" : "json",
+    "timeout" : "2s"
   } ],
   "extra_config" : { },
   "listen_ip" : "0.0.0.0",
