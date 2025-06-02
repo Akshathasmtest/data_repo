@@ -318,36 +318,6 @@
     "method" : "GET",
     "output_encoding" : "json",
     "timeout" : "2s"
-  }, {
-    "backend" : [ {
-      "allow" : [ "id" ],
-      "deny" : [ "from" ],
-      "backendEncoding" : "json",
-      "group" : "backend",
-      "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
-      "mapping" : {
-        "status" : "status_krakend"
-      },
-      "method" : "PUT",
-      "sd" : "static",
-      "target" : "flights",
-      "disable_host_sanitize" : false,
-      "extra_config" : { },
-      "input_headers" : [ "header_value" ],
-      "input_query_strings" : [ "query_value" ],
-      "is_collection" : true,
-      "sd_scheme" : "https",
-      "url_pattern" : "/krakend"
-    } ],
-    "cache_ttl" : "0ms",
-    "concurrent_calls" : 1,
-    "endpoint" : "/krakend",
-    "extra_config" : { },
-    "input_headers" : [ "header_endpoint" ],
-    "input_query_strings" : [ "query_endpoint" ],
-    "method" : "POST",
-    "output_encoding" : "json",
-    "timeout" : "2s"
   } ],
   "extra_config" : { },
   "listen_ip" : "0.0.0.0",
