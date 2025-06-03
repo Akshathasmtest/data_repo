@@ -384,52 +384,6 @@
     "method" : "GET",
     "output_encoding" : "json",
     "timeout" : "2s"
-  }, {
-    "backend" : [ {
-      "allow" : [ ],
-      "deny" : [ ],
-      "backendEncoding" : "json",
-      "group" : "",
-      "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
-      "method" : "POST",
-      "sd" : "static",
-      "target" : "",
-      "disable_host_sanitize" : false,
-      "extra_config" : {
-        "auth/client-credentials" : {
-          "endpoint_params" : {
-            "grant_type" : [ "client_credentials" ]
-          },
-          "client_secret" : "elrVrTht3YjmrdsadasadasHXLPFscnzet0cBkfh3Y",
-          "token_url" : "https://test1-kong-apiproxy.apiwiz.io/oauth2/token",
-          "client_id" : "O9Zifb24hoq9iAHjF90yrl6twZTNl6fW"
-        }
-      },
-      "input_headers" : [ "req_headers.has(\"Content-Type\")" ],
-      "input_query_strings" : [ ],
-      "is_collection" : false,
-      "sd_scheme" : "http",
-      "url_pattern" : "/krakend"
-    } ],
-    "cache_ttl" : "1s",
-    "concurrent_calls" : 1,
-    "endpoint" : "/krakend",
-    "extra_config" : {
-      "modifier/response-body-generator" : {
-        "template" : false,
-        "path" : "/etc/krakend/template.tmpl",
-        "debug" : true,
-        "content_type" : "application/json"
-      }
-    },
-    "input_headers" : [ "x-apikey" ],
-    "input_query_strings" : [ ],
-    "method" : "POST",
-    "output_encoding" : "json",
-    "timeout" : "2s"
   } ],
   "extra_config" : { },
   "listen_ip" : "0.0.0.0",
