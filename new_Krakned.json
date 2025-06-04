@@ -402,44 +402,6 @@
       "allow" : [ ],
       "deny" : [ ],
       "backendEncoding" : "json",
-      "group" : "backend1",
-      "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
-      "method" : "POST",
-      "sd" : "static",
-      "target" : "",
-      "disable_host_sanitize" : false,
-      "extra_config" : {
-        "backend/lambda" : {
-          "function_param_name" : "Function_name",
-          "endpoint" : "/call-a-lambda",
-          "max_retries" : 1,
-          "region" : "ap-south-1",
-          "function_name" : "KrakendTest"
-        }
-      },
-      "input_headers" : [ ],
-      "input_query_strings" : [ ],
-      "is_collection" : true,
-      "sd_scheme" : "https",
-      "url_pattern" : "/krakend"
-    } ],
-    "cache_ttl" : "0ms",
-    "concurrent_calls" : 1,
-    "endpoint" : "/krakend",
-    "extra_config" : { },
-    "input_headers" : [ ],
-    "input_query_strings" : [ ],
-    "method" : "POST",
-    "output_encoding" : "json",
-    "timeout" : "2s"
-  }, {
-    "backend" : [ {
-      "allow" : [ ],
-      "deny" : [ ],
-      "backendEncoding" : "json",
       "group" : "krakend_endpoint_group",
       "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
       "mapping" : {
