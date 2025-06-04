@@ -516,6 +516,48 @@
     "method" : "POST",
     "output_encoding" : "json",
     "timeout" : "2s"
+  }, {
+    "backend" : [ {
+      "allow" : [ ],
+      "deny" : [ ],
+      "backendEncoding" : "json",
+      "group" : "",
+      "host" : [ ],
+      "mapping" : {
+        "" : ""
+      },
+      "method" : "GET",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : {
+        "auth/client-credentials" : {
+          "endpoint_params" : {
+            "endpoint_params" : {
+              "grant_type" : [ "client_credentials" ]
+            }
+          },
+          "client_secret" : "elrVrTht3YjmrHXLPFscnzet0cBkfh3Y",
+          "scopes" : "scopeA, scopeB, ",
+          "token_url" : "https://test1-kong-apiproxy.apiwiz.io/oauth2/token",
+          "client_id" : "O9Zifb24hoq9iAHjF90yrl6twZTNl6fW"
+        }
+      },
+      "input_headers" : [ ],
+      "input_query_strings" : [ ],
+      "is_collection" : true,
+      "sd_scheme" : "http",
+      "url_pattern" : "/testBackend"
+    } ],
+    "cache_ttl" : "0ms",
+    "concurrent_calls" : 1,
+    "endpoint" : "/testOAuth2",
+    "extra_config" : { },
+    "input_headers" : [ ],
+    "input_query_strings" : [ ],
+    "method" : "GET",
+    "output_encoding" : "json",
+    "timeout" : "2s"
   } ],
   "extra_config" : { },
   "listen_ip" : "0.0.0.0",
