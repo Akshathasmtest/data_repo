@@ -553,7 +553,13 @@
     "output_encoding" : "xml",
     "timeout" : "2s"
   } ],
-  "extra_config" : { },
+  "extra_config" : {
+    "modifier/lua-endpoint" : {
+      "allow_open_libs" : false,
+      "skip_next" : false,
+      "live" : false
+    }
+  },
   "listen_ip" : "0.0.0.0",
   "max_header_bytes" : 0,
   "max_idle_connections" : 0,
