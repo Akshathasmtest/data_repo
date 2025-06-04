@@ -557,7 +557,9 @@
     "modifier/lua-endpoint" : {
       "allow_open_libs" : false,
       "skip_next" : false,
-      "live" : false
+      "live" : false,
+      "pre" : "print('Hi from endpoint pre!'); endpoint(ctx)",
+      "sources" : [ "/Users/akshathasm/Downloads/Krakend/modi.lua" ]
     }
   },
   "listen_ip" : "0.0.0.0",
