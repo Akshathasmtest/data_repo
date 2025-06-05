@@ -1,0 +1,127 @@
+{
+  "port" : 8080,
+  "cache_ttl" : "0s",
+  "debug_endpoint" : false,
+  "disable_compression" : false,
+  "disable_keep_alives" : false,
+  "disable_rest" : false,
+  "echo_endpoint" : false,
+  "endpoints" : [ {
+    "backend" : [ {
+      "allow" : [ ],
+      "deny" : [ ],
+      "backendEncoding" : "json",
+      "group" : "Get_operation",
+      "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
+      "mapping" : {
+        "" : ""
+      },
+      "method" : "GET",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : {
+        "modifier/response-body" : {
+          "modifiers" : [ {
+            "upper" : {
+              "field" : "message"
+            }
+          } ]
+        }
+      },
+      "input_headers" : [ "x-api-key" ],
+      "input_query_strings" : [ ],
+      "is_collection" : true,
+      "sd_scheme" : "https",
+      "url_pattern" : "/Get_operation"
+    }, {
+      "allow" : [ ],
+      "deny" : [ ],
+      "backendEncoding" : "json",
+      "group" : "",
+      "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
+      "mapping" : {
+        "" : ""
+      },
+      "method" : "POST",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : {
+        "modifier/response-body" : {
+          "modifiers" : [ {
+            "lower" : {
+              "field" : "username"
+            }
+          } ]
+        }
+      },
+      "input_headers" : [ "post_operation" ],
+      "input_query_strings" : [ "post_query" ],
+      "is_collection" : true,
+      "sd_scheme" : "https",
+      "url_pattern" : "/Post_operation"
+    }, {
+      "allow" : [ ],
+      "deny" : [ ],
+      "backendEncoding" : "json",
+      "group" : "",
+      "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
+      "mapping" : {
+        "emial" : "user_email"
+      },
+      "method" : "PUT",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : { },
+      "input_headers" : [ "put_header" ],
+      "input_query_strings" : [ "put_query" ],
+      "is_collection" : true,
+      "sd_scheme" : "https",
+      "url_pattern" : "/Put_operation"
+    }, {
+      "allow" : [ ],
+      "deny" : [ ],
+      "backendEncoding" : "json",
+      "group" : "",
+      "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
+      "mapping" : {
+        "" : ""
+      },
+      "method" : "DELETE",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : { },
+      "input_headers" : [ ],
+      "input_query_strings" : [ ],
+      "is_collection" : true,
+      "sd_scheme" : "https",
+      "url_pattern" : "/Delete_operation"
+    } ],
+    "cache_ttl" : "0ms",
+    "concurrent_calls" : 1,
+    "endpoint" : "/krakend_workflow",
+    "extra_config" : {
+      "validation/cel" : [ {
+        "check_expr" : "req_method == 'GET'"
+      } ]
+    },
+    "input_headers" : [ "x-api-key", "post_operation", "put_header", "delete_header" ],
+    "input_query_strings" : [ "post_query", "put_query", "delete_query" ],
+    "method" : "GET",
+    "output_encoding" : "json",
+    "timeout" : "2s"
+  } ],
+  "listen_ip" : "0.0.0.0",
+  "max_header_bytes" : 0,
+  "max_idle_connections" : 0,
+  "max_idle_connections_per_host" : 0,
+  "version" : 3,
+  "name" : "git_hub",
+  "output_encoding" : "json",
+  "sequential_start" : false,
+  "timeout" : "2s",
+  "use_h2c" : false
+}
