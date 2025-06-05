@@ -544,6 +544,44 @@
     "method" : "GET",
     "output_encoding" : "json",
     "timeout" : "2s"
+  }, {
+    "backend" : [ {
+      "allow" : [ ],
+      "deny" : [ ],
+      "backendEncoding" : "json",
+      "group" : "",
+      "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
+      "mapping" : {
+        "" : ""
+      },
+      "method" : "POST",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : {
+        "modifier/jmespath" : {
+          "expr" : "students[?age > `18` ].name"
+        }
+      },
+      "input_headers" : [ "header" ],
+      "input_query_strings" : [ "query" ],
+      "is_collection" : false,
+      "sd_scheme" : "https",
+      "url_pattern" : "/jmes_path"
+    } ],
+    "cache_ttl" : "0ms",
+    "concurrent_calls" : 1,
+    "endpoint" : "/jmes",
+    "extra_config" : {
+      "validation/cel" : [ {
+        "check_expr" : "req_method == 'POST'"
+      } ]
+    },
+    "input_headers" : [ ],
+    "input_query_strings" : [ ],
+    "method" : "POST",
+    "output_encoding" : "json",
+    "timeout" : "2s"
   } ],
   "extra_config" : {
     "modifier/lua-endpoint" : {
