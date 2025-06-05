@@ -539,6 +539,67 @@
     "method" : "POST",
     "output_encoding" : "json",
     "timeout" : "2s"
+  }, {
+    "backend" : [ {
+      "allow" : [ ],
+      "deny" : [ ],
+      "backendEncoding" : "no-op",
+      "group" : "",
+      "host" : [ ],
+      "mapping" : {
+        "" : ""
+      },
+      "method" : "GET",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : { },
+      "input_headers" : [ ],
+      "input_query_strings" : [ ],
+      "is_collection" : false,
+      "sd_scheme" : "http",
+      "url_pattern" : "/start-krakend"
+    } ],
+    "cache_ttl" : "0ms",
+    "concurrent_calls" : 1,
+    "endpoint" : "/start-krakend",
+    "extra_config" : {
+      "validation/json-schema" : {
+        "schema" : {
+          "$schema" : "http://json-schema.org/draft-07/schema#",
+          "type" : "object",
+          "properties" : {
+            "user" : {
+              "type" : "object",
+              "properties" : {
+                "username" : {
+                  "type" : "string"
+                },
+                "user_id" : {
+                  "type" : "string"
+                },
+                "status" : {
+                  "type" : "string",
+                  "enum" : [ "registered", "banned" ]
+                }
+              },
+              "required" : [ "username", "user_id" ]
+            }
+          },
+          "required" : [ "user" ]
+        },
+        "error" : {
+          "body" : "We couldn't process you request, try again later.",
+          "status" : 401,
+          "content_type" : "application/json"
+        }
+      }
+    },
+    "input_headers" : [ ],
+    "input_query_strings" : [ ],
+    "method" : "GET",
+    "output_encoding" : "no-op",
+    "timeout" : "2s"
   } ],
   "extra_config" : {
     "modifier/lua-endpoint" : {
