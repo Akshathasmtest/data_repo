@@ -10,7 +10,7 @@
     "backend" : [ {
       "allow" : [ ],
       "deny" : [ ],
-      "backendEncoding" : "json",
+      "encoding" : "json",
       "group" : "Get_operation",
       "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
       "mapping" : {
@@ -29,7 +29,7 @@
     }, {
       "allow" : [ ],
       "deny" : [ ],
-      "backendEncoding" : "json",
+      "encoding" : "json",
       "group" : "",
       "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
       "mapping" : {
@@ -48,7 +48,7 @@
     }, {
       "allow" : [ ],
       "deny" : [ ],
-      "backendEncoding" : "json",
+      "encoding" : "json",
       "group" : "",
       "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
       "mapping" : {
@@ -67,7 +67,7 @@
     }, {
       "allow" : [ ],
       "deny" : [ ],
-      "backendEncoding" : "json",
+      "encoding" : "json",
       "group" : "",
       "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
       "mapping" : {
@@ -90,6 +90,44 @@
     "extra_config" : { },
     "input_headers" : [ "x-api-key", "post_operation", "put_header", "delete_header" ],
     "input_query_strings" : [ "post_query", "put_query", "delete_query", "name" ],
+    "method" : "GET",
+    "output_encoding" : "json",
+    "timeout" : "2s"
+  }, {
+    "backend" : [ {
+      "allow" : [ ],
+      "deny" : [ ],
+      "encoding" : "json",
+      "group" : "",
+      "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
+      "mapping" : {
+        "" : ""
+      },
+      "method" : "GET",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : {
+        "modifier/martian" : {
+          "body.Modifier" : {
+            "body" : "ZXlKdGMyY2lPaUo1YjNVZ2NtOWpheUVpZlE9PQ==",
+            "scope" : [ "request" ],
+            "contentType" : "application/json"
+          }
+        }
+      },
+      "input_headers" : [ ],
+      "input_query_strings" : [ ],
+      "is_collection" : false,
+      "sd_scheme" : "http",
+      "url_pattern" : "/martial"
+    } ],
+    "cache_ttl" : "0ms",
+    "concurrent_calls" : 1,
+    "endpoint" : "/martial",
+    "extra_config" : { },
+    "input_headers" : [ ],
+    "input_query_strings" : [ ],
     "method" : "GET",
     "output_encoding" : "json",
     "timeout" : "2s"
