@@ -6,7 +6,55 @@
   "disable_keep_alives" : false,
   "disable_rest" : false,
   "echo_endpoint" : false,
-  "endpoints" : [ ],
+  "endpoints" : [ {
+    "backend" : [ {
+      "allow" : [ ],
+      "deny" : [ ],
+      "backendEncoding" : "json",
+      "group" : "",
+      "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
+      "mapping" : {
+        "" : ""
+      },
+      "method" : "GET",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : {
+        "modifier/martian" : {
+          "cookie.Modifier" : { },
+          "body.Modifier" : {
+            "body" : "ZXlKdGMyY2lPaUo1YjNVZ2NtOWpheUVpZlE9JTNE",
+            "scope" : [ "response" ],
+            "contentType" : "application/json"
+          },
+          "header.Id" : { },
+          "stash.Modifier" : { },
+          "header.Copy" : { },
+          "port.Modifier" : { },
+          "header.Modifier" : { },
+          "querystring.Modifier" : { },
+          "url.Modifier" : { },
+          "header.Append" : { },
+          "header.Blacklist" : { }
+        }
+      },
+      "input_headers" : [ ],
+      "input_query_strings" : [ ],
+      "is_collection" : false,
+      "sd_scheme" : "https",
+      "url_pattern" : "/krakend_workflow_new"
+    } ],
+    "cache_ttl" : "0ms",
+    "concurrent_calls" : 1,
+    "endpoint" : "/krakend_workflow_new",
+    "extra_config" : { },
+    "input_headers" : [ ],
+    "input_query_strings" : [ ],
+    "method" : "GET",
+    "output_encoding" : "json",
+    "timeout" : "2s"
+  } ],
   "listen_ip" : "0.0.0.0",
   "max_header_bytes" : 0,
   "max_idle_connections" : 0,
