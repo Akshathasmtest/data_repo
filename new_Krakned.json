@@ -569,6 +569,19 @@
     "timeout" : "2s"
   } ],
   "extra_config" : {
+    "security/http" : {
+      "ssl_host" : "ssl.host.domain",
+      "referrer_policy" : "same-origin",
+      "browser_xss_filter" : false,
+      "content_type_nosniff" : false,
+      "frame_deny" : false,
+      "ssl_redirect" : false,
+      "sts_include_subdomains" : false,
+      "allowed_hosts_are_regex" : false,
+      "sts_seconds" : 0,
+      "force_sts_header" : false,
+      "is_development" : false
+    },
     "modifier/lua-endpoint" : {
       "allow_open_libs" : false,
       "skip_next" : false,
