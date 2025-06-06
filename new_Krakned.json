@@ -556,6 +556,44 @@
     "method" : "GET",
     "output_encoding" : "json",
     "timeout" : "2s"
+  }, {
+    "backend" : [ {
+      "allow" : [ ],
+      "deny" : [ ],
+      "encoding" : "json",
+      "group" : "",
+      "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
+      "mapping" : {
+        "" : ""
+      },
+      "method" : "PUT",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : {
+        "modifier/martian" : {
+          "body.Modifier" : {
+            "body" : "ZXlKdGMyY2lPaUo1YjNVZ2NtOWpheUVpZlE9JTNE",
+            "scope" : [ "response" ],
+            "contentType" : "application/json"
+          }
+        }
+      },
+      "input_headers" : [ "header_put" ],
+      "input_query_strings" : [ "query_put" ],
+      "is_collection" : false,
+      "sd_scheme" : "http",
+      "url_pattern" : "/krakend_endpoint2"
+    } ],
+    "cache_ttl" : "0ms",
+    "concurrent_calls" : 1,
+    "endpoint" : "/krakend_endpoint2",
+    "extra_config" : { },
+    "input_headers" : [ "header_put" ],
+    "input_query_strings" : [ "query_put" ],
+    "method" : "GET",
+    "output_encoding" : "json",
+    "timeout" : "2s"
   } ],
   "extra_config" : {
     "security/http" : {
