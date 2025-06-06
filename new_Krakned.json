@@ -44,9 +44,7 @@
       "backendEncoding" : "json",
       "group" : "backend1",
       "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
+      "mapping" : { },
       "method" : "POST",
       "sd" : "static",
       "target" : "",
@@ -93,9 +91,7 @@
       "backendEncoding" : "json",
       "group" : "backend1",
       "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
+      "mapping" : { },
       "method" : "GET",
       "sd" : "static",
       "target" : "",
@@ -123,9 +119,7 @@
       "backendEncoding" : "json",
       "group" : "backend1",
       "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
+      "mapping" : { },
       "method" : "POST",
       "sd" : "static",
       "target" : "",
@@ -153,9 +147,7 @@
       "backendEncoding" : "json",
       "group" : "backend1",
       "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
+      "mapping" : { },
       "method" : "POST",
       "sd" : "static",
       "target" : "",
@@ -191,9 +183,7 @@
       "backendEncoding" : "no-op",
       "group" : "backend1",
       "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
+      "mapping" : { },
       "method" : "POST",
       "sd" : "static",
       "target" : "",
@@ -284,9 +274,7 @@
       "backendEncoding" : "json",
       "group" : "",
       "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
+      "mapping" : { },
       "method" : "POST",
       "sd" : "static",
       "target" : "",
@@ -331,9 +319,7 @@
       "backendEncoding" : "json",
       "group" : "",
       "host" : [ ],
-      "mapping" : {
-        "" : ""
-      },
+      "mapping" : { },
       "method" : "GET",
       "sd" : "static",
       "target" : "",
@@ -369,9 +355,7 @@
       "backendEncoding" : "json",
       "group" : "krakend_endpoint_group",
       "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
+      "mapping" : { },
       "method" : "GET",
       "sd" : "static",
       "target" : "",
@@ -388,9 +372,7 @@
       "backendEncoding" : "json",
       "group" : "krakend_endpoint1_group",
       "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
+      "mapping" : { },
       "method" : "POST",
       "sd" : "static",
       "target" : "",
@@ -407,9 +389,7 @@
       "backendEncoding" : "json",
       "group" : "krakend_endpoint2_group",
       "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
+      "mapping" : { },
       "method" : "PUT",
       "sd" : "static",
       "target" : "",
@@ -437,9 +417,7 @@
       "backendEncoding" : "xml",
       "group" : "",
       "host" : [ "https://qa-dev-lmxz.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
+      "mapping" : { },
       "method" : "GET",
       "sd" : "static",
       "target" : "",
@@ -456,9 +434,7 @@
       "backendEncoding" : "json",
       "group" : "",
       "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
+      "mapping" : { },
       "method" : "GET",
       "sd" : "static",
       "target" : "",
@@ -486,9 +462,7 @@
       "backendEncoding" : "json",
       "group" : "",
       "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
+      "mapping" : { },
       "method" : "GET",
       "sd" : "static",
       "target" : "",
@@ -516,9 +490,7 @@
       "backendEncoding" : "no-op",
       "group" : "",
       "host" : [ ],
-      "mapping" : {
-        "" : ""
-      },
+      "mapping" : { },
       "method" : "GET",
       "sd" : "static",
       "target" : "",
@@ -577,9 +549,7 @@
       "backendEncoding" : "json",
       "group" : "",
       "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
+      "mapping" : { },
       "method" : "GET",
       "sd" : "static",
       "target" : "",
@@ -589,7 +559,7 @@
           "cookie.Modifier" : { },
           "body.Modifier" : {
             "body" : "ZXlKdGMyY2lPaUo1YjNVZ2NtOWpheUVpZlE9JTNE",
-            "scope" : [ "request" ],
+            "scope" : [ "response" ],
             "contentType" : "application/json"
           },
           "header.Id" : { },
@@ -606,12 +576,12 @@
       "input_headers" : [ ],
       "input_query_strings" : [ ],
       "is_collection" : false,
-      "sd_scheme" : "http",
-      "url_pattern" : "/martian"
+      "sd_scheme" : "https",
+      "url_pattern" : "/krakend_workflow_new"
     } ],
     "cache_ttl" : "0ms",
     "concurrent_calls" : 1,
-    "endpoint" : "/martian",
+    "endpoint" : "/krakend_workflow_new",
     "extra_config" : { },
     "input_headers" : [ ],
     "input_query_strings" : [ ],
