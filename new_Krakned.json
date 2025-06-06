@@ -513,36 +513,6 @@
     "backend" : [ {
       "allow" : [ ],
       "deny" : [ ],
-      "backendEncoding" : "json",
-      "group" : "",
-      "host" : [ "https://qa-dev-ieia.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
-      "method" : "POST",
-      "sd" : "static",
-      "target" : "",
-      "disable_host_sanitize" : false,
-      "extra_config" : { },
-      "input_headers" : [ "header" ],
-      "input_query_strings" : [ ],
-      "is_collection" : true,
-      "sd_scheme" : "https",
-      "url_pattern" : "/krakend_workflow_new"
-    } ],
-    "cache_ttl" : "0ms",
-    "concurrent_calls" : 1,
-    "endpoint" : "/jmes",
-    "extra_config" : { },
-    "input_headers" : [ "header" ],
-    "input_query_strings" : [ ],
-    "method" : "POST",
-    "output_encoding" : "json",
-    "timeout" : "2s"
-  }, {
-    "backend" : [ {
-      "allow" : [ ],
-      "deny" : [ ],
       "backendEncoding" : "no-op",
       "group" : "",
       "host" : [ ],
