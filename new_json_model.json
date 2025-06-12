@@ -70,37 +70,7 @@
   "disable_rest" : false,
   "dns_cache_ttl" : "30s",
   "echo_endpoint" : false,
-  "endpoints" : [ {
-    "backend" : [ {
-      "allow" : [ ],
-      "deny" : [ ],
-      "encoding" : "json",
-      "group" : "",
-      "host" : [ "https://acme-team-production-xwzg.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
-      "method" : "GET",
-      "sd" : "static",
-      "target" : "",
-      "disable_host_sanitize" : false,
-      "extra_config" : { },
-      "input_headers" : [ ],
-      "input_query_strings" : [ ],
-      "is_collection" : false,
-      "sd_scheme" : "https",
-      "url_pattern" : "/Krakend"
-    } ],
-    "cache_ttl" : "0ms",
-    "concurrent_calls" : 1,
-    "endpoint" : "/Krakend",
-    "extra_config" : { },
-    "input_headers" : [ ],
-    "input_query_strings" : [ ],
-    "method" : "GET",
-    "output_encoding" : "json",
-    "timeout" : "2s"
-  } ],
+  "endpoints" : [ ],
   "expect_continue_timeout" : "0s",
   "extra_config" : {
     "auth/validator" : {
