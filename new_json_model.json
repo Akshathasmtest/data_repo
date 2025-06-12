@@ -70,56 +70,7 @@
   "disable_rest" : false,
   "dns_cache_ttl" : "30s",
   "echo_endpoint" : false,
-  "endpoints" : [ {
-    "backend" : [ {
-      "allow" : [ "details" ],
-      "deny" : [ "type" ],
-      "encoding" : "json",
-      "group" : "Backend1",
-      "host" : [ "https://acme-team-production-xwzg.apiwiz.io" ],
-      "mapping" : {
-        "type" : "Type"
-      },
-      "method" : "GET",
-      "sd" : "static",
-      "target" : "error",
-      "disable_host_sanitize" : false,
-      "extra_config" : { },
-      "input_headers" : [ "builder_header" ],
-      "input_query_strings" : [ "builder_query" ],
-      "is_collection" : false,
-      "sd_scheme" : "https",
-      "url_pattern" : "/Krakend"
-    }, {
-      "allow" : [ ],
-      "deny" : [ ],
-      "encoding" : "json",
-      "group" : "",
-      "host" : [ "https://acme-team-production-jjgl.apiwiz.io" ],
-      "mapping" : {
-        "" : ""
-      },
-      "method" : "GET",
-      "sd" : "static",
-      "target" : "",
-      "disable_host_sanitize" : false,
-      "extra_config" : { },
-      "input_headers" : [ "Sandbox_header" ],
-      "input_query_strings" : [ "Sandbox_query" ],
-      "is_collection" : false,
-      "sd_scheme" : "https",
-      "url_pattern" : "/krakend"
-    } ],
-    "cache_ttl" : "0ms",
-    "concurrent_calls" : 2,
-    "endpoint" : "/Krakend",
-    "extra_config" : { },
-    "input_headers" : [ "builder_header", "Sandbox_header" ],
-    "input_query_strings" : [ "builder_query", "Sandbox_query" ],
-    "method" : "GET",
-    "output_encoding" : "json",
-    "timeout" : "2s"
-  } ],
+  "endpoints" : [ ],
   "expect_continue_timeout" : "0s",
   "extra_config" : {
     "auth/validator" : {
