@@ -11,7 +11,7 @@
     "backend" : [ {
       "allow" : [ ],
       "deny" : [ ],
-      "backendEncoding" : "json",
+      "encoding" : "json",
       "group" : "backend1",
       "host" : [ "https://stage-data-lkgc.apiwiz.io" ],
       "mapping" : {
@@ -74,7 +74,7 @@
     "backend" : [ {
       "allow" : [ ],
       "deny" : [ ],
-      "backendEncoding" : "json",
+      "encoding" : "json",
       "group" : "",
       "host" : [ "https://stage-data-lkgc.apiwiz.io" ],
       "mapping" : {
@@ -116,7 +116,7 @@
     "backend" : [ {
       "allow" : [ ],
       "deny" : [ ],
-      "backendEncoding" : "json",
+      "encoding" : "json",
       "group" : "backend1",
       "host" : [ "https://stage-data-lkgc.apiwiz.io" ],
       "mapping" : {
@@ -146,7 +146,7 @@
     "backend" : [ {
       "allow" : [ ],
       "deny" : [ ],
-      "backendEncoding" : "json",
+      "encoding" : "json",
       "group" : "",
       "host" : [ "https://stage-data-lkgc.apiwiz.io" ],
       "mapping" : {
@@ -192,7 +192,7 @@
     "backend" : [ {
       "allow" : [ ],
       "deny" : [ ],
-      "backendEncoding" : "json",
+      "encoding" : "json",
       "group" : "",
       "host" : [ "https://stage-data-lkgc.apiwiz.io" ],
       "mapping" : {
@@ -253,7 +253,7 @@
   "max_header_bytes" : 0,
   "max_idle_connections" : 0,
   "max_idle_connections_per_host" : 0,
-  "version" : 0,
+  "version" : 3,
   "name" : "KarkenD_WithToken_Git_Con",
   "output_encoding" : "json",
   "plugin" : {
