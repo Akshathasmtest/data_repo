@@ -93,7 +93,7 @@
     } ],
     "cache_ttl" : "0ms",
     "concurrent_calls" : 1,
-    "endpoint" : "/Krakend ",
+    "endpoint" : "/Krakend",
     "extra_config" : { },
     "input_headers" : [ ],
     "input_query_strings" : [ ],
