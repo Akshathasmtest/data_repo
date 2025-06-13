@@ -145,6 +145,46 @@
     "method" : "POST",
     "output_encoding" : "json",
     "timeout" : "2s"
+  }, {
+    "backend" : [ {
+      "allow" : [ ],
+      "deny" : [ ],
+      "encoding" : "json",
+      "group" : "Backend1",
+      "host" : [ "https://acme-team-production-xwzg.apiwiz.io" ],
+      "mapping" : {
+        "type" : "Type"
+      },
+      "method" : "GET",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : {
+        "auth/client-credentials" : {
+          "endpoint_params" : {
+            "grant_type" : [ "client_credentials" ]
+          },
+          "client_secret" : "elrVrTht3YjmrHXLPFscnzet0cBkfh3Y",
+          "scopes" : "krakend",
+          "token_url" : "https://test1-kong-apiproxy.apiwiz.io/oauth2/token",
+          "client_id" : "O9Zifb24hoq9iAHjF90yrl6twZTNl6fW"
+        }
+      },
+      "input_headers" : [ "*" ],
+      "input_query_strings" : [ "*" ],
+      "is_collection" : false,
+      "sd_scheme" : "https",
+      "url_pattern" : "/Krakend"
+    } ],
+    "cache_ttl" : "0ms",
+    "concurrent_calls" : 2,
+    "endpoint" : "/Krakend",
+    "extra_config" : { },
+    "input_headers" : [ "builder_header", "Sandbox_header" ],
+    "input_query_strings" : [ "builder_query", "Sandbox_query" ],
+    "method" : "GET",
+    "output_encoding" : "json",
+    "timeout" : "2s"
   } ],
   "expect_continue_timeout" : "0s",
   "extra_config" : {
