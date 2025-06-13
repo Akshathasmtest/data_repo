@@ -102,6 +102,42 @@
     "method" : "GET",
     "output_encoding" : "json",
     "timeout" : "2s"
+  }, {
+    "backend" : [ {
+      "allow" : [ ],
+      "deny" : [ ],
+      "encoding" : "json",
+      "group" : "",
+      "host" : [ "https://acme-team-production-xwzg.apiwiz.io" ],
+      "mapping" : {
+        "" : ""
+      },
+      "method" : "POST",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : {
+        "backend/soap" : {
+          "content_type" : "text/xml",
+          "path" : "./soap_workflow_flag_request.xml",
+          "debug" : false
+        }
+      },
+      "input_headers" : [ ],
+      "input_query_strings" : [ ],
+      "is_collection" : false,
+      "sd_scheme" : "https",
+      "url_pattern" : "/soap_workflow"
+    } ],
+    "cache_ttl" : "0ms",
+    "concurrent_calls" : 1,
+    "endpoint" : "/soap_workflow",
+    "extra_config" : { },
+    "input_headers" : [ ],
+    "input_query_strings" : [ ],
+    "method" : "GET",
+    "output_encoding" : "xml",
+    "timeout" : "2s"
   } ],
   "expect_continue_timeout" : "0s",
   "extra_config" : {
