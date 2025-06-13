@@ -145,6 +145,44 @@
     "method" : "POST",
     "output_encoding" : "json",
     "timeout" : "2s"
+  }, {
+    "backend" : [ {
+      "allow" : [ ],
+      "deny" : [ ],
+      "encoding" : "json",
+      "group" : "Backend1",
+      "host" : [ "https://acme-team-production-xwzg.apiwiz.io" ],
+      "mapping" : {
+        "type" : "Type"
+      },
+      "method" : "GET",
+      "sd" : "static",
+      "target" : "",
+      "disable_host_sanitize" : false,
+      "extra_config" : {
+        "modifier/martian" : {
+          "body.Modifier" : {
+            "body" : "ewogICJzdGF0dXMiOiAiYnVpbGRlciByZXNwb25zZSIsCiAgImNvZGUiOiA0MDQsCiAgIm1lc3NhZ2UiOiAiVXNlciBub3QgZm91bmQuIiwKICAiZXJyb3IiOiB7CiAgICAidHlwZSI6ICJOb3RGb3VuZEVycm9yIiwKICAgICJkZXRhaWxzIjogIlRoZSB1c2VyIHdpdGggdGhlIHByb3ZpZGVkIElEIGRvZXMgbm90IGV4aXN0IGluIHRoZSBkYXRhYmFzZS4iCiAgfSwKICAidGltZXN0YW1wIjogIjIwMjUtMDYtMTJUMTQ6MzU6MDBaIgp9",
+            "scope" : [ "response" ],
+            "contentType" : "application/json"
+          }
+        }
+      },
+      "input_headers" : [ "*" ],
+      "input_query_strings" : [ "*" ],
+      "is_collection" : false,
+      "sd_scheme" : "https",
+      "url_pattern" : "/Krakend"
+    } ],
+    "cache_ttl" : "0ms",
+    "concurrent_calls" : 2,
+    "endpoint" : "/Krakend",
+    "extra_config" : { },
+    "input_headers" : [ "builder_header", "Sandbox_header" ],
+    "input_query_strings" : [ "builder_query", "Sandbox_query" ],
+    "method" : "GET",
+    "output_encoding" : "json",
+    "timeout" : "2s"
   } ],
   "expect_continue_timeout" : "0s",
   "extra_config" : {
