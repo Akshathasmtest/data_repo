@@ -7,7 +7,6 @@
     "version" : "1.0.2"
   },
   "externalDocs" : {
-    "description" : "",
     "url" : ""
   },
   "servers" : [ {
@@ -57,7 +56,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/user_details"
+                  "$ref" : "#/components/schemas/inheritance_1"
                 },
                 "examples" : {
                   "example_1" : {
@@ -387,7 +386,7 @@
         "description" : "byte_sample_value",
         "format" : "byte",
         "example" : "ewogICAgInN0YXJ1cyI6InN0cmluZyIsCiAgICAic3RhdHVzIiA6ICJieXRlIgp9",
-        "default" : "[B@354883bc"
+        "default" : "[B@6d7ea8a2"
       },
       "String_binary" : {
         "type" : "string",
@@ -396,7 +395,7 @@
         "readOnly" : true,
         "example" : "ewogICAgInN0YXJ1cyI6InN0cmluZyIsCiAgICAic3RhdHVzIiA6ICJiaW5hcnkiCn0=",
         "deprecated" : true,
-        "default" : "[B@b14dc9d",
+        "default" : "[B@4894cba2",
         "enum" : [ "c3RyaW5nX2JpbmFyeV8x", "c3RyaW5nX2JpbmFyeV8y" ]
       },
       "number_double" : {
@@ -524,7 +523,7 @@
             "description" : "sample",
             "format" : "byte",
             "example" : "ewogICAgInR5cGUiIDogIm9iamVjdCIsCiAgICAic3RhcnVzIjoic3RyaW5nIiwKICAgICJzdGF0dXMiIDogImJ5dGUiCn0=",
-            "default" : "[B@43e38ef8"
+            "default" : "[B@64102843"
           },
           "Array" : {
             "uniqueItems" : true,
