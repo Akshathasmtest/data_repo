@@ -1,0 +1,1 @@
+{"a":{"type":"object","properties":{"a":{"example":"request","$ref":"#/definitions/string"}},"example":"{\n    \"a\": \"request\"\n}"},"definitions":{}}
