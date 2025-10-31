@@ -10,7 +10,7 @@
     "url" : ""
   },
   "servers" : [ {
-    "url" : "https://qa-dev-lmxz.apiwiz.io/details",
+    "url" : "https://qa-dev-lmxz.apiwiz.io/sandbox/details/",
     "description" : "builder_server",
     "variables" : {
       "var_1" : {
