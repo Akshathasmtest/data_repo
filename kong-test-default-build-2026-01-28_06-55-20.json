@@ -1,0 +1,37 @@
+{
+  "id" : "6979b2d814eded56f762b793",
+  "cts" : 1769583320907,
+  "mts" : 1769583320907,
+  "createdBy" : "AnkitTeamUser IT",
+  "modifiedBy" : "AnkitTeamUser IT",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+  "runtime" : "kong-test",
+  "workspace" : "default",
+  "swaggerId" : "694a1a855e492342f9dfe6b7",
+  "serviceName" : "asdcredit_simulation-kong",
+  "revision" : 1,
+  "swaggerVersion" : "3.0",
+  "swaggerName" : "Credit_Simulation-Kong",
+  "serviceId" : "da6cf67e-650b-4d4e-aa26-f550ca49fe8e",
+  "service" : {
+    "serviceName" : "asdcredit_simulation-kong",
+    "protocol" : "https",
+    "host" : "akshatha-dev-gnhn.apiwiz.io",
+    "hosts" : [ "akshatha-dev-gnhn.apiwiz.io" ],
+    "basePath" : "/sever",
+    "basePaths" : [ "/sever" ],
+    "port" : 443,
+    "ports" : [ -1 ],
+    "metadata" : {
+      "retries" : 5,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    },
+    "tags" : [ "credit_simulation-kong" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ ],
+  "plugins" : [ ],
+  "errors" : [ ]
+}
