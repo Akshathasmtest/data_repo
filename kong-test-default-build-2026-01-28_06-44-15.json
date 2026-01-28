@@ -1,0 +1,457 @@
+{
+  "id" : "6979b03f14eded56f762b74e",
+  "cts" : 1769582655773,
+  "mts" : 1769582655773,
+  "createdBy" : "AnkitTeamUser IT",
+  "modifiedBy" : "AnkitTeamUser IT",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+  "runtime" : "kong-test",
+  "workspace" : "default",
+  "swaggerId" : "",
+  "serviceName" : "ubx-admin-service",
+  "revision" : 0,
+  "swaggerVersion" : "",
+  "swaggerName" : "",
+  "serviceId" : "707ed9ba-5126-41ca-8213-06fe9d2b8d0f",
+  "service" : {
+    "serviceName" : "ubx-admin-service",
+    "protocol" : "http",
+    "host" : "internal-xpanse-sbx-datp-api-2015228706.ap-southeast-1.elb.amazonaws.com",
+    "hosts" : [ "internal-xpanse-sbx-datp-api-2015228706.ap-southeast-1.elb.amazonaws.com", "mock.apiwiz.io" ],
+    "basePath" : "/xpanse/1.0/admin:80",
+    "basePaths" : [ "/xpanse/1.0/admin:80", "/xpanse/1.0/admin:443" ],
+    "port" : 80,
+    "ports" : [ -1 ],
+    "metadata" : {
+      "retries" : 5,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    },
+    "tags" : [ "ubx-admin-service" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "7e2c4bee-34b4-4562-8d21-0e4e5b25c657",
+    "routeName" : "enableDisableSmsNotification",
+    "service" : {
+      "_id" : "707ed9ba-5126-41ca-8213-06fe9d2b8d0f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "PUT" ],
+    "paths" : [ "/payments/tenant/sms" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "ubx-admin-service" ]
+  }, {
+    "routeId" : "8234d38d-0b06-4949-bcbe-41b1da89413a",
+    "routeName" : "addPaymentStatusMappingConfiguration",
+    "service" : {
+      "_id" : "707ed9ba-5126-41ca-8213-06fe9d2b8d0f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/payments/status/retrymapping" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "ubx-admin-service" ]
+  }, {
+    "routeId" : "611089b1-4c4c-478f-a417-8efb78c3958b",
+    "routeName" : "getPaymentStatusMappingConfiguration",
+    "service" : {
+      "_id" : "707ed9ba-5126-41ca-8213-06fe9d2b8d0f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/payments/status/retrymapping" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "ubx-admin-service" ]
+  }, {
+    "routeId" : "df340f48-58a6-48d1-955e-51fb311a50b1",
+    "routeName" : "addCredentials",
+    "service" : {
+      "_id" : "707ed9ba-5126-41ca-8213-06fe9d2b8d0f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/provider/credentials" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "ubx-admin-service" ]
+  }, {
+    "routeId" : "86ad4f4e-897e-4324-95fd-3456293729c1",
+    "routeName" : "updateTenantCredentials",
+    "service" : {
+      "_id" : "707ed9ba-5126-41ca-8213-06fe9d2b8d0f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "PUT" ],
+    "paths" : [ "/provider/credentials" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "ubx-admin-service" ]
+  }, {
+    "routeId" : "defb8b8d-7791-48bc-95d1-d94a0e119313",
+    "routeName" : "updatePaymentRetryConfiguration",
+    "service" : {
+      "_id" : "707ed9ba-5126-41ca-8213-06fe9d2b8d0f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "PUT" ],
+    "paths" : [ "/payments/status/paymentretry" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "ubx-admin-service" ]
+  }, {
+    "routeId" : "34707713-d848-4551-917d-522007e59134",
+    "routeName" : "getTenantConfiguration",
+    "service" : {
+      "_id" : "707ed9ba-5126-41ca-8213-06fe9d2b8d0f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/tenant/configurations/{clientId}" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "ubx-admin-service" ]
+  }, {
+    "routeId" : "bc8f75a9-0b24-400e-a261-6f0f128df394",
+    "routeName" : "getTenants",
+    "service" : {
+      "_id" : "707ed9ba-5126-41ca-8213-06fe9d2b8d0f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/tenants" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "ubx-admin-service" ]
+  }, {
+    "routeId" : "c7b8050e-9fb0-46ab-a80e-7365dce3e3b6",
+    "routeName" : "addPaymentProvider",
+    "service" : {
+      "_id" : "707ed9ba-5126-41ca-8213-06fe9d2b8d0f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/payments/provider" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "ubx-admin-service" ]
+  }, {
+    "routeId" : "4653f116-6c11-492e-a8f3-320a9aef1aed",
+    "routeName" : "getPaymentProvider",
+    "service" : {
+      "_id" : "707ed9ba-5126-41ca-8213-06fe9d2b8d0f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/payments/providers" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "ubx-admin-service" ]
+  }, {
+    "routeId" : "7758486f-2d43-4a35-bc9b-30bc27e98f6e",
+    "routeName" : "updatePaymentStatus",
+    "service" : {
+      "_id" : "707ed9ba-5126-41ca-8213-06fe9d2b8d0f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/payments/transactions/status" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "ubx-admin-service" ]
+  }, {
+    "routeId" : "ac6e5c72-a0e7-444b-b816-24b9fd5c3b32",
+    "routeName" : "getTransactionHistory",
+    "service" : {
+      "_id" : "707ed9ba-5126-41ca-8213-06fe9d2b8d0f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/transaction/history/{transactionId}" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "ubx-admin-service" ]
+  }, {
+    "routeId" : "0ab0a657-f764-41f3-aef9-461fc43985ad",
+    "routeName" : "enableDisablePaymentChannelResponse",
+    "service" : {
+      "_id" : "707ed9ba-5126-41ca-8213-06fe9d2b8d0f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/payments/channels/status" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "ubx-admin-service" ]
+  }, {
+    "routeId" : "6d2f7812-8617-4da8-9ade-a01fc5e81394",
+    "routeName" : "updateTenantConfigurations",
+    "service" : {
+      "_id" : "707ed9ba-5126-41ca-8213-06fe9d2b8d0f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "PUT" ],
+    "paths" : [ "/tenant/configurations" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "ubx-admin-service" ]
+  } ],
+  "plugins" : [ ],
+  "errors" : [ ]
+}
