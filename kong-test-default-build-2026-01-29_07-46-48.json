@@ -1,0 +1,67 @@
+{
+  "id" : "697b106814eded56f762bf7b",
+  "cts" : 1769672808664,
+  "mts" : 1769672808664,
+  "createdBy" : "AnkitTeamUser IT",
+  "modifiedBy" : "AnkitTeamUser IT",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+  "runtime" : "kong-test",
+  "workspace" : "default",
+  "swaggerId" : "",
+  "serviceName" : "credit_simulation-kong_1",
+  "revision" : 0,
+  "swaggerVersion" : "",
+  "swaggerName" : "",
+  "serviceId" : "68dfd55f-4567-4bdb-a276-c7bb91f13215",
+  "service" : {
+    "serviceName" : "credit_simulation-kong_1",
+    "protocol" : "https",
+    "host" : "api-dev.idofocus.co.id",
+    "hosts" : [ "api-dev.idofocus.co.id" ],
+    "basePath" : "/i",
+    "basePaths" : [ "/i" ],
+    "port" : 443,
+    "ports" : [ -1 ],
+    "metadata" : {
+      "retries" : 5,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    },
+    "tags" : [ "credit_simulation-kong" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "eb8cdac3-176a-49a1-bb9a-bed93edbc149",
+    "routeName" : "creditSimulationCreate_1",
+    "service" : {
+      "_id" : "68dfd55f-4567-4bdb-a276-c7bb91f13215"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/simulasikreditext" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "credit_simulation-kong" ]
+  } ],
+  "plugins" : [ ],
+  "errors" : [ ]
+}
