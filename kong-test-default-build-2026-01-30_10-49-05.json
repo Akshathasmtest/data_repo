@@ -1,0 +1,68 @@
+{
+  "id" : "697c8ca114eded56f762c564",
+  "cts" : 1769770145584,
+  "mts" : 1769770145584,
+  "createdBy" : "AnkitTeamUser IT",
+  "modifiedBy" : "AnkitTeamUser IT",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+  "runtime" : "kong-test",
+  "workspace" : "default",
+  "swaggerId" : "697874ddc193d01c59fdb11a",
+  "serviceName" : "sample_swagger",
+  "revision" : 3,
+  "swaggerVersion" : "3.0",
+  "swaggerName" : "Sample_swagger",
+  "serviceId" : "33f856ad-d59c-4789-b8e4-6c9ba8e521b5",
+  "service" : {
+    "serviceId" : "33f856ad-d59c-4789-b8e4-6c9ba8e521b5",
+    "serviceName" : "sample_swagger",
+    "protocol" : "https",
+    "host" : "New_kong-test_upstream",
+    "hosts" : [ "akshatha-dev-gnhn.apiwiz.io", "Upstream_target_var_name", "Kong-test_1", "New_test", "New_upstream_target", "new_target", "New_kong-test_upstream" ],
+    "basePath" : "/sample_basepath",
+    "basePaths" : [ "/sample_basepath" ],
+    "port" : 443,
+    "ports" : [ -1 ],
+    "metadata" : {
+      "retries" : 5,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    },
+    "tags" : [ "sample_swagger" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "1f96238e-13e8-4fca-ba28-976d1bba315a",
+    "routeName" : "get_opeartion",
+    "service" : {
+      "_id" : "33f856ad-d59c-4789-b8e4-6c9ba8e521b5"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/get" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "sample_swagger" ]
+  } ],
+  "plugins" : [ ],
+  "errors" : [ ]
+}
