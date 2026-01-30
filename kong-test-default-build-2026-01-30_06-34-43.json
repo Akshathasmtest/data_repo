@@ -1,0 +1,68 @@
+{
+  "id" : "697c510314eded56f762c264",
+  "cts" : 1769754883834,
+  "mts" : 1769754883834,
+  "createdBy" : "AnkitTeamUser IT",
+  "modifiedBy" : "AnkitTeamUser IT",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+  "runtime" : "kong-test",
+  "workspace" : "default",
+  "swaggerId" : "",
+  "serviceName" : "new_gateway_oas_1",
+  "revision" : 0,
+  "swaggerVersion" : "",
+  "swaggerName" : "",
+  "serviceId" : "5bd9cda9-08d9-434f-9ad6-8057351f28b5",
+  "service" : {
+    "serviceId" : "5bd9cda9-08d9-434f-9ad6-8057351f28b5",
+    "serviceName" : "new_gateway_oas_1",
+    "protocol" : "https",
+    "host" : "Kong-test_1",
+    "hosts" : [ "akshatha-dev-gnhn.apiwiz.io", "Kong-test_1" ],
+    "basePath" : "/gateway",
+    "basePaths" : [ "/gateway" ],
+    "port" : 443,
+    "ports" : [ -1 ],
+    "metadata" : {
+      "retries" : 5,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    },
+    "tags" : [ "new_gateway_oas" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "c1796431-3a5f-4015-adbb-489d78ce540d",
+    "routeName" : "get_operation_id_1",
+    "service" : {
+      "_id" : "5bd9cda9-08d9-434f-9ad6-8057351f28b5"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/operation" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "new_gateway_oas" ]
+  } ],
+  "plugins" : [ ],
+  "errors" : [ ]
+}
