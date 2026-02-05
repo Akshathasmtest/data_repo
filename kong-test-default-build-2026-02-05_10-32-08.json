@@ -1,0 +1,33 @@
+{
+  "id" : "698471a82ecb13357bda4b7e",
+  "cts" : 1770287528953,
+  "mts" : 1770287528953,
+  "createdBy" : "AnkitTeamUser IT",
+  "modifiedBy" : "AnkitTeamUser IT",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+  "runtime" : "kong-test",
+  "workspace" : "default",
+  "swaggerId" : "",
+  "serviceName" : "delete-it",
+  "revision" : 0,
+  "swaggerVersion" : "",
+  "swaggerName" : "",
+  "serviceId" : "466fef95-fb29-4a5a-a547-ff121d8b007e",
+  "service" : {
+    "serviceId" : "",
+    "serviceName" : "delete-it",
+    "protocol" : "http",
+    "host" : "api.apiwiz.io",
+    "hosts" : [ ],
+    "basePath" : "/s",
+    "basePaths" : [ ],
+    "port" : 80,
+    "ports" : [ ],
+    "metadata" : { },
+    "tags" : [ "delete-it" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ ],
+  "plugins" : [ ],
+  "errors" : [ ]
+}
