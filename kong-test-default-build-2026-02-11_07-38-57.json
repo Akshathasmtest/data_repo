@@ -1,0 +1,80 @@
+{
+  "id" : "698c3211e7194c5d73d007ce",
+  "cts" : 1770795537350,
+  "mts" : 1770795537350,
+  "createdBy" : "AnkitTeamUser IT",
+  "modifiedBy" : "AnkitTeamUser IT",
+  "kongAdminHost" : "https://test-kong-admin.apiwiz.io/",
+  "runtime" : "kong-test",
+  "workspace" : "default",
+  "swaggerId" : "",
+  "serviceName" : "newService",
+  "revision" : 0,
+  "swaggerVersion" : "",
+  "swaggerName" : "",
+  "serviceId" : "9c1affae-4a8b-4512-8df4-784e741bfa8f",
+  "service" : {
+    "serviceId" : "9c1affae-4a8b-4512-8df4-784e741bfa8f",
+    "serviceName" : "newService",
+    "protocol" : "http",
+    "host" : "mock.apiwiz.io",
+    "hosts" : [ ],
+    "basePath" : "/newpath/service1",
+    "basePaths" : [ ],
+    "port" : 80,
+    "ports" : [ ],
+    "metadata" : { },
+    "tags" : [ "newService" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "4e4472a6-b543-4249-a71a-b6c7f985bdc3",
+    "routeName" : "routepath",
+    "service" : {
+      "_id" : "9c1affae-4a8b-4512-8df4-784e741bfa8f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/new/route/path1" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "681aed5c68efcb19bdec351e",
+      "name" : "kong-test",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "newService" ]
+  } ],
+  "plugins" : [ {
+    "id" : "f4432716-af12-4f22-b799-c38eecb1be7f",
+    "pluginName" : "basic-auth",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "serviceName" : "newService",
+    "kongName" : "basic-auth",
+    "configs" : { },
+    "tags" : [ "newService" ]
+  } ],
+  "promoteSource" : {
+    "workspace" : "default",
+    "runtime" : "kong-dev",
+    "buildId" : "698c313ae7194c5d73d00745",
+    "serviceName" : "newService",
+    "mts" : 1770795322203,
+    "revision" : 0
+  },
+  "errors" : [ ]
+}
