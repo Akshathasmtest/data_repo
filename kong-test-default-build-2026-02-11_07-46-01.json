@@ -1,0 +1,71 @@
+{
+  "id" : "698c33b9e7194c5d73d008f4",
+  "cts" : 1770795961459,
+  "mts" : 1770795961459,
+  "createdBy" : "AnkitTeamUser IT",
+  "modifiedBy" : "AnkitTeamUser IT",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+  "runtime" : "kong-test",
+  "workspace" : "default",
+  "swaggerId" : "",
+  "serviceName" : "onpremToSaas",
+  "revision" : 0,
+  "swaggerVersion" : "",
+  "swaggerName" : "",
+  "serviceId" : "1a8e5e9d-a8e3-483f-935b-14e0335e9be1",
+  "service" : {
+    "serviceId" : "1a8e5e9d-a8e3-483f-935b-14e0335e9be1",
+    "serviceName" : "onpremToSaas",
+    "protocol" : "http",
+    "host" : "api.apiwiz.io",
+    "hosts" : [ ],
+    "basePath" : "/test",
+    "basePaths" : [ ],
+    "port" : 80,
+    "ports" : [ ],
+    "metadata" : { },
+    "tags" : [ "onpremToSaas" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "dab86587-fe1b-42ac-b5ba-c9699340ccdc",
+    "routeName" : "route1",
+    "service" : {
+      "_id" : "1a8e5e9d-a8e3-483f-935b-14e0335e9be1"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/zsdsd" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 0,
+      "dbless" : false
+    },
+    "tags" : [ "onpremToSaas" ]
+  } ],
+  "plugins" : [ ],
+  "promoteSource" : {
+    "controlPlane" : "Serverless",
+    "runtime" : "kong-saas",
+    "buildId" : "69846bf02ecb13357bda4b0c",
+    "serviceName" : "onpremToSaas",
+    "mts" : 1770286064868,
+    "revision" : 0
+  },
+  "errors" : [ ]
+}
