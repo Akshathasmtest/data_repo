@@ -1,0 +1,226 @@
+{
+  "id" : "698c48f3e7194c5d73d00b31",
+  "cts" : 1770801395629,
+  "mts" : 1770801395629,
+  "createdBy" : "AnkitTeamUser IT",
+  "modifiedBy" : "AnkitTeamUser IT",
+  "kongAdminHost" : "https://test-kong-admin.apiwiz.io/",
+  "runtime" : "kong-test",
+  "workspace" : "default",
+  "swaggerId" : "6979af79c193d01c59fdc991",
+  "serviceName" : "notifications-api-v1",
+  "revision" : 0,
+  "swaggerVersion" : "3.0",
+  "swaggerName" : "Notifications-API-V1",
+  "serviceId" : "fadca249-9c12-4c90-90c6-1a4ac9e41843",
+  "service" : {
+    "serviceId" : "fadca249-9c12-4c90-90c6-1a4ac9e41843",
+    "serviceName" : "notifications-api-v1",
+    "protocol" : "https",
+    "host" : "qa-dev-lmxz.apiwiz.io",
+    "hosts" : [ "testapi.tonikbank.com", "qa-dev-lmxz.apiwiz.io", "api.tonikbank.com" ],
+    "basePath" : "/api/v1/notifications",
+    "basePaths" : [ "/new/path", "/paths/new/add", "/api/v1/notifications" ],
+    "port" : 443,
+    "ports" : [ -1 ],
+    "metadata" : {
+      "retries" : 5,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    },
+    "tags" : [ "notifications-api-v1" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "fe4a77bf-4b73-4785-add9-372033476f7c",
+    "routeName" : "postInappCallEvents",
+    "service" : {
+      "_id" : "fadca249-9c12-4c90-90c6-1a4ac9e41843"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/inapp/calling/event/api" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "681aed5c68efcb19bdec351e",
+      "name" : "kong-test",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "notifications-api-v1" ]
+  }, {
+    "routeId" : "5fa320af-0d3d-402a-9028-f1946a9d352d",
+    "routeName" : "postSinchToken",
+    "service" : {
+      "_id" : "fadca249-9c12-4c90-90c6-1a4ac9e41843"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/oauth2/token" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "681aed5c68efcb19bdec351e",
+      "name" : "kong-test",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "notifications-api-v1" ]
+  }, {
+    "routeId" : "475e2e1b-4484-43b2-8c4d-543120f582dd",
+    "routeName" : "gv",
+    "service" : {
+      "_id" : "fadca249-9c12-4c90-90c6-1a4ac9e41843"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/khm" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "681aed5c68efcb19bdec351e",
+      "name" : "kong-test",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "notifications-api-v1" ]
+  }, {
+    "routeId" : "a4d034b3-2975-41d3-bc9f-507b7ef51bcd",
+    "routeName" : "postCallEvents",
+    "service" : {
+      "_id" : "fadca249-9c12-4c90-90c6-1a4ac9e41843"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/call-events" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "681aed5c68efcb19bdec351e",
+      "name" : "kong-test",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "notifications-api-v1" ]
+  }, {
+    "routeId" : "40141dbf-8438-4565-a271-80fa73809cda",
+    "routeName" : "postSinchDeviceRegistration",
+    "service" : {
+      "_id" : "fadca249-9c12-4c90-90c6-1a4ac9e41843"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/device-registrations" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "681aed5c68efcb19bdec351e",
+      "name" : "kong-test",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "notifications-api-v1" ]
+  }, {
+    "routeId" : "87b101f8-0bb7-409a-8c59-c864467e52c2",
+    "routeName" : "newroutelevel",
+    "service" : {
+      "_id" : "fadca249-9c12-4c90-90c6-1a4ac9e41843"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "PATCH" ],
+    "paths" : [ "/newroutelevel/api2" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "681aed5c68efcb19bdec351e",
+      "name" : "kong-test",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "notifications-api-v1" ]
+  } ],
+  "plugins" : [ ],
+  "promoteSource" : {
+    "workspace" : "default",
+    "runtime" : "kong-dev",
+    "buildId" : "698c2edee7194c5d73d00669",
+    "serviceName" : "notifications-api-v1",
+    "mts" : 1770794718748,
+    "revision" : 2
+  },
+  "errors" : [ ]
+}
