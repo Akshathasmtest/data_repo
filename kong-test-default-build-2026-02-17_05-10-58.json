@@ -1,0 +1,96 @@
+{
+  "id" : "6993f86253c95e26c18d4c9a",
+  "cts" : 1771305058022,
+  "mts" : 1771305058022,
+  "createdBy" : "AnkitTeamUser IT",
+  "modifiedBy" : "AnkitTeamUser IT",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+  "runtime" : "kong-test",
+  "workspace" : "default",
+  "swaggerId" : "698c14a9e41afd3b4e0ee20b",
+  "serviceName" : "test-spec-migrates",
+  "revision" : 2,
+  "swaggerVersion" : "3.0",
+  "swaggerName" : "Test-Spec-Migrate-1",
+  "serviceId" : "999a46fc-6843-4e74-bf9d-b78d9e9cd870",
+  "service" : {
+    "serviceId" : "999a46fc-6843-4e74-bf9d-b78d9e9cd870",
+    "serviceName" : "test-spec-migrates",
+    "protocol" : "https",
+    "host" : "acme-team-production-jjgl.apiwiz.io",
+    "hosts" : [ "acme-team-production-jjgl.apiwiz.io", "stage-data-gujl.apiwiz.io", "qa-dev-lmxz.apiwiz.io" ],
+    "basePath" : "/v1/dev1",
+    "basePaths" : [ "/v1/dev1", "/v1/prod1", "/v1/uat1" ],
+    "port" : 443,
+    "ports" : [ -1 ],
+    "metadata" : {
+      "retries" : 5,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    },
+    "tags" : [ "test-spec-migrate-1" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "7f15e626-30d2-43c8-bbb4-ac688e667dd5",
+    "routeName" : "server",
+    "service" : {
+      "_id" : "999a46fc-6843-4e74-bf9d-b78d9e9cd870"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/get" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 0,
+      "dbless" : false
+    },
+    "tags" : [ "test-spec-migrate-1" ]
+  } ],
+  "plugins" : [ {
+    "id" : "90a19046-1776-4eaa-9bcd-f874f7d8f4e8",
+    "pluginName" : "basic-auth",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "routeName" : "server",
+    "kongName" : "basic-auth_s",
+    "configs" : { },
+    "tags" : [ "test-spec-migrates" ]
+  }, {
+    "id" : "bba66a4e-d9b4-4c8a-9da5-18fd00410cee",
+    "pluginName" : "oauth2",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "routeName" : "server",
+    "kongName" : "oauth2_1",
+    "configs" : {
+      "accept_http_if_already_terminated" : false,
+      "auth_header_name" : "authorization",
+      "enable_client_credentials" : true,
+      "enable_implicit_grant" : true,
+      "enable_password_grant" : true,
+      "global_credentials" : true,
+      "hide_credentials" : true,
+      "mandatory_scope" : true,
+      "scopes" : [ ]
+    },
+    "tags" : [ "test-spec-migrates" ]
+  } ],
+  "errors" : [ ]
+}
