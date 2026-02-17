@@ -1,0 +1,77 @@
+{
+  "id" : "69940bd353c95e26c18d4fd3",
+  "cts" : 1771310035245,
+  "mts" : 1771310035245,
+  "createdBy" : "AnkitTeamUser IT",
+  "modifiedBy" : "AnkitTeamUser IT",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+  "runtime" : "kong-test",
+  "workspace" : "default",
+  "swaggerId" : "698c14a9e41afd3b4e0ee20b",
+  "serviceName" : "test-spec-migrate_kong",
+  "revision" : 2,
+  "swaggerVersion" : "3.0",
+  "swaggerName" : "Test-Spec-Migrate-1",
+  "serviceId" : "d78d1207-2cef-4544-a562-ac80079b3a55",
+  "service" : {
+    "serviceId" : "",
+    "serviceName" : "test-spec-migrate_kong",
+    "protocol" : "https",
+    "host" : "acme-team-production-jjgl.apiwiz.io",
+    "hosts" : [ "acme-team-production-jjgl.apiwiz.io", "stage-data-gujl.apiwiz.io", "qa-dev-lmxz.apiwiz.io" ],
+    "basePath" : "/v1/dev1",
+    "basePaths" : [ "/v1/dev1", "/v1/prod1", "/v1/uat1" ],
+    "port" : 443,
+    "ports" : [ -1 ],
+    "metadata" : {
+      "retries" : 5,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    },
+    "tags" : [ "test-spec-migrate-1" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "b4b59cdc-946f-42d2-9b79-49f6cc1e1516",
+    "routeName" : "route_Details",
+    "service" : {
+      "_id" : "d78d1207-2cef-4544-a562-ac80079b3a55"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/get" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 0,
+      "dbless" : false
+    },
+    "tags" : [ "test-spec-migrate-1" ]
+  } ],
+  "plugins" : [ {
+    "id" : "3545aee4-911c-417c-862f-bc13ba85f2fb",
+    "pluginName" : "basic-auth",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "routeName" : "route_Details",
+    "kongName" : "basic-auth_s",
+    "configs" : { },
+    "tags" : [ "test-spec-migrate_kong" ]
+  } ],
+  "errors" : [ ]
+}
