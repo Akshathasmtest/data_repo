@@ -1,5 +1,5 @@
 {
-  "cts" : 1771916344546,
+  "cts" : 1771916424802,
   "name" : "New Workflow 284",
   "exportedBy" : "AnkitTeamUser IT",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1771916344476,
         "createdUserName" : "AnkitTeamUser IT",
         "modifiedUserName" : "AnkitTeamUser IT",
-        "mts" : 1771916344476,
+        "mts" : 1771916424704,
         "createdBy" : "67c562eba649de63bf3835e4",
         "modifiedBy" : "67c562eba649de63bf3835e4",
         "taggedTeams" : [ ],
@@ -19,39 +19,18 @@
         "revision" : 1,
         "name" : "New Workflow 284",
         "description" : "",
-        "apiType" : "RESTAPI",
+        "apiType" : "SCHEDULED",
         "apiMethod" : "GET",
         "path" : "/cxcxvcvcvc",
         "pathArray" : [ "cxcxvcvcvc" ],
         "revisionStatus" : "DRAFT",
         "locked" : true,
         "lockedBy" : "AnkitTeamUser IT",
-        "nodeDataHashMap" : {
-          "inbound" : {
-            "9f62429d-7123-44dd-be74-3c43c48280c0" : [ "v1" ]
-          },
-          "outbound" : {
-            "v1" : [ "9f62429d-7123-44dd-be74-3c43c48280c0" ]
-          },
-          "allNeighbours" : [ "9f62429d-7123-44dd-be74-3c43c48280c0", "v1" ]
-        },
+        "nodeDataHashMap" : { },
         "vertexHashMap" : {
-          "9f62429d-7123-44dd-be74-3c43c48280c0" : {
-            "vertexId" : "9f62429d-7123-44dd-be74-3c43c48280c0",
-            "vertexType" : "STOP",
-            "name" : "Stop",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 200,
-              "body" : {
-                "type" : "JSON"
-              }
-            }
-          },
           "v1" : {
             "vertexId" : "v1",
-            "vertexType" : "START",
+            "vertexType" : "SCHEDULED_TRIGGER",
             "name" : "Request",
             "requestVariables" : [ ],
             "mandatoryHeaders" : [ ],
