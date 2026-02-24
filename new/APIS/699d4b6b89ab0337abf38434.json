@@ -1,0 +1,116 @@
+{
+  "cts" : 1771916139430,
+  "name" : "Scheduler",
+  "exportedBy" : "AnkitTeamUser IT",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "699d4b6b89ab0337abf38434",
+        "cts" : 1771916139194,
+        "createdUserName" : "AnkitTeamUser IT",
+        "modifiedUserName" : "AnkitTeamUser IT",
+        "mts" : 1771916139194,
+        "createdBy" : "67c562eba649de63bf3835e4",
+        "modifiedBy" : "67c562eba649de63bf3835e4",
+        "taggedTeams" : [ ],
+        "proxyId" : "699d4b6b89ab0337abf38433",
+        "revision" : 1,
+        "name" : "Scheduler",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/zsfdfdsf",
+        "pathArray" : [ "zsfdfdsf" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "AnkitTeamUser IT",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "51310328-3c25-48d7-bcf2-142263273a84" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "51310328-3c25-48d7-bcf2-142263273a84" ]
+          },
+          "allNeighbours" : [ "51310328-3c25-48d7-bcf2-142263273a84", "v1" ]
+        },
+        "vertexHashMap" : {
+          "51310328-3c25-48d7-bcf2-142263273a84" : {
+            "vertexId" : "51310328-3c25-48d7-bcf2-142263273a84",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1771916139194,
+          "lastModifiedBy" : "AnkitTeamUser IT",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "699d4b6b89ab0337abf38434",
+      "proxyid" : "699d4b6b89ab0337abf38433",
+      "name" : "Scheduler",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
