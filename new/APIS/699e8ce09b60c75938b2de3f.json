@@ -1,5 +1,5 @@
 {
-  "cts" : 1771998432608,
+  "cts" : 1771998625486,
   "name" : "New Workflow 285",
   "exportedBy" : "sujith kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1771998432592,
         "createdUserName" : "sujith kumar",
         "modifiedUserName" : "sujith kumar",
-        "mts" : 1771998432592,
+        "mts" : 1771998625391,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "taggedTeams" : [ ],
@@ -28,12 +28,14 @@
         "lockedBy" : "sujith kumar",
         "nodeDataHashMap" : {
           "inbound" : {
-            "5c209c7e-2c1a-436b-9d00-0f2bbea06cfb" : [ "v1" ]
+            "22d4104d-32ed-41b5-869f-389a31f7ae53" : [ "v1" ],
+            "5c209c7e-2c1a-436b-9d00-0f2bbea06cfb" : [ "22d4104d-32ed-41b5-869f-389a31f7ae53" ]
           },
           "outbound" : {
-            "v1" : [ "5c209c7e-2c1a-436b-9d00-0f2bbea06cfb" ]
+            "v1" : [ "22d4104d-32ed-41b5-869f-389a31f7ae53" ],
+            "22d4104d-32ed-41b5-869f-389a31f7ae53" : [ "5c209c7e-2c1a-436b-9d00-0f2bbea06cfb" ]
           },
-          "allNeighbours" : [ "5c209c7e-2c1a-436b-9d00-0f2bbea06cfb", "v1" ]
+          "allNeighbours" : [ "5c209c7e-2c1a-436b-9d00-0f2bbea06cfb", "22d4104d-32ed-41b5-869f-389a31f7ae53", "v1" ]
         },
         "vertexHashMap" : {
           "5c209c7e-2c1a-436b-9d00-0f2bbea06cfb" : {
@@ -48,6 +50,38 @@
                 "type" : "JSON"
               }
             }
+          },
+          "22d4104d-32ed-41b5-869f-389a31f7ae53" : {
+            "vertexId" : "22d4104d-32ed-41b5-869f-389a31f7ae53",
+            "vertexType" : "ENCRYPTION",
+            "name" : "sdf",
+            "description" : "sdf",
+            "encryptionData" : {
+              "encryptionDecryptionOperationList" : [ {
+                "operationName" : "sdf",
+                "description" : "sdf",
+                "targetVariable" : "f",
+                "sourceData" : "sdf",
+                "sourceProvidedAtNode" : true,
+                "transformationKey" : "sdf",
+                "initializationVector" : "dsf",
+                "algorithmType" : "AES",
+                "modeType" : "ECB",
+                "paddingType" : "PKCS5Padding"
+              } ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "{\n    \"m\": \"terminated\"\n}",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "v1" : {
             "vertexId" : "v1",
