@@ -1,5 +1,5 @@
 {
-  "cts" : 1771998625486,
+  "cts" : 1771998633392,
   "name" : "New Workflow 285",
   "exportedBy" : "sujith kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1771998432592,
         "createdUserName" : "sujith kumar",
         "modifiedUserName" : "sujith kumar",
-        "mts" : 1771998625391,
+        "mts" : 1771998633315,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "taggedTeams" : [ ],
@@ -21,8 +21,8 @@
         "description" : "",
         "apiType" : "RESTAPI",
         "apiMethod" : "GET",
-        "path" : "/",
-        "pathArray" : [ ],
+        "path" : "/wer234",
+        "pathArray" : [ "wer234" ],
         "revisionStatus" : "DRAFT",
         "locked" : true,
         "lockedBy" : "sujith kumar",
