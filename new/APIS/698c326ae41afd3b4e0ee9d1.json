@@ -1,5 +1,5 @@
 {
-  "cts" : 1773034856509,
+  "cts" : 1773034879709,
   "name" : "on-error",
   "exportedBy" : "sujith kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1770795626581,
         "createdUserName" : "sujith kumar",
         "modifiedUserName" : "sujith kumar",
-        "mts" : 1773034856506,
+        "mts" : 1773034879539,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "taggedTeams" : [ ],
@@ -347,8 +347,8 @@
         } ],
         "virtualHostList" : [ ],
         "enableTracing" : true,
-        "environmentName" : "uat",
-        "environmentId" : "68ef29919d30e85f6e63cb8b",
+        "environmentName" : "WORKPSACE-SYNC-DNT",
+        "environmentId" : "68ba8257399db1665a321ff2",
         "selectedVirtualHostName" : "",
         "selectedVirtualHostId" : "",
         "kafkaConnectorId" : "",
@@ -367,15 +367,15 @@
       "id" : "698c326ae41afd3b4e0ee9d1",
       "proxyid" : "698c326ae41afd3b4e0ee9d0",
       "name" : "on-error",
-      "attachedEnv" : "68ef29919d30e85f6e63cb8b",
+      "attachedEnv" : "68ba8257399db1665a321ff2",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
       "attachedConnectors" : [ ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
-      "id" : "68ef29919d30e85f6e63cb8b",
-      "name" : "uat"
+      "id" : "68ba8257399db1665a321ff2",
+      "name" : "WORKPSACE-SYNC-DNT"
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
     "connectorMetadataDetailsDtoList" : [ ]
