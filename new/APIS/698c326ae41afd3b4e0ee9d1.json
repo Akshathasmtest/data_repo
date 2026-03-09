@@ -1,5 +1,5 @@
 {
-  "cts" : 1773034879709,
+  "cts" : 1773054256823,
   "name" : "on-error",
   "exportedBy" : "sujith kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1770795626581,
         "createdUserName" : "sujith kumar",
         "modifiedUserName" : "sujith kumar",
-        "mts" : 1773034879539,
+        "mts" : 1773054256816,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "taggedTeams" : [ ],
@@ -71,7 +71,7 @@
               "timeout" : 0,
               "skip" : false,
               "showActualErrorMessage" : false,
-              "continueOnError" : true,
+              "continueOnError" : false,
               "errorResponse" : {
                 "statusCode" : 400,
                 "body" : {
@@ -190,6 +190,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1773054251297,
+          "lastModifiedBy" : "67a0969408a0e559a5309912",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1773054235377,
+          "lastModifiedBy" : "67a0969408a0e559a5309912",
+          "description" : " "
+        }, {
           "status" : "Review",
           "cts" : 1773034831057,
           "lastModifiedBy" : "67a0969408a0e559a5309912",
@@ -357,8 +367,8 @@
         "enableLogging" : false,
         "misconfigurationMessages" : [ ],
         "validated" : true,
-        "deployed" : false,
-        "deleted" : false
+        "deleted" : false,
+        "deployed" : false
       }
     }
   } ],
