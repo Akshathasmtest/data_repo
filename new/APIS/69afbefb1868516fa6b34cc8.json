@@ -1,0 +1,265 @@
+{
+  "cts" : 1773125381860,
+  "name" : "dmn test1-03-10-2026 06:49:31",
+  "exportedBy" : "sujith kumar",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "69afbefb1868516fa6b34cc8",
+        "cts" : 1773125371775,
+        "createdUserName" : "sujith kumar",
+        "modifiedUserName" : "sujith kumar",
+        "mts" : 1773125381708,
+        "createdBy" : "67a0969408a0e559a5309912",
+        "modifiedBy" : "67a0969408a0e559a5309912",
+        "taggedTeams" : [ ],
+        "proxyId" : "69a7ebfe99b8ca7609151093",
+        "revision" : 1,
+        "name" : "dmn test1-03-10-2026 06:49:31",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/dmn/test/12",
+        "pathArray" : [ "dmn", "test", "12" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "sujith kumar",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "c4f075ab-dbd4-4b86-8453-78d1e2bd9454" : [ "v1" ],
+            "ca29e890-828c-4ce2-aca0-22ea62379035" : [ "c4f075ab-dbd4-4b86-8453-78d1e2bd9454" ],
+            "8562e0be-361d-4a25-851b-3242a4c202be" : [ "7dbf5d2a-61bb-4252-a876-ecde10bd6e1e" ],
+            "d50a2e0f-c45b-4abd-8b48-19cfd44f1816" : [ "8562e0be-361d-4a25-851b-3242a4c202be" ],
+            "7dbf5d2a-61bb-4252-a876-ecde10bd6e1e" : [ "ca29e890-828c-4ce2-aca0-22ea62379035" ]
+          },
+          "outbound" : {
+            "v1" : [ "c4f075ab-dbd4-4b86-8453-78d1e2bd9454" ],
+            "c4f075ab-dbd4-4b86-8453-78d1e2bd9454" : [ "ca29e890-828c-4ce2-aca0-22ea62379035" ],
+            "7dbf5d2a-61bb-4252-a876-ecde10bd6e1e" : [ "8562e0be-361d-4a25-851b-3242a4c202be" ],
+            "8562e0be-361d-4a25-851b-3242a4c202be" : [ "d50a2e0f-c45b-4abd-8b48-19cfd44f1816" ],
+            "ca29e890-828c-4ce2-aca0-22ea62379035" : [ "7dbf5d2a-61bb-4252-a876-ecde10bd6e1e" ]
+          },
+          "allNeighbours" : [ "7dbf5d2a-61bb-4252-a876-ecde10bd6e1e", "d50a2e0f-c45b-4abd-8b48-19cfd44f1816", "v1", "8562e0be-361d-4a25-851b-3242a4c202be", "ca29e890-828c-4ce2-aca0-22ea62379035", "c4f075ab-dbd4-4b86-8453-78d1e2bd9454" ]
+        },
+        "vertexHashMap" : {
+          "7dbf5d2a-61bb-4252-a876-ecde10bd6e1e" : {
+            "vertexId" : "7dbf5d2a-61bb-4252-a876-ecde10bd6e1e",
+            "vertexType" : "DMN",
+            "name" : "dmn1",
+            "dmnData" : {
+              "xml" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<definitions xmlns=\"https://www.omg.org/spec/DMN/20191111/MODEL/\" xmlns:dmndi=\"https://www.omg.org/spec/DMN/20191111/DMNDI/\" xmlns:biodi=\"http://bpmn.io/schema/dmn/biodi/2.0\" xmlns:dc=\"http://www.omg.org/spec/DMN/20180521/DC/\" xmlns:di=\"http://www.omg.org/spec/DMN/20180521/DI/\" id=\"Definitions_1lmea3i\" name=\"DRD\" namespace=\"http://camunda.org/schema/1.0/dmn\"><inputData id=\"InputData_175v0m1\" name=\"module\" /><decision id=\"Decision_0yksbh3\" name=\"notificationConfig\"><informationRequirement id=\"InformationRequirement_1cdsiq6\"><requiredInput href=\"#InputData_175v0m1\" /></informationRequirement><decisionTable id=\"DecisionTable_0ytn2q0\" hitPolicy=\"COLLECT\"><input id=\"InputClause_0hibsg3\" label=\"ModuleName\"><inputExpression id=\"LiteralExpression_1h75qzs\" typeRef=\"string\"><text>string(module)</text></inputExpression></input><output id=\"OutputClause_1a37qqc\" label=\"isSMS\" name=\"isSMS\" typeRef=\"boolean\" biodi:width=\"192\" /><output id=\"OutputClause_0ugf8dz\" label=\"isEmail\" name=\"isEmail\" typeRef=\"boolean\" /><output id=\"OutputClause_0m571c8\" label=\"isViber\" name=\"isViber\" typeRef=\"string\" /><output id=\"OutputClause_0sbrryl\" label=\"isFCM\" name=\"isFCM\" typeRef=\"dateTime\" /><rule id=\"DecisionRule_1m58zut\"><inputEntry id=\"UnaryTests_04935xx\"><text>\"simservice\"</text></inputEntry><outputEntry id=\"LiteralExpression_0yd3xkh\"><text>true</text></outputEntry><outputEntry id=\"LiteralExpression_0byomwq\"><text>true</text></outputEntry><outputEntry id=\"LiteralExpression_14erm2c\"><text>\"F\"</text></outputEntry><outputEntry id=\"LiteralExpression_0a3rwog\"><text>date and time(\"2026-03-05T00:00:00Z\")</text></outputEntry></rule><rule id=\"DecisionRule_1ezziax\"><inputEntry id=\"UnaryTests_1l82gas\"><text>\"simservice\"</text></inputEntry><outputEntry id=\"LiteralExpression_06lnnuc\"><text>true</text></outputEntry><outputEntry id=\"LiteralExpression_11pyhyk\"><text>false</text></outputEntry><outputEntry id=\"LiteralExpression_0736yio\"><text>\"F\"</text></outputEntry><outputEntry id=\"LiteralExpression_10q4lje\"><text>date and time(\"2026-03-05T00:00:00Z\")</text></outputEntry></rule></decisionTable></decision><dmndi:DMNDI><dmndi:DMNDiagram><dmndi:DMNShape id=\"DMNShape_12wc34b\" dmnElementRef=\"InputData_175v0m1\"><dc:Bounds height=\"45\" width=\"125\" x=\"238\" y=\"358\" /></dmndi:DMNShape><dmndi:DMNEdge id=\"DMNEdge_0oby07x\" dmnElementRef=\"InformationRequirement_1cdsiq6\"><di:waypoint x=\"301\" y=\"358\" /><di:waypoint x=\"340\" y=\"290\" /><di:waypoint x=\"340\" y=\"270\" /></dmndi:DMNEdge><dmndi:DMNShape id=\"DMNShape_1nbaw3p\" dmnElementRef=\"Decision_0yksbh3\"><dc:Bounds height=\"80\" width=\"180\" x=\"250\" y=\"190\" /></dmndi:DMNShape></dmndi:DMNDiagram></dmndi:DMNDI></definitions>",
+              "decisionId" : "Decision_0yksbh3",
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "auxiliaryOutputVariables" : [ {
+                "name" : "isSMS",
+                "variableDataType" : "BOOLEAN"
+              }, {
+                "name" : "isEmail",
+                "variableDataType" : "BOOLEAN"
+              }, {
+                "name" : "isViber",
+                "variableDataType" : "STRING"
+              }, {
+                "name" : "isFCM",
+                "variableDataType" : "STRING"
+              } ],
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "d50a2e0f-c45b-4abd-8b48-19cfd44f1816" : {
+            "vertexId" : "d50a2e0f-c45b-4abd-8b48-19cfd44f1816",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "headers" : {
+                "content-type" : "application/json"
+              },
+              "body" : {
+                "data" : "{\"name\" : {{{isFCM}}}, \"isViber\":{{{isViber}}}}\n\n\n\n",
+                "type" : "json"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "8562e0be-361d-4a25-851b-3242a4c202be" : {
+            "vertexId" : "8562e0be-361d-4a25-851b-3242a4c202be",
+            "vertexType" : "LOGGER",
+            "name" : "Logger 1",
+            "description" : "",
+            "logData" : {
+              "data" : "{\n    \"name\" : {{{isFCM}}},\n    \"isViber\":{{{isViber}}}\n}\n\n\n\n",
+              "skip" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "ca29e890-828c-4ce2-aca0-22ea62379035" : {
+            "vertexId" : "ca29e890-828c-4ce2-aca0-22ea62379035",
+            "vertexType" : "TARGET",
+            "name" : "api1",
+            "target" : {
+              "name" : "api1",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "GET",
+                "scheme" : "https",
+                "host" : "dev-core.apiwiz-rcbcconnect.rcbclab.ygctest.test",
+                "path" : "/itorix/v1/health",
+                "headerParams" : [ ],
+                "queryParams" : [ ],
+                "targetRequestBodyType" : "NONE",
+                "body" : {
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ ]
+              },
+              "staticResponse" : {
+                "headers" : { },
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                },
+                "statusCode" : 400,
+                "httpStatus" : ""
+              },
+              "timeout" : 0,
+              "skip" : true,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              },
+              "securityResponse" : {
+                "isEnabled" : false,
+                "useEnforcedRules" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 400,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "c4f075ab-dbd4-4b86-8453-78d1e2bd9454" : {
+            "vertexId" : "c4f075ab-dbd4-4b86-8453-78d1e2bd9454",
+            "vertexType" : "VARIABLES",
+            "name" : "Set Variable",
+            "runtimeVariableList" : [ {
+              "name" : "module",
+              "value" : "simservice",
+              "type" : "STRING",
+              "feelExpression" : false,
+              "source" : "c4f075ab-dbd4-4b86-8453-78d1e2bd9454",
+              "override" : true
+            } ],
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1773125371775,
+          "lastModifiedBy" : "sujith kumar",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "69afbefb1868516fa6b34cc8",
+      "proxyid" : "69a7ebfe99b8ca7609151093",
+      "name" : "dmn test1-03-10-2026 06:49:31",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
