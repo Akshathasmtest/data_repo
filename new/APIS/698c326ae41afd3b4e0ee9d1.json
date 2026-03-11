@@ -1,5 +1,5 @@
 {
-  "cts" : 1773214053398,
+  "cts" : 1773214106842,
   "name" : "on-error",
   "exportedBy" : "sujith kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1770795626581,
         "createdUserName" : "sujith kumar",
         "modifiedUserName" : "sujith kumar",
-        "mts" : 1773214051888,
+        "mts" : 1773214106761,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "taggedTeams" : [ ],
@@ -73,7 +73,7 @@
               "timeout" : 0,
               "skip" : false,
               "showActualErrorMessage" : false,
-              "continueOnError" : false,
+              "continueOnError" : true,
               "errorResponse" : {
                 "statusCode" : 400,
                 "body" : {
@@ -183,6 +183,8 @@
               "childWorkflowName" : "dmn test1-03-10-2026 06:49:31",
               "virtualHostId" : "6863de2dba3e090e8ec5df08",
               "virtualHostName" : "test",
+              "url" : "HTTPS://qa-dev-sujith.apiwiz.io/dmn/test/12",
+              "apiMethod" : "GET",
               "request" : {
                 "headerParams" : [ ],
                 "queryParams" : [ ],
@@ -232,6 +234,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1773214098438,
+          "lastModifiedBy" : "67a0969408a0e559a5309912",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1773214059237,
+          "lastModifiedBy" : "67a0969408a0e559a5309912",
+          "description" : "sdf"
+        }, {
           "status" : "Review",
           "cts" : 1773208432834,
           "lastModifiedBy" : "67a0969408a0e559a5309912",
