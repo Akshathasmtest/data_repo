@@ -1,0 +1,102 @@
+{
+  "id" : "69b7cdc036cf5c5ff49a3a81",
+  "cts" : 1773653440521,
+  "mts" : 1773653440521,
+  "createdBy" : "Akshatha sm",
+  "modifiedBy" : "Akshatha sm",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+  "runtime" : "chinmayee-test1",
+  "workspace" : "default",
+  "swaggerId" : "",
+  "serviceName" : "Systemmessages",
+  "revision" : 0,
+  "swaggerVersion" : "",
+  "swaggerName" : "",
+  "serviceId" : "e740b640-9484-4247-a247-054b245470b2",
+  "service" : {
+    "serviceId" : "e740b640-9484-4247-a247-054b245470b2",
+    "serviceName" : "Systemmessages",
+    "protocol" : "https",
+    "host" : "devapi.tonikbank.com",
+    "hosts" : [ ],
+    "basePath" : "/v0",
+    "basePaths" : [ ],
+    "port" : 443,
+    "ports" : [ ],
+    "metadata" : { },
+    "tags" : [ "Systemmessages" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "4307bdfe-75fb-4272-acb1-964c7cf18527",
+    "routeName" : "get-Systemmessages",
+    "service" : {
+      "_id" : "e740b640-9484-4247-a247-054b245470b2"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/systemmessages" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "6887457f0a35223ee1607332",
+      "name" : "chinmayee-test1",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "Systemmessages" ]
+  } ],
+  "plugins" : [ {
+    "id" : "e02c6e6e-8fb0-4ea6-950f-07483d8cbefb",
+    "pluginName" : "basic-auth",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "serviceName" : "Systemmessages",
+    "kongName" : "basic-auth",
+    "configs" : { },
+    "tags" : [ "Systemmessages" ]
+  }, {
+    "pluginName" : "post-function",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "serviceName" : "Systemmessages",
+    "kongName" : "post-function",
+    "configs" : {
+      "access" : [ ],
+      "body_filter" : [ ],
+      "log" : [ ],
+      "certificate" : [ "kong.service.set_target(:https://mock.apiwiz.io,9000)" ],
+      "header_filter" : [ ],
+      "rewrite" : [ ]
+    },
+    "tags" : [ "Systemmessages" ]
+  } ],
+  "promoteSource" : {
+    "workspace" : "default",
+    "runtime" : "chinmayee-test",
+    "buildId" : "698da7f1a813b33fb0f1ac75",
+    "serviceName" : "Systemmessages",
+    "mts" : 1770891249470,
+    "revision" : 0
+  },
+  "errors" : [ {
+    "message" : "404 Not Found: \"{\"message\":\"Not found\"}\"",
+    "type" : "SERVICE_PLUGIN"
+  }, {
+    "message" : "400 Bad Request: \"{\"code\":2,\"message\":\"schema violation (config.certificate: {\\n  \\\"error parsing post-function: [string \\\\\\\"kong.service.set_target(:https://mock.apiwiz....\\\\\\\"]:1: unexpected symbol near ':'\\\"\\n})\",\"name\":\"schema violation\",\"fields\":{\"config\":{\"certificate\":[\"error parsing post-function: [string \\\"kong.service.set_target(:https://mock.apiwiz....\\\"]:1: unexpected symbol near ':'\"]}}}\"",
+    "name" : "post-function",
+    "type" : "SERVICE_PLUGIN"
+  } ]
+}
