@@ -1,0 +1,68 @@
+{
+  "id" : "69c6330b73f4700923886540",
+  "cts" : 1774596875766,
+  "mts" : 1774596875766,
+  "createdBy" : "AnkitTeamUser IT",
+  "modifiedBy" : "AnkitTeamUser IT",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+  "runtime" : "kong-test",
+  "workspace" : "default",
+  "swaggerId" : "699be3506f930a0aaf3f2d60",
+  "serviceName" : "inventory-service-api",
+  "revision" : 1,
+  "swaggerVersion" : "3.0",
+  "swaggerName" : "Inventory Service API",
+  "serviceId" : "b49629bf-a2f0-4fb1-a3be-f5398435815e",
+  "service" : {
+    "serviceId" : "",
+    "serviceName" : "inventory-service-api",
+    "protocol" : "https",
+    "host" : "acme-team-production-jjgl.apiwiz.io",
+    "hosts" : [ "acme-team-production-jjgl.apiwiz.io", "qa-dev-ieia.apiwiz.io" ],
+    "basePath" : "/v1/inventory-service",
+    "basePaths" : [ "/v1/inventory-service", "/prod2" ],
+    "port" : 443,
+    "ports" : [ -1 ],
+    "metadata" : {
+      "retries" : 5,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    },
+    "tags" : [ "inventory-service-api" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "6e56c5de-c54f-46ad-b746-7749c2586e3e",
+    "routeName" : "asdssfdfdf",
+    "service" : {
+      "_id" : "b49629bf-a2f0-4fb1-a3be-f5398435815e"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/items" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 0,
+      "dbless" : false
+    },
+    "tags" : [ "inventory-service-api" ]
+  } ],
+  "plugins" : [ ],
+  "errors" : [ ]
+}
