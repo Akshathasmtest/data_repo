@@ -1,0 +1,146 @@
+{
+  "id" : "69c61db273f47009238863ae",
+  "cts" : 1774591410078,
+  "mts" : 1774591410078,
+  "createdBy" : "AnkitTeamUser IT",
+  "modifiedBy" : "AnkitTeamUser IT",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+  "runtime" : "kong-test",
+  "workspace" : "default",
+  "swaggerId" : "699be3506f930a0aaf3f2d60",
+  "serviceName" : "inventory-service-api",
+  "revision" : 1,
+  "swaggerVersion" : "3.0",
+  "swaggerName" : "Inventory Service API",
+  "serviceId" : "f524cbd3-f5c6-455f-9bc3-f9fe5388a942",
+  "service" : {
+    "serviceId" : "f524cbd3-f5c6-455f-9bc3-f9fe5388a942",
+    "serviceName" : "inventory-service-api",
+    "protocol" : "https",
+    "host" : "acme-team-production-jjgl.apiwiz.io",
+    "hosts" : [ "acme-team-production-jjgl.apiwiz.io", "qa-dev-ieia.apiwiz.io" ],
+    "basePath" : "/v1/inventory-service",
+    "basePaths" : [ "/v1/inventory-service", "/prod2" ],
+    "port" : 443,
+    "ports" : [ -1 ],
+    "metadata" : {
+      "retries" : 5,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    },
+    "tags" : [ "inventory-service-api" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "d0c4f3de-e198-4f4a-a097-01b0e05314aa",
+    "routeName" : "Kong_prefunction_route",
+    "service" : {
+      "_id" : "f524cbd3-f5c6-455f-9bc3-f9fe5388a942"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/items" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 0,
+      "dbless" : false
+    },
+    "tags" : [ "inventory-service-api" ]
+  } ],
+  "plugins" : [ {
+    "pluginName" : "pre-function",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "kongName" : "pre-function",
+    "configs" : {
+      "access" : [ ],
+      "body_filter" : [ ],
+      "test" : [ ],
+      "log" : [ ],
+      "certificate" : [ ],
+      "header_filter" : [ ],
+      "rewrite" : [ ]
+    },
+    "tags" : [ "inventory-service-api" ]
+  }, {
+    "pluginName" : "pre-function",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "kongName" : "pre-function",
+    "configs" : {
+      "access" : [ ],
+      "body_filter" : [ ],
+      "test" : [ ],
+      "log" : [ ],
+      "certificate" : [ ],
+      "header_filter" : [ ],
+      "rewrite" : [ ]
+    },
+    "tags" : [ "inventory-service-api" ]
+  }, {
+    "pluginName" : "pre-function",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "kongName" : "pre-function",
+    "configs" : {
+      "access" : [ ],
+      "body_filter" : [ ],
+      "test" : [ ],
+      "log" : [ ],
+      "certificate" : [ ],
+      "header_filter" : [ ],
+      "rewrite" : [ ]
+    },
+    "tags" : [ "inventory-service-api" ]
+  }, {
+    "pluginName" : "pre-function",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "routeName" : "Kong_prefunction_route",
+    "kongName" : "pre-function",
+    "configs" : {
+      "access" : [ ],
+      "body_filter" : [ ],
+      "test" : [ ],
+      "log" : [ ],
+      "certificate" : [ ],
+      "header_filter" : [ ],
+      "rewrite" : [ ]
+    },
+    "tags" : [ "inventory-service-api" ]
+  } ],
+  "errors" : [ {
+    "message" : "400 Bad Request: \"{\"code\":2,\"message\":\"2 schema violations (at least one of these fields must be non-empty: 'config.certificate', 'config.rewrite', 'config.access', 'config.header_filter', 'config.body_filter', 'config.log'; config.test: unknown field)\",\"name\":\"schema violation\",\"fields\":{\"config\":{\"test\":\"unknown field\"},\"@entity\":[\"at least one of these fields must be non-empty: 'config.certificate', 'config.rewrite', 'config.access', 'config.header_filter', 'config.body_filter', 'config.log'\"]}}\"",
+    "name" : "pre-function",
+    "type" : "ROUTE_PLUGIN"
+  }, {
+    "message" : "400 Bad Request: \"{\"code\":2,\"message\":\"2 schema violations (at least one of these fields must be non-empty: 'config.certificate', 'config.rewrite', 'config.access', 'config.header_filter', 'config.body_filter', 'config.log'; config.test: unknown field)\",\"name\":\"schema violation\",\"fields\":{\"config\":{\"test\":\"unknown field\"},\"@entity\":[\"at least one of these fields must be non-empty: 'config.certificate', 'config.rewrite', 'config.access', 'config.header_filter', 'config.body_filter', 'config.log'\"]}}\"",
+    "name" : "pre-function",
+    "type" : "ROUTE_PLUGIN"
+  }, {
+    "message" : "400 Bad Request: \"{\"code\":2,\"message\":\"2 schema violations (at least one of these fields must be non-empty: 'config.certificate', 'config.rewrite', 'config.access', 'config.header_filter', 'config.body_filter', 'config.log'; config.test: unknown field)\",\"name\":\"schema violation\",\"fields\":{\"config\":{\"test\":\"unknown field\"},\"@entity\":[\"at least one of these fields must be non-empty: 'config.certificate', 'config.rewrite', 'config.access', 'config.header_filter', 'config.body_filter', 'config.log'\"]}}\"",
+    "name" : "pre-function",
+    "type" : "ROUTE_PLUGIN"
+  }, {
+    "message" : "400 Bad Request: \"{\"code\":2,\"message\":\"2 schema violations (at least one of these fields must be non-empty: 'config.certificate', 'config.rewrite', 'config.access', 'config.header_filter', 'config.body_filter', 'config.log'; config.test: unknown field)\",\"name\":\"schema violation\",\"fields\":{\"config\":{\"test\":\"unknown field\"},\"@entity\":[\"at least one of these fields must be non-empty: 'config.certificate', 'config.rewrite', 'config.access', 'config.header_filter', 'config.body_filter', 'config.log'\"]}}\"",
+    "name" : "pre-function",
+    "type" : "ROUTE_PLUGIN",
+    "routeName" : "Kong_prefunction_route"
+  } ]
+}
