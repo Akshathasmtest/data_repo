@@ -1,0 +1,98 @@
+{
+  "id" : "69d4988f9fa31676e5ffeac8",
+  "cts" : 1775540367368,
+  "mts" : 1775540367368,
+  "createdBy" : "AnkitTeamUser IT",
+  "modifiedBy" : "AnkitTeamUser IT",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+  "runtime" : "kong-test",
+  "workspace" : "default",
+  "swaggerId" : "699be3506f930a0aaf3f2d60",
+  "serviceName" : "inventory-service-api",
+  "revision" : 1,
+  "swaggerVersion" : "3.0",
+  "swaggerName" : "Inventory Service API",
+  "serviceId" : "de04c6dd-c05a-42d6-8587-7e78ae137fea",
+  "service" : {
+    "serviceId" : "de04c6dd-c05a-42d6-8587-7e78ae137fea",
+    "serviceName" : "inventory-service-api",
+    "protocol" : "https",
+    "host" : "acme-team-production-jjgl.apiwiz.io",
+    "hosts" : [ "acme-team-production-jjgl.apiwiz.io", "qa-dev-ieia.apiwiz.io" ],
+    "basePath" : "/v1/inventory-service",
+    "basePaths" : [ "/v1/inventory-service", "/prod2" ],
+    "port" : 443,
+    "ports" : [ -1 ],
+    "metadata" : {
+      "retries" : 5,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    },
+    "tags" : [ "inventory-service-api" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "816cd2d4-73ff-46fd-a14f-de4360076924",
+    "routeName" : "asdsadsa",
+    "service" : {
+      "_id" : "de04c6dd-c05a-42d6-8587-7e78ae137fea"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/items" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 0,
+      "dbless" : false
+    },
+    "tags" : [ "inventory-service-api" ]
+  } ],
+  "plugins" : [ {
+    "id" : "db404326-6e80-40cb-be5c-7b3f04b4459f",
+    "pluginName" : "pre-function",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "serviceName" : "inventory-service-api",
+    "kongName" : "pre-function",
+    "configs" : {
+      "access" : [ "kong.service.set_target(\"http://test.com\",30276)" ],
+      "body_filter" : [ ],
+      "log" : [ ],
+      "certificate" : [ ],
+      "header_filter" : [ ],
+      "rewrite" : [ ]
+    },
+    "tags" : [ "inventory-service-api" ]
+  }, {
+    "id" : "d1c6b3b5-506c-4adb-ace3-86b56d90adab",
+    "pluginName" : "cors",
+    "enabled" : false,
+    "workspaceName" : "default",
+    "serviceName" : "inventory-service-api",
+    "kongName" : "cors_1",
+    "configs" : {
+      "methods" : [ "GET", "POST" ],
+      "headers" : [ "Accept", "Accept-Version", "Content-Length", "Content-MD5", "Content-Type", "Date", "X-Auth-Token" ],
+      "credentials" : true,
+      "max_age" : 3600
+    },
+    "tags" : [ "inventory-service-api" ]
+  } ],
+  "errors" : [ ]
+}
