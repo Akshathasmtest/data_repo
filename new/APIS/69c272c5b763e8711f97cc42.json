@@ -1,7 +1,7 @@
 {
-  "cts" : 1774351045574,
-  "name" : "New Workflow 288",
-  "exportedBy" : "sujith kumar",
+  "cts" : 1775636620723,
+  "name" : "gfhh",
+  "exportedBy" : "AnkitTeamUser IT",
   "data" : [ {
     "type" : "proxy",
     "collectionName" : "ApiBuilder.Proxy.List",
@@ -10,22 +10,22 @@
         "id" : "69c272c5b763e8711f97cc42",
         "cts" : 1774351045525,
         "createdUserName" : "sujith kumar",
-        "modifiedUserName" : "sujith kumar",
-        "mts" : 1774351045525,
+        "modifiedUserName" : "AnkitTeamUser IT",
+        "mts" : 1775636620476,
         "createdBy" : "67a0969408a0e559a5309912",
-        "modifiedBy" : "67a0969408a0e559a5309912",
+        "modifiedBy" : "67c562eba649de63bf3835e4",
         "taggedTeams" : [ ],
         "proxyId" : "69c272c5b763e8711f97cc41",
         "revision" : 1,
-        "name" : "New Workflow 288",
+        "name" : "gfhh",
         "description" : "",
         "apiType" : "RESTAPI",
         "apiMethod" : "GET",
-        "path" : "/",
-        "pathArray" : [ ],
-        "revisionStatus" : "DRAFT",
+        "path" : "/userdetails",
+        "pathArray" : [ "userdetails" ],
+        "revisionStatus" : "REVIEW",
         "locked" : true,
-        "lockedBy" : "sujith kumar",
+        "lockedBy" : "AnkitTeamUser IT",
         "nodeDataHashMap" : {
           "inbound" : {
             "9535af3d-c03d-4a47-bd32-44dbd0faea4c" : [ "v1" ]
@@ -74,11 +74,22 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1775636608407,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1775636558964,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : "m"
+        }, {
           "status" : "Draft",
           "cts" : 1774351045525,
           "lastModifiedBy" : "sujith kumar",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : false,
         "environmentName" : "",
         "environmentId" : "",
@@ -99,7 +110,7 @@
     "proxyMetadataDetailsDtoList" : [ {
       "id" : "69c272c5b763e8711f97cc42",
       "proxyid" : "69c272c5b763e8711f97cc41",
-      "name" : "New Workflow 288",
+      "name" : "gfhh",
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
