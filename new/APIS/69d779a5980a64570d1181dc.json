@@ -1,0 +1,116 @@
+{
+  "cts" : 1775729061396,
+  "name" : "GET - Get_operation",
+  "exportedBy" : "AnkitTeamUser IT",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "69d779a5980a64570d1181dc",
+        "cts" : 1775729061362,
+        "createdUserName" : "AnkitTeamUser IT",
+        "modifiedUserName" : "AnkitTeamUser IT",
+        "mts" : 1775729061362,
+        "createdBy" : "67c562eba649de63bf3835e4",
+        "modifiedBy" : "67c562eba649de63bf3835e4",
+        "taggedTeams" : [ ],
+        "proxyId" : "69d779a5980a64570d1181db",
+        "revision" : 1,
+        "name" : "GET - Get_operation",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/Server_1_2/operation",
+        "pathArray" : [ "Server_1_2", "operation" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "AnkitTeamUser IT",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "a8b79988-b86b-441c-bd4d-8c0b6d2520d9" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "a8b79988-b86b-441c-bd4d-8c0b6d2520d9" ]
+          },
+          "allNeighbours" : [ "a8b79988-b86b-441c-bd4d-8c0b6d2520d9", "v1" ]
+        },
+        "vertexHashMap" : {
+          "a8b79988-b86b-441c-bd4d-8c0b6d2520d9" : {
+            "vertexId" : "a8b79988-b86b-441c-bd4d-8c0b6d2520d9",
+            "vertexType" : "STOP",
+            "name" : "200 - ok",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "json"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1775729061362,
+          "lastModifiedBy" : "AnkitTeamUser IT",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "69d779a5980a64570d1181dc",
+      "proxyid" : "69d779a5980a64570d1181db",
+      "name" : "GET - Get_operation",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
