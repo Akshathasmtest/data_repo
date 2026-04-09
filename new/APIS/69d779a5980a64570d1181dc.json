@@ -1,5 +1,5 @@
 {
-  "cts" : 1775729072593,
+  "cts" : 1775729238389,
   "name" : "GET - Get_operation",
   "exportedBy" : "AnkitTeamUser IT",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1775729061362,
         "createdUserName" : "AnkitTeamUser IT",
         "modifiedUserName" : "AnkitTeamUser IT",
-        "mts" : 1775729072564,
+        "mts" : 1775729238387,
         "createdBy" : "67c562eba649de63bf3835e4",
         "modifiedBy" : "67c562eba649de63bf3835e4",
         "taggedTeams" : [ ],
@@ -23,7 +23,7 @@
         "apiMethod" : "GET",
         "path" : "/Server_1_2/operation",
         "pathArray" : [ "Server_1_2", "operation" ],
-        "revisionStatus" : "DRAFT",
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "AnkitTeamUser IT",
         "nodeDataHashMap" : {
@@ -44,7 +44,11 @@
             "skipRuntimeVariables" : false,
             "proxyResponse" : {
               "statusCode" : 200,
+              "headers" : {
+                "content-type" : "application/json"
+              },
               "body" : {
+                "data" : "{\n    \"ok\" :\"ok\"\n}",
                 "type" : "json"
               }
             }
@@ -74,11 +78,22 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1775729226619,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1775729085476,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : "g"
+        }, {
           "status" : "Draft",
           "cts" : 1775729061362,
           "lastModifiedBy" : "AnkitTeamUser IT",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : true,
         "environmentName" : "",
         "environmentId" : "",
