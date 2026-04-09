@@ -1,5 +1,5 @@
 {
-  "cts" : 1775636620723,
+  "cts" : 1775714520315,
   "name" : "gfhh",
   "exportedBy" : "AnkitTeamUser IT",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1774351045525,
         "createdUserName" : "sujith kumar",
         "modifiedUserName" : "AnkitTeamUser IT",
-        "mts" : 1775636620476,
+        "mts" : 1775714520247,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67c562eba649de63bf3835e4",
         "taggedTeams" : [ ],
@@ -75,6 +75,16 @@
         },
         "statusHistory" : [ {
           "status" : "Review",
+          "cts" : 1775714476487,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1775636628485,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : "h"
+        }, {
+          "status" : "Review",
           "cts" : 1775636608407,
           "lastModifiedBy" : "67c562eba649de63bf3835e4",
           "description" : "Proxy undeploy"
@@ -90,7 +100,7 @@
           "description" : "Created new proxy"
         } ],
         "virtualHostList" : [ ],
-        "enableTracing" : false,
+        "enableTracing" : true,
         "environmentName" : "",
         "environmentId" : "",
         "selectedVirtualHostName" : "",
@@ -98,7 +108,7 @@
         "kafkaConnectorId" : "",
         "kafkaTopic" : "",
         "kafkaGroupId" : "",
-        "enableLogging" : false,
+        "enableLogging" : true,
         "misconfigurationMessages" : [ ],
         "validated" : true,
         "deleted" : false,
