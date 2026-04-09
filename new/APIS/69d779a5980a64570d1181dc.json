@@ -1,5 +1,5 @@
 {
-  "cts" : 1775729061396,
+  "cts" : 1775729072593,
   "name" : "GET - Get_operation",
   "exportedBy" : "AnkitTeamUser IT",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1775729061362,
         "createdUserName" : "AnkitTeamUser IT",
         "modifiedUserName" : "AnkitTeamUser IT",
-        "mts" : 1775729061362,
+        "mts" : 1775729072564,
         "createdBy" : "67c562eba649de63bf3835e4",
         "modifiedBy" : "67c562eba649de63bf3835e4",
         "taggedTeams" : [ ],
@@ -79,7 +79,7 @@
           "lastModifiedBy" : "AnkitTeamUser IT",
           "description" : "Created new proxy"
         } ],
-        "enableTracing" : false,
+        "enableTracing" : true,
         "environmentName" : "",
         "environmentId" : "",
         "selectedVirtualHostName" : "",
@@ -87,7 +87,7 @@
         "kafkaConnectorId" : "",
         "kafkaTopic" : "",
         "kafkaGroupId" : "",
-        "enableLogging" : false,
+        "enableLogging" : true,
         "misconfigurationMessages" : [ ],
         "validated" : true,
         "deleted" : false,
