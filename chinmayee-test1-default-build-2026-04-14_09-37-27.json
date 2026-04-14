@@ -1,0 +1,82 @@
+{
+  "id" : "69de0ad7c374f34806a75f4a",
+  "cts" : 1776159447821,
+  "mts" : 1776159447821,
+  "createdBy" : "Elanie tom",
+  "modifiedBy" : "Elanie tom",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+  "runtime" : "chinmayee-test1",
+  "workspace" : "default",
+  "swaggerId" : "",
+  "serviceName" : "EWB-check",
+  "revision" : 0,
+  "swaggerVersion" : "",
+  "swaggerName" : "",
+  "serviceId" : "2e450144-385d-4702-8c6f-c897f4372fe4",
+  "service" : {
+    "serviceId" : "2e450144-385d-4702-8c6f-c897f4372fe4",
+    "serviceName" : "EWB-check",
+    "protocol" : "https",
+    "host" : "sujith-production.apiwiz.io",
+    "hosts" : [ ],
+    "basePath" : "/",
+    "basePaths" : [ ],
+    "port" : 443,
+    "ports" : [ ],
+    "metadata" : { },
+    "tags" : [ "EWB-check" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "142d5764-7169-409e-883e-98fcd2e0f577",
+    "routeName" : "migration-check",
+    "service" : {
+      "_id" : "2e450144-385d-4702-8c6f-c897f4372fe4"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/migration/check" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "6887457f0a35223ee1607332",
+      "name" : "chinmayee-test1",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "EWB-check" ]
+  } ],
+  "plugins" : [ {
+    "id" : "07608dfa-aada-483c-be8f-029798368ed1",
+    "pluginName" : "oauth2",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "serviceName" : "EWB-check",
+    "kongName" : "oauth2-new",
+    "configs" : {
+      "auth_header_name" : "authorization",
+      "pkce" : "lax",
+      "global_credentials" : true,
+      "mandatory_scope" : true,
+      "accept_http_if_already_terminated" : true,
+      "scopes" : [ "scopes = [\"basic\", \"premium\", \"vip\"]" ],
+      "token_expiration" : 7200,
+      "enable_client_credentials" : true,
+      "refresh_token_ttl" : 1209600
+    },
+    "tags" : [ "EWB-check" ]
+  } ],
+  "errors" : [ ]
+}
