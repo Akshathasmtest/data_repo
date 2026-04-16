@@ -1,0 +1,414 @@
+{
+  "id" : "69e07f38c374f34806a75ffc",
+  "cts" : 1776320312299,
+  "mts" : 1776320312299,
+  "createdBy" : "Elanie tom",
+  "modifiedBy" : "Elanie tom",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+  "runtime" : "chinmayee-test1",
+  "workspace" : "default",
+  "swaggerId" : "",
+  "serviceName" : "account-staging",
+  "revision" : 0,
+  "swaggerVersion" : "",
+  "swaggerName" : "",
+  "serviceId" : "6dbc1b22-fdd8-4903-aa1b-abe9e5311d9f",
+  "service" : {
+    "serviceId" : "6dbc1b22-fdd8-4903-aa1b-abe9e5311d9f",
+    "serviceName" : "account-staging",
+    "protocol" : "https",
+    "host" : "project-boss.azure-api.net",
+    "hosts" : [ ],
+    "basePath" : "/staging/api/account",
+    "basePaths" : [ ],
+    "port" : 443,
+    "ports" : [ ],
+    "metadata" : {
+      "retries" : 5,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    },
+    "tags" : [ "account-staging" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "32cfb132-56a9-4920-9c5b-2c8305a8ecf6",
+    "routeName" : "account-staging-details-GET",
+    "service" : {
+      "_id" : "6dbc1b22-fdd8-4903-aa1b-abe9e5311d9f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/details" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : true,
+      "headers" : [ ]
+    },
+    "kongRuntime" : {
+      "id" : "6887457f0a35223ee1607332",
+      "name" : "chinmayee-test1",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "account-staging" ]
+  }, {
+    "routeId" : "5b10b33c-7fb6-484f-a0d1-140f40755fc2",
+    "routeName" : "account-staging-soa-GET",
+    "service" : {
+      "_id" : "6dbc1b22-fdd8-4903-aa1b-abe9e5311d9f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/soa" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : true,
+      "headers" : [ ]
+    },
+    "kongRuntime" : {
+      "id" : "6887457f0a35223ee1607332",
+      "name" : "chinmayee-test1",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "account-staging" ]
+  }, {
+    "routeId" : "5dc2e91b-cd7c-4b4f-a12b-39edab1a563e",
+    "routeName" : "account-staging-soa-get-soa-no-validate-session-POST",
+    "service" : {
+      "_id" : "6dbc1b22-fdd8-4903-aa1b-abe9e5311d9f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/soa/get-soa-no-validate-session" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : true,
+      "headers" : [ ]
+    },
+    "kongRuntime" : {
+      "id" : "6887457f0a35223ee1607332",
+      "name" : "chinmayee-test1",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "account-staging" ]
+  }, {
+    "routeId" : "615caddb-c50a-456a-b4ba-02dc4671b773",
+    "routeName" : "account-staging-healthcheck-GET",
+    "service" : {
+      "_id" : "6dbc1b22-fdd8-4903-aa1b-abe9e5311d9f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/healthcheck" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : true,
+      "headers" : [ ]
+    },
+    "kongRuntime" : {
+      "id" : "6887457f0a35223ee1607332",
+      "name" : "chinmayee-test1",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "account-staging" ]
+  }, {
+    "routeId" : "628b6fe0-79ed-4c7c-b011-1ef8b37c479f",
+    "routeName" : "account-staging-bankcertificate-GET-POST",
+    "service" : {
+      "_id" : "6dbc1b22-fdd8-4903-aa1b-abe9e5311d9f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "GET", "POST" ],
+    "paths" : [ "/bankcertificate" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : true,
+      "headers" : [ ]
+    },
+    "kongRuntime" : {
+      "id" : "6887457f0a35223ee1607332",
+      "name" : "chinmayee-test1",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "account-staging" ]
+  }, {
+    "routeId" : "62eaf196-0d93-485f-b00d-4d7b7a8f2b44",
+    "routeName" : "account-staging-activity-POST",
+    "service" : {
+      "_id" : "6dbc1b22-fdd8-4903-aa1b-abe9e5311d9f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/activity" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : true,
+      "headers" : [ ]
+    },
+    "kongRuntime" : {
+      "id" : "6887457f0a35223ee1607332",
+      "name" : "chinmayee-test1",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "account-staging" ]
+  }, {
+    "routeId" : "761a2cdc-f385-4dab-9cbb-6775dffcfd09",
+    "routeName" : "account-staging-history-GET-POST",
+    "service" : {
+      "_id" : "6dbc1b22-fdd8-4903-aa1b-abe9e5311d9f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "GET", "POST" ],
+    "paths" : [ "/history" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : true,
+      "headers" : [ ]
+    },
+    "kongRuntime" : {
+      "id" : "6887457f0a35223ee1607332",
+      "name" : "chinmayee-test1",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "account-staging" ]
+  }, {
+    "routeId" : "847ea736-6789-4c36-898d-5bb90caf8ce5",
+    "routeName" : "account-staging-bankcertificate-download-POST",
+    "service" : {
+      "_id" : "6dbc1b22-fdd8-4903-aa1b-abe9e5311d9f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/bankcertificate/download" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : true,
+      "headers" : [ ]
+    },
+    "kongRuntime" : {
+      "id" : "6887457f0a35223ee1607332",
+      "name" : "chinmayee-test1",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "account-staging" ]
+  }, {
+    "routeId" : "92001297-c22f-48b6-8a67-f0b53811ba42",
+    "routeName" : "account-staging-goal-computation-POST",
+    "service" : {
+      "_id" : "6dbc1b22-fdd8-4903-aa1b-abe9e5311d9f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/goal/computation" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : true,
+      "headers" : [ ]
+    },
+    "kongRuntime" : {
+      "id" : "6887457f0a35223ee1607332",
+      "name" : "chinmayee-test1",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "account-staging" ]
+  }, {
+    "routeId" : "b1929458-f614-4e4a-b035-f5339616a070",
+    "routeName" : "account-staging-bankcertificate-email-POST",
+    "service" : {
+      "_id" : "6dbc1b22-fdd8-4903-aa1b-abe9e5311d9f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/bankcertificate/email" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : true,
+      "headers" : [ ]
+    },
+    "kongRuntime" : {
+      "id" : "6887457f0a35223ee1607332",
+      "name" : "chinmayee-test1",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "account-staging" ]
+  }, {
+    "routeId" : "db0e7307-3a82-4bb7-831c-2a8b455efcf7",
+    "routeName" : "account-staging-history-batch-fetch-GET",
+    "service" : {
+      "_id" : "6dbc1b22-fdd8-4903-aa1b-abe9e5311d9f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/history/batch-fetch" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : true,
+      "headers" : [ ]
+    },
+    "kongRuntime" : {
+      "id" : "6887457f0a35223ee1607332",
+      "name" : "chinmayee-test1",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "account-staging" ]
+  }, {
+    "routeId" : "e63e7b2f-4ba6-48c3-a9c3-b71ca55e862b",
+    "routeName" : "account-staging-goal-POST-GET",
+    "service" : {
+      "_id" : "6dbc1b22-fdd8-4903-aa1b-abe9e5311d9f"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "POST", "GET" ],
+    "paths" : [ "/goal" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : true,
+      "headers" : [ ]
+    },
+    "kongRuntime" : {
+      "id" : "6887457f0a35223ee1607332",
+      "name" : "chinmayee-test1",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "account-staging" ]
+  } ],
+  "plugins" : [ {
+    "id" : "33ebc880-e2fd-4823-823b-c882b2831b7b",
+    "pluginName" : "rate-limiting",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "serviceName" : "account-staging",
+    "kongName" : "rate-limiting",
+    "configs" : {
+      "error_message" : "API rate limit exceeded",
+      "redis_port" : 6379,
+      "hide_client_headers" : false,
+      "redis_ssl" : false,
+      "redis_ssl_verify" : false,
+      "redis" : {
+        "port" : 6379,
+        "ssl_verify" : false,
+        "ssl" : false,
+        "timeout" : 2000
+      },
+      "fault_tolerant" : true,
+      "second" : 20,
+      "limit_by" : "consumer",
+      "error_code" : 429,
+      "redis_timeout" : 2000,
+      "sync_rate" : -1,
+      "policy" : "local"
+    },
+    "tags" : [ "account-staging" ]
+  } ],
+  "errors" : [ ]
+}
