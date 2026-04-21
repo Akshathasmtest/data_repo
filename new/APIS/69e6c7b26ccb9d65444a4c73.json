@@ -1,5 +1,5 @@
 {
-  "cts" : 1776732082366,
+  "cts" : 1776732269084,
   "name" : "New Workflow 292",
   "exportedBy" : "AnkitTeamUser IT",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1776732082290,
         "createdUserName" : "AnkitTeamUser IT",
         "modifiedUserName" : "AnkitTeamUser IT",
-        "mts" : 1776732082290,
+        "mts" : 1776732269082,
         "createdBy" : "67c562eba649de63bf3835e4",
         "modifiedBy" : "67c562eba649de63bf3835e4",
         "taggedTeams" : [ ],
@@ -44,8 +44,12 @@
             "skipRuntimeVariables" : false,
             "proxyResponse" : {
               "statusCode" : 200,
+              "headers" : {
+                "content-type" : "application/json"
+              },
               "body" : {
-                "type" : "JSON"
+                "data" : "{\n    \"ok\":\"ok\",\n    \"dzf\":{{a}}\n}",
+                "type" : "json"
               }
             }
           },
