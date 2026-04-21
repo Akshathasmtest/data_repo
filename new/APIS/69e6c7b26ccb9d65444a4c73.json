@@ -1,0 +1,116 @@
+{
+  "cts" : 1776732082366,
+  "name" : "New Workflow 292",
+  "exportedBy" : "AnkitTeamUser IT",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "69e6c7b26ccb9d65444a4c73",
+        "cts" : 1776732082290,
+        "createdUserName" : "AnkitTeamUser IT",
+        "modifiedUserName" : "AnkitTeamUser IT",
+        "mts" : 1776732082290,
+        "createdBy" : "67c562eba649de63bf3835e4",
+        "modifiedBy" : "67c562eba649de63bf3835e4",
+        "taggedTeams" : [ ],
+        "proxyId" : "69e6c7b26ccb9d65444a4c72",
+        "revision" : 1,
+        "name" : "New Workflow 292",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/sampletesturl",
+        "pathArray" : [ "sampletesturl" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "AnkitTeamUser IT",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "da64c996-fdd8-4dae-94dc-513190df910f" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "da64c996-fdd8-4dae-94dc-513190df910f" ]
+          },
+          "allNeighbours" : [ "da64c996-fdd8-4dae-94dc-513190df910f", "v1" ]
+        },
+        "vertexHashMap" : {
+          "da64c996-fdd8-4dae-94dc-513190df910f" : {
+            "vertexId" : "da64c996-fdd8-4dae-94dc-513190df910f",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1776732082290,
+          "lastModifiedBy" : "AnkitTeamUser IT",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "env",
+        "environmentId" : "68526682f358527f2e75b0ad",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "69e6c7b26ccb9d65444a4c73",
+      "proxyid" : "69e6c7b26ccb9d65444a4c72",
+      "name" : "New Workflow 292",
+      "attachedEnv" : "68526682f358527f2e75b0ad",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "68526682f358527f2e75b0ad",
+      "name" : "env"
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
