@@ -1,5 +1,5 @@
 {
-  "cts" : 1776924414820,
+  "cts" : 1776924432510,
   "name" : "New Workflow 292",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1776732082290,
         "createdUserName" : "AnkitTeamUser IT",
         "modifiedUserName" : "Uday C",
-        "mts" : 1776924414818,
+        "mts" : 1776924432509,
         "createdBy" : "67c562eba649de63bf3835e4",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -102,6 +102,15 @@
               "name" : "key",
               "reference" : "body",
               "value" : "a",
+              "variableDataType" : "STRING",
+              "active" : true,
+              "source" : "raw",
+              "hide" : false,
+              "feelExpression" : false
+            }, {
+              "name" : "aa",
+              "reference" : "body",
+              "value" : "aa",
               "variableDataType" : "STRING",
               "active" : true,
               "source" : "raw",
