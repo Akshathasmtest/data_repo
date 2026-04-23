@@ -1,6 +1,6 @@
 {
-  "cts" : 1776924432510,
-  "name" : "New Workflow 292",
+  "cts" : 1776924534536,
+  "name" : "AWS_SQS",
   "exportedBy" : "Uday C",
   "data" : [ {
     "type" : "proxy",
@@ -11,35 +11,36 @@
         "cts" : 1776732082290,
         "createdUserName" : "AnkitTeamUser IT",
         "modifiedUserName" : "Uday C",
-        "mts" : 1776924432509,
+        "mts" : 1776924534534,
         "createdBy" : "67c562eba649de63bf3835e4",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
         "proxyId" : "69e6c7b26ccb9d65444a4c72",
         "revision" : 1,
-        "name" : "New Workflow 292",
+        "name" : "AWS_SQS",
         "description" : "",
         "apiType" : "RESTAPI",
-        "apiMethod" : "GET",
-        "path" : "/sampletesturl",
-        "pathArray" : [ "sampletesturl" ],
+        "apiMethod" : "POST",
+        "path" : "/aws",
+        "pathArray" : [ "aws" ],
         "revisionStatus" : "DRAFT",
         "locked" : true,
         "lockedBy" : "Uday C",
         "nodeDataHashMap" : {
           "inbound" : {
-            "39b38ddb-d87b-4e20-bbf0-f12fa40fe98a" : [ "v1" ],
-            "da64c996-fdd8-4dae-94dc-513190df910f" : [ "39b38ddb-d87b-4e20-bbf0-f12fa40fe98a" ]
+            "6ccfe1ef-dbf7-494c-ba97-88faa9ffe8d0" : [ "v1" ],
+            "8b9ac2a8-8ea4-4e1f-8d49-7b2b7c8bf269" : [ "6ccfe1ef-dbf7-494c-ba97-88faa9ffe8d0" ],
+            "f2ef0266-f8c5-4014-a135-e302076223e7" : [ "6ccfe1ef-dbf7-494c-ba97-88faa9ffe8d0" ]
           },
           "outbound" : {
-            "v1" : [ "39b38ddb-d87b-4e20-bbf0-f12fa40fe98a" ],
-            "39b38ddb-d87b-4e20-bbf0-f12fa40fe98a" : [ "da64c996-fdd8-4dae-94dc-513190df910f" ]
+            "v1" : [ "6ccfe1ef-dbf7-494c-ba97-88faa9ffe8d0" ],
+            "6ccfe1ef-dbf7-494c-ba97-88faa9ffe8d0" : [ "8b9ac2a8-8ea4-4e1f-8d49-7b2b7c8bf269", "f2ef0266-f8c5-4014-a135-e302076223e7" ]
           },
-          "allNeighbours" : [ "39b38ddb-d87b-4e20-bbf0-f12fa40fe98a", "da64c996-fdd8-4dae-94dc-513190df910f", "v1" ]
+          "allNeighbours" : [ "6ccfe1ef-dbf7-494c-ba97-88faa9ffe8d0", "8b9ac2a8-8ea4-4e1f-8d49-7b2b7c8bf269", "f2ef0266-f8c5-4014-a135-e302076223e7", "v1" ]
         },
         "vertexHashMap" : {
-          "39b38ddb-d87b-4e20-bbf0-f12fa40fe98a" : {
-            "vertexId" : "39b38ddb-d87b-4e20-bbf0-f12fa40fe98a",
+          "6ccfe1ef-dbf7-494c-ba97-88faa9ffe8d0" : {
+            "vertexId" : "6ccfe1ef-dbf7-494c-ba97-88faa9ffe8d0",
             "vertexType" : "CONDITIONAL_FLOW",
             "name" : "Condition",
             "conditionalFlow" : [ {
@@ -48,9 +49,9 @@
                 "expression" : "({0})",
                 "placeHolders" : [ {
                   "rule" : "EQUAL_TO",
-                  "key" : "vbc",
-                  "value" : "https://drive.google.com/drive/folders/0AG-iwrykbjQKUk9PVA",
-                  "valueDataType" : "STRING"
+                  "key" : "payload",
+                  "value" : "{\n    \"message\" : \"messagede\"\n}",
+                  "valueDataType" : "JSON"
                 } ],
                 "feelExpression" : false,
                 "skip" : false,
@@ -64,7 +65,7 @@
                   }
                 }
               },
-              "flowVertexes" : [ "da64c996-fdd8-4dae-94dc-513190df910f" ]
+              "flowVertexes" : [ "8b9ac2a8-8ea4-4e1f-8d49-7b2b7c8bf269" ]
             }, {
               "condition" : "else",
               "assertion" : {
@@ -72,13 +73,14 @@
                 "skip" : false,
                 "showActualErrorMessage" : false,
                 "continueOnError" : false
-              }
+              },
+              "flowVertexes" : [ "f2ef0266-f8c5-4014-a135-e302076223e7" ]
             } ],
             "imported" : false,
             "skipRuntimeVariables" : false
           },
-          "da64c996-fdd8-4dae-94dc-513190df910f" : {
-            "vertexId" : "da64c996-fdd8-4dae-94dc-513190df910f",
+          "8b9ac2a8-8ea4-4e1f-8d49-7b2b7c8bf269" : {
+            "vertexId" : "8b9ac2a8-8ea4-4e1f-8d49-7b2b7c8bf269",
             "vertexType" : "STOP",
             "name" : "Stop",
             "imported" : false,
@@ -89,7 +91,24 @@
                 "content-type" : "application/json"
               },
               "body" : {
-                "data" : "{\n    \"ok\":\"ok\",\n    \"dzf\":{{a}}\n}",
+                "data" : "{\n    \"sqs response\" : {{response1}}\n}",
+                "type" : "json"
+              }
+            }
+          },
+          "f2ef0266-f8c5-4014-a135-e302076223e7" : {
+            "vertexId" : "f2ef0266-f8c5-4014-a135-e302076223e7",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "headers" : {
+                "content-type" : "application/json"
+              },
+              "body" : {
+                "data" : "\n{\n    \"ok\" : \"ok\"\n}",
                 "type" : "json"
               }
             }
@@ -99,18 +118,9 @@
             "vertexType" : "START",
             "name" : "Request",
             "requestVariables" : [ {
-              "name" : "key",
+              "name" : "payload",
               "reference" : "body",
-              "value" : "a",
-              "variableDataType" : "STRING",
-              "active" : true,
-              "source" : "raw",
-              "hide" : false,
-              "feelExpression" : false
-            }, {
-              "name" : "aa",
-              "reference" : "body",
-              "value" : "aa",
+              "value" : "$.message",
               "variableDataType" : "STRING",
               "active" : true,
               "source" : "raw",
@@ -162,7 +172,7 @@
     "proxyMetadataDetailsDtoList" : [ {
       "id" : "69e6c7b26ccb9d65444a4c73",
       "proxyid" : "69e6c7b26ccb9d65444a4c72",
-      "name" : "New Workflow 292",
+      "name" : "AWS_SQS",
       "attachedEnv" : "68526682f358527f2e75b0ad",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
