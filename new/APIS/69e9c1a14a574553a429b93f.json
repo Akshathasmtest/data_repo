@@ -1,0 +1,125 @@
+{
+  "cts" : 1776927137245,
+  "name" : "New Workflow 294",
+  "exportedBy" : "Uday C",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "69e9c1a14a574553a429b93f",
+        "cts" : 1776927137240,
+        "createdUserName" : "Uday C",
+        "modifiedUserName" : "Uday C",
+        "mts" : 1776927137240,
+        "createdBy" : "69e6ff196ccb9d65444a4d97",
+        "modifiedBy" : "69e6ff196ccb9d65444a4d97",
+        "taggedTeams" : [ ],
+        "proxyId" : "69e9c1a14a574553a429b93e",
+        "revision" : 1,
+        "name" : "New Workflow 294",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "POST",
+        "path" : "/path",
+        "pathArray" : [ "path" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Uday C",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "c9b14342-d8e5-4bbb-bbbf-f2fc6ba1d2e6" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "c9b14342-d8e5-4bbb-bbbf-f2fc6ba1d2e6" ]
+          },
+          "allNeighbours" : [ "v1", "c9b14342-d8e5-4bbb-bbbf-f2fc6ba1d2e6" ]
+        },
+        "vertexHashMap" : {
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ {
+              "name" : "key",
+              "reference" : "body",
+              "value" : "value",
+              "variableDataType" : "STRING",
+              "active" : true,
+              "source" : "raw",
+              "hide" : false,
+              "feelExpression" : false
+            } ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "c9b14342-d8e5-4bbb-bbbf-f2fc6ba1d2e6" : {
+            "vertexId" : "c9b14342-d8e5-4bbb-bbbf-f2fc6ba1d2e6",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1776927137240,
+          "lastModifiedBy" : "Uday C",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "WORKPSACE-SYNC-DNT",
+        "environmentId" : "68ba8257399db1665a321ff2",
+        "selectedVirtualHostName" : "apiwiz-vhost-2",
+        "selectedVirtualHostId" : "68fa0320100a9b425569e26f",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "69e9c1a14a574553a429b93f",
+      "proxyid" : "69e9c1a14a574553a429b93e",
+      "name" : "New Workflow 294",
+      "attachedEnv" : "68ba8257399db1665a321ff2",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "68ba8257399db1665a321ff2",
+      "name" : "WORKPSACE-SYNC-DNT"
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
