@@ -1,5 +1,5 @@
 {
-  "cts" : 1776924388521,
+  "cts" : 1776924414820,
   "name" : "New Workflow 292",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1776732082290,
         "createdUserName" : "AnkitTeamUser IT",
         "modifiedUserName" : "Uday C",
-        "mts" : 1776924388519,
+        "mts" : 1776924414818,
         "createdBy" : "67c562eba649de63bf3835e4",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -98,7 +98,16 @@
             "vertexId" : "v1",
             "vertexType" : "START",
             "name" : "Request",
-            "requestVariables" : [ ],
+            "requestVariables" : [ {
+              "name" : "key",
+              "reference" : "body",
+              "value" : "a",
+              "variableDataType" : "STRING",
+              "active" : true,
+              "source" : "raw",
+              "hide" : false,
+              "feelExpression" : false
+            } ],
             "mandatoryHeaders" : [ ],
             "mandatoryQueryParams" : [ ],
             "imported" : true,
