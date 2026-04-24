@@ -1,5 +1,5 @@
 {
-  "cts" : 1777010146267,
+  "cts" : 1777023850043,
   "name" : "Testing_Loans",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1777010146193,
         "createdUserName" : "Uday C",
         "modifiedUserName" : "Uday C",
-        "mts" : 1777010146193,
+        "mts" : 1777023849985,
         "createdBy" : "69e6ff196ccb9d65444a4d97",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -28,12 +28,18 @@
         "lockedBy" : "Uday C",
         "nodeDataHashMap" : {
           "inbound" : {
-            "780540f4-ede4-4bae-8dd8-130efecafacc" : [ "v1" ]
+            "4c8c8bae-df3e-42c2-b886-59351078c391" : [ "v1" ],
+            "1532535e-41b6-426a-a118-e2a7ed566ea3" : [ "4c8c8bae-df3e-42c2-b886-59351078c391" ],
+            "780540f4-ede4-4bae-8dd8-130efecafacc" : [ "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" ],
+            "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" : [ "1532535e-41b6-426a-a118-e2a7ed566ea3" ]
           },
           "outbound" : {
-            "v1" : [ "780540f4-ede4-4bae-8dd8-130efecafacc" ]
+            "v1" : [ "4c8c8bae-df3e-42c2-b886-59351078c391" ],
+            "4c8c8bae-df3e-42c2-b886-59351078c391" : [ "1532535e-41b6-426a-a118-e2a7ed566ea3" ],
+            "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" : [ "780540f4-ede4-4bae-8dd8-130efecafacc" ],
+            "1532535e-41b6-426a-a118-e2a7ed566ea3" : [ "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" ]
           },
-          "allNeighbours" : [ "780540f4-ede4-4bae-8dd8-130efecafacc", "v1" ]
+          "allNeighbours" : [ "780540f4-ede4-4bae-8dd8-130efecafacc", "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2", "4c8c8bae-df3e-42c2-b886-59351078c391", "1532535e-41b6-426a-a118-e2a7ed566ea3", "v1" ]
         },
         "vertexHashMap" : {
           "780540f4-ede4-4bae-8dd8-130efecafacc" : {
@@ -48,6 +54,109 @@
                 "type" : "JSON"
               }
             }
+          },
+          "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" : {
+            "vertexId" : "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2",
+            "vertexType" : "VARIABLES",
+            "name" : "Set Variable",
+            "runtimeVariableList" : [ {
+              "name" : "a",
+              "value" : "a",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "vbc",
+              "value" : "b n ",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "user_id",
+              "value" : "6d04c530",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "name",
+              "value" : "stage",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "body_target_var",
+              "value" : "body_target_var",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "body",
+              "value" : "123",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "payload",
+              "value" : "{ \"message\" : \"messagede\"}",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "Key",
+              "value" : "Value",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "source" : "raw",
+              "override" : false
+            } ],
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "4c8c8bae-df3e-42c2-b886-59351078c391" : {
+            "vertexId" : "4c8c8bae-df3e-42c2-b886-59351078c391",
+            "vertexType" : "DELAY",
+            "name" : "Delay",
+            "delayData" : {
+              "delayUnit" : "SECONDS",
+              "delayAmount" : 10,
+              "skip" : true,
+              "showActualErrorMessage" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "1532535e-41b6-426a-a118-e2a7ed566ea3" : {
+            "vertexId" : "1532535e-41b6-426a-a118-e2a7ed566ea3",
+            "vertexType" : "CONDITIONAL_FLOW",
+            "name" : "Condition",
+            "conditionalFlow" : [ {
+              "condition" : "if",
+              "assertion" : {
+                "expression" : "({0})",
+                "placeHolders" : [ {
+                  "rule" : "EQUAL_TO",
+                  "key" : "name",
+                  "value" : "stage",
+                  "valueDataType" : "STRING"
+                } ],
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 400,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
+                }
+              },
+              "flowVertexes" : [ "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" ]
+            }, {
+              "condition" : "else",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              }
+            } ],
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "v1" : {
             "vertexId" : "v1",
