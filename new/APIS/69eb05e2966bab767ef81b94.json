@@ -1,0 +1,224 @@
+{
+  "cts" : 1777010146267,
+  "name" : "Testing_Loans",
+  "exportedBy" : "Uday C",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "69eb05e2966bab767ef81b94",
+        "cts" : 1777010146193,
+        "createdUserName" : "Uday C",
+        "modifiedUserName" : "Uday C",
+        "mts" : 1777010146193,
+        "createdBy" : "69e6ff196ccb9d65444a4d97",
+        "modifiedBy" : "69e6ff196ccb9d65444a4d97",
+        "taggedTeams" : [ ],
+        "proxyId" : "69eb05e2966bab767ef81b93",
+        "revision" : 1,
+        "name" : "Testing_Loans",
+        "description" : "Toink Bank Laons Api",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "https://Toink-Bank.com/Loans",
+        "pathArray" : [ "https:", "Toink-Bank.com", "Loans" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Uday C",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "780540f4-ede4-4bae-8dd8-130efecafacc" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "780540f4-ede4-4bae-8dd8-130efecafacc" ]
+          },
+          "allNeighbours" : [ "780540f4-ede4-4bae-8dd8-130efecafacc", "v1" ]
+        },
+        "vertexHashMap" : {
+          "780540f4-ede4-4bae-8dd8-130efecafacc" : {
+            "vertexId" : "780540f4-ede4-4bae-8dd8-130efecafacc",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ {
+              "name" : "Key",
+              "reference" : "body",
+              "value" : "Value",
+              "variableDataType" : "STRING",
+              "active" : true,
+              "source" : "raw",
+              "hide" : false,
+              "feelExpression" : false
+            } ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : true,
+              "ruleGroup" : [ {
+                "id" : "66dbe3f751f265165e11c027",
+                "name" : "Protocol enforcement Validator",
+                "rules" : [ {
+                  "id" : "66dbea9b51f265165e11c3a2",
+                  "name" : "Request Line validation"
+                }, {
+                  "id" : "66dbeabd51f265165e11c3e6",
+                  "name" : "Content-Length HTTP header validator Rule"
+                }, {
+                  "id" : "66dbeb8751f265165e11c434",
+                  "name" : "GET or HEAD Request with Body Content Rule"
+                }, {
+                  "id" : "66dbeccb51f265165e11c4bf",
+                  "name" : "Check GET or HEAD Request with Transfer-Encoding rule"
+                }, {
+                  "id" : "66dbece551f265165e11c4c0",
+                  "name" : "Check POST request missing Content-Length Header rule"
+                }, {
+                  "id" : "66dbed2751f265165e11c504",
+                  "name" : "Check Content-Length and Transfer-Encoding headers present rule"
+                }, {
+                  "id" : "66dbed6351f265165e11c552",
+                  "name" : "Check Range for Invalid Last Byte Value"
+                }, {
+                  "id" : "66dbed7d51f265165e11c553",
+                  "name" : "Check Range having Too many fields (6 or more)"
+                }, {
+                  "id" : "66dbed9151f265165e11c554",
+                  "name" : "Multiple/Conflicting Connection Header Data Found"
+                }, {
+                  "id" : "66dbee0551f265165e11c57a",
+                  "name" : "Range having Too many fields for pdf request (35 or more)"
+                }, {
+                  "id" : "66dbee2851f265165e11c57b",
+                  "name" : "URL Encoding Abuse Attack Attempt rule"
+                }, {
+                  "id" : "66dbee4551f265165e11c5bf",
+                  "name" : "Multiple URL Encoding Detected rule"
+                }, {
+                  "id" : "66dbee5a51f265165e11c5c7",
+                  "name" : "Unicode Full/Half Width Abuse Attack Attempt rule"
+                }, {
+                  "id" : "66dbee7851f265165e11c5fa",
+                  "name" : "Invalid character in request (null character) rule"
+                }, {
+                  "id" : "66dbee9e51f265165e11c5fb",
+                  "name" : "Request Missing a Host Header rule"
+                }, {
+                  "id" : "66dbeec751f265165e11c5fd",
+                  "name" : "Request with empty a Host Header rule"
+                }, {
+                  "id" : "66dbeee851f265165e11c5fe",
+                  "name" : "Request Missing a Accept Header rule"
+                }, {
+                  "id" : "66dbeef451f265165e11c5ff",
+                  "name" : "Request with empty a Accept Header rule"
+                }, {
+                  "id" : "66dbef4851f265165e11c600",
+                  "name" : "Request Missing a User-Agent Header rule"
+                }, {
+                  "id" : "66dbef5b51f265165e11c601",
+                  "name" : "Request with empty a User-Agent Header rule"
+                }, {
+                  "id" : "66dbef8951f265165e11c684",
+                  "name" : "Request Containing Content but Missing Content-Type header rule"
+                }, {
+                  "id" : "66dbefa051f265165e11c68b",
+                  "name" : "Host header is a numeric IP address rule"
+                } ]
+              }, {
+                "id" : "66dbefff51f265165e11c6aa",
+                "name" : "Protocol attack Validator",
+                "rules" : [ {
+                  "id" : "66dbf05a51f265165e11c6ab",
+                  "name" : "LDAP Injection Attack rule"
+                }, {
+                  "id" : "66dbf0e151f265165e11c734",
+                  "name" : "HTTP Splitting (CR/LF in request filename detected) rule"
+                }, {
+                  "id" : "66dbf23951f265165e11c7cb",
+                  "name" : "HTTP Header Injection Attack via payload (CR/LF detected) rule - 921150"
+                }, {
+                  "id" : "66dbf24f51f265165e11c7cc",
+                  "name" : "HTTP Header Injection Attack via payload (CR/LF detected) rule - 921151"
+                }, {
+                  "id" : "66dbf27c51f265165e11c7dc",
+                  "name" : "HTTP Header Injection Attack via headers rule"
+                }, {
+                  "id" : "66dbf29751f265165e11c7dd",
+                  "name" : "HTTP Response Splitting Attack rule"
+                }, {
+                  "id" : "66dbf48051f265165e11c8f4",
+                  "name" : "HTTP Request Smuggling Attack rule"
+                }, {
+                  "id" : "66dbf4cb51f265165e11c8f5",
+                  "name" : "HTTP Header Injection Attack via payload (CR/LF and header-name detected) rule"
+                } ]
+              } ],
+              "skip" : false,
+              "showActualErrorMessage" : true,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1777010146193,
+          "lastModifiedBy" : "Uday C",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : true,
+        "environmentName" : "env",
+        "environmentId" : "68526682f358527f2e75b0ad",
+        "selectedVirtualHostName" : "qa-dev",
+        "selectedVirtualHostId" : "67ed20509ecb12099c749c7a",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deployed" : false,
+        "deleted" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "69eb05e2966bab767ef81b94",
+      "proxyid" : "69eb05e2966bab767ef81b93",
+      "name" : "Testing_Loans",
+      "attachedEnv" : "68526682f358527f2e75b0ad",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "68526682f358527f2e75b0ad",
+      "name" : "env"
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
