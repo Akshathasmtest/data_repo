@@ -1,5 +1,5 @@
 {
-  "cts" : 1777024133946,
+  "cts" : 1777024163945,
   "name" : "Testing_Loans",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1777010146193,
         "createdUserName" : "Uday C",
         "modifiedUserName" : "Uday C",
-        "mts" : 1777024133941,
+        "mts" : 1777024163941,
         "createdBy" : "69e6ff196ccb9d65444a4d97",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -32,8 +32,9 @@
             "1532535e-41b6-426a-a118-e2a7ed566ea3" : [ "4c8c8bae-df3e-42c2-b886-59351078c391" ],
             "8e5a90b2-09e7-4e49-abcf-c7f6549dba69" : [ "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" ],
             "d45f7d35-0cfd-479c-bab0-976aa1ec3556" : [ "129a3325-384f-4956-9e32-eb76b2d8fced" ],
-            "780540f4-ede4-4bae-8dd8-130efecafacc" : [ "8e5a90b2-09e7-4e49-abcf-c7f6549dba69" ],
+            "b19fbd59-e2d6-4eb8-a44c-defa88c423d4" : [ "8e5a90b2-09e7-4e49-abcf-c7f6549dba69" ],
             "8248fc0e-4c30-4ea0-b3c5-508186f2b9ae" : [ "d45f7d35-0cfd-479c-bab0-976aa1ec3556" ],
+            "780540f4-ede4-4bae-8dd8-130efecafacc" : [ "b19fbd59-e2d6-4eb8-a44c-defa88c423d4" ],
             "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" : [ "1532535e-41b6-426a-a118-e2a7ed566ea3" ],
             "129a3325-384f-4956-9e32-eb76b2d8fced" : [ "1532535e-41b6-426a-a118-e2a7ed566ea3" ]
           },
@@ -42,11 +43,12 @@
             "4c8c8bae-df3e-42c2-b886-59351078c391" : [ "1532535e-41b6-426a-a118-e2a7ed566ea3" ],
             "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" : [ "8e5a90b2-09e7-4e49-abcf-c7f6549dba69" ],
             "129a3325-384f-4956-9e32-eb76b2d8fced" : [ "d45f7d35-0cfd-479c-bab0-976aa1ec3556" ],
-            "8e5a90b2-09e7-4e49-abcf-c7f6549dba69" : [ "780540f4-ede4-4bae-8dd8-130efecafacc" ],
+            "8e5a90b2-09e7-4e49-abcf-c7f6549dba69" : [ "b19fbd59-e2d6-4eb8-a44c-defa88c423d4" ],
             "d45f7d35-0cfd-479c-bab0-976aa1ec3556" : [ "8248fc0e-4c30-4ea0-b3c5-508186f2b9ae" ],
+            "b19fbd59-e2d6-4eb8-a44c-defa88c423d4" : [ "780540f4-ede4-4bae-8dd8-130efecafacc" ],
             "1532535e-41b6-426a-a118-e2a7ed566ea3" : [ "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2", "129a3325-384f-4956-9e32-eb76b2d8fced" ]
           },
-          "allNeighbours" : [ "780540f4-ede4-4bae-8dd8-130efecafacc", "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2", "4c8c8bae-df3e-42c2-b886-59351078c391", "1532535e-41b6-426a-a118-e2a7ed566ea3", "d45f7d35-0cfd-479c-bab0-976aa1ec3556", "v1", "8e5a90b2-09e7-4e49-abcf-c7f6549dba69", "8248fc0e-4c30-4ea0-b3c5-508186f2b9ae", "129a3325-384f-4956-9e32-eb76b2d8fced" ]
+          "allNeighbours" : [ "780540f4-ede4-4bae-8dd8-130efecafacc", "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2", "4c8c8bae-df3e-42c2-b886-59351078c391", "1532535e-41b6-426a-a118-e2a7ed566ea3", "d45f7d35-0cfd-479c-bab0-976aa1ec3556", "b19fbd59-e2d6-4eb8-a44c-defa88c423d4", "v1", "8e5a90b2-09e7-4e49-abcf-c7f6549dba69", "8248fc0e-4c30-4ea0-b3c5-508186f2b9ae", "129a3325-384f-4956-9e32-eb76b2d8fced" ]
         },
         "vertexHashMap" : {
           "780540f4-ede4-4bae-8dd8-130efecafacc" : {
@@ -189,6 +191,17 @@
                   "type" : "json"
                 }
               }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "b19fbd59-e2d6-4eb8-a44c-defa88c423d4" : {
+            "vertexId" : "b19fbd59-e2d6-4eb8-a44c-defa88c423d4",
+            "vertexType" : "LOGGER",
+            "name" : "Logger",
+            "description" : "-",
+            "logData" : {
+              "skip" : true
             },
             "imported" : false,
             "skipRuntimeVariables" : false
