@@ -1,5 +1,5 @@
 {
-  "cts" : 1777023895767,
+  "cts" : 1777023939148,
   "name" : "Testing_Loans",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1777010146193,
         "createdUserName" : "Uday C",
         "modifiedUserName" : "Uday C",
-        "mts" : 1777023895765,
+        "mts" : 1777023939144,
         "createdBy" : "69e6ff196ccb9d65444a4d97",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -30,19 +30,21 @@
           "inbound" : {
             "4c8c8bae-df3e-42c2-b886-59351078c391" : [ "v1" ],
             "1532535e-41b6-426a-a118-e2a7ed566ea3" : [ "4c8c8bae-df3e-42c2-b886-59351078c391" ],
-            "780540f4-ede4-4bae-8dd8-130efecafacc" : [ "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" ],
+            "8e5a90b2-09e7-4e49-abcf-c7f6549dba69" : [ "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" ],
             "8248fc0e-4c30-4ea0-b3c5-508186f2b9ae" : [ "129a3325-384f-4956-9e32-eb76b2d8fced" ],
+            "780540f4-ede4-4bae-8dd8-130efecafacc" : [ "8e5a90b2-09e7-4e49-abcf-c7f6549dba69" ],
             "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" : [ "1532535e-41b6-426a-a118-e2a7ed566ea3" ],
             "129a3325-384f-4956-9e32-eb76b2d8fced" : [ "1532535e-41b6-426a-a118-e2a7ed566ea3" ]
           },
           "outbound" : {
             "v1" : [ "4c8c8bae-df3e-42c2-b886-59351078c391" ],
             "4c8c8bae-df3e-42c2-b886-59351078c391" : [ "1532535e-41b6-426a-a118-e2a7ed566ea3" ],
-            "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" : [ "780540f4-ede4-4bae-8dd8-130efecafacc" ],
+            "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" : [ "8e5a90b2-09e7-4e49-abcf-c7f6549dba69" ],
             "129a3325-384f-4956-9e32-eb76b2d8fced" : [ "8248fc0e-4c30-4ea0-b3c5-508186f2b9ae" ],
+            "8e5a90b2-09e7-4e49-abcf-c7f6549dba69" : [ "780540f4-ede4-4bae-8dd8-130efecafacc" ],
             "1532535e-41b6-426a-a118-e2a7ed566ea3" : [ "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2", "129a3325-384f-4956-9e32-eb76b2d8fced" ]
           },
-          "allNeighbours" : [ "780540f4-ede4-4bae-8dd8-130efecafacc", "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2", "4c8c8bae-df3e-42c2-b886-59351078c391", "1532535e-41b6-426a-a118-e2a7ed566ea3", "v1", "8248fc0e-4c30-4ea0-b3c5-508186f2b9ae", "129a3325-384f-4956-9e32-eb76b2d8fced" ]
+          "allNeighbours" : [ "780540f4-ede4-4bae-8dd8-130efecafacc", "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2", "4c8c8bae-df3e-42c2-b886-59351078c391", "1532535e-41b6-426a-a118-e2a7ed566ea3", "v1", "8e5a90b2-09e7-4e49-abcf-c7f6549dba69", "8248fc0e-4c30-4ea0-b3c5-508186f2b9ae", "129a3325-384f-4956-9e32-eb76b2d8fced" ]
         },
         "vertexHashMap" : {
           "780540f4-ede4-4bae-8dd8-130efecafacc" : {
@@ -320,6 +322,46 @@
             "imported" : false,
             "skipRuntimeVariables" : false
           },
+          "8e5a90b2-09e7-4e49-abcf-c7f6549dba69" : {
+            "vertexId" : "8e5a90b2-09e7-4e49-abcf-c7f6549dba69",
+            "vertexType" : "CALL_WORKFLOW",
+            "name" : "Call Workflow",
+            "description" : "-",
+            "callWorkflowData" : {
+              "childWorkflowId" : "67efc814f13f990a07c8b934",
+              "childWorkflowName" : "GetUserDetails_B",
+              "virtualHostId" : "67ed20509ecb12099c749c7a",
+              "virtualHostName" : "qa-dev",
+              "request" : {
+                "headerParams" : [ ],
+                "queryParams" : [ ],
+                "targetRequestBodyType" : "NONE",
+                "body" : {
+                  "data" : "{}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "129a3325-384f-4956-9e32-eb76b2d8fced" : {
             "vertexId" : "129a3325-384f-4956-9e32-eb76b2d8fced",
             "vertexType" : "VARIABLES",
@@ -393,6 +435,339 @@
         "deleted" : false
       }
     }
+  }, {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "67efc814f13f990a07c8b934",
+        "cts" : 1743767572652,
+        "createdUserName" : "Akshatha sm",
+        "modifiedUserName" : "Akshatha SM",
+        "mts" : 1753443338348,
+        "createdBy" : "67e298cbed1ae94ac870b921",
+        "modifiedBy" : "67c562eba649de63bf3835e4",
+        "taggedTeams" : [ ],
+        "proxyId" : "67efc814f13f990a07c8b933",
+        "revision" : 1,
+        "name" : "GetUserDetails_B",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/user/6d04c530",
+        "pathArray" : [ "user", "6d04c530" ],
+        "revisionStatus" : "APPROVED",
+        "locked" : true,
+        "lockedBy" : "Akshatha SM",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "ccf85cd4-4d77-4fd9-9776-7208de0adca4" : [ "v1" ],
+            "bb2cf93d-eb54-4fc2-82d8-cf5a4726ac8f" : [ "ccf85cd4-4d77-4fd9-9776-7208de0adca4" ],
+            "b4ea4b10-20b0-4bde-8454-30cdcc294c15" : [ "ccf85cd4-4d77-4fd9-9776-7208de0adca4" ]
+          },
+          "outbound" : {
+            "v1" : [ "ccf85cd4-4d77-4fd9-9776-7208de0adca4" ],
+            "ccf85cd4-4d77-4fd9-9776-7208de0adca4" : [ "bb2cf93d-eb54-4fc2-82d8-cf5a4726ac8f", "b4ea4b10-20b0-4bde-8454-30cdcc294c15" ]
+          },
+          "allNeighbours" : [ "bb2cf93d-eb54-4fc2-82d8-cf5a4726ac8f", "ccf85cd4-4d77-4fd9-9776-7208de0adca4", "b4ea4b10-20b0-4bde-8454-30cdcc294c15", "v1" ]
+        },
+        "vertexHashMap" : {
+          "bb2cf93d-eb54-4fc2-82d8-cf5a4726ac8f" : {
+            "vertexId" : "bb2cf93d-eb54-4fc2-82d8-cf5a4726ac8f",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "headers" : {
+                "content-type" : "application/json"
+              },
+              "body" : {
+                "data" : "{\n  \"message\": \"User details fetched successfully\",\n  \"user\": {\n    \"user_id\": \"{{user_id}}\",\n    \"first_name\": \"sharadh\",\n    \"last_name\": \"t\",\n    \"email\": \"sharadha.t@example.com\",\n    \"phone_number\": \"7760794532\",\n    \"address\": {\n      \"street\": \"#130 ayappalayout\",\n      \"city\": \"bangalore\",\n      \"state\": \"karnataka\",\n      \"zipcode\": \"560024\"\n    }\n  }\n}",
+                "type" : "json"
+              }
+            }
+          },
+          "ccf85cd4-4d77-4fd9-9776-7208de0adca4" : {
+            "vertexId" : "ccf85cd4-4d77-4fd9-9776-7208de0adca4",
+            "vertexType" : "CONDITIONAL_FLOW",
+            "name" : "Condition",
+            "conditionalFlow" : [ {
+              "condition" : "if",
+              "assertion" : {
+                "expression" : "({0}) || ({1})",
+                "placeHolders" : [ {
+                  "rule" : "EQUAL_TO",
+                  "key" : "user_id_1",
+                  "value" : "6d04c530",
+                  "valueDataType" : "STRING"
+                }, {
+                  "rule" : "EQUAL_TO",
+                  "key" : "user_id_1",
+                  "value" : "6d04c530",
+                  "valueDataType" : "STRING"
+                } ],
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 400,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
+                }
+              },
+              "flowVertexes" : [ "bb2cf93d-eb54-4fc2-82d8-cf5a4726ac8f" ]
+            }, {
+              "condition" : "else",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              },
+              "flowVertexes" : [ "b4ea4b10-20b0-4bde-8454-30cdcc294c15" ]
+            } ],
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "b4ea4b10-20b0-4bde-8454-30cdcc294c15" : {
+            "vertexId" : "b4ea4b10-20b0-4bde-8454-30cdcc294c15",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "headers" : {
+                "content-type" : "application/json"
+              },
+              "body" : {
+                "data" : "{\n  \"message\": \"User not found\",\n  \"user\" : \"ad\",\n  \"status\" : \"ok\",\n  \"id\":\"123\",\n  \"description\": \"The user_id provided does not match any existing user in the system.\"\n}\n",
+                "type" : "json"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ {
+              "name" : "user_id_1",
+              "reference" : "path-variable",
+              "value" : "6d04c530",
+              "variableDataType" : "STRING",
+              "active" : true,
+              "source" : "path-variable",
+              "hide" : false,
+              "feelExpression" : false
+            } ],
+            "mandatoryHeaders" : [ "header" ],
+            "mandatoryQueryParams" : [ "query" ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Approved",
+          "cts" : 1753443334846,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1753443322545,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1753437683639,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1753437666172,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1753436017405,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1753435997745,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1753434017236,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1753433938666,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1752840867241,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1752840852739,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1752840789101,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : "d"
+        }, {
+          "status" : "Review",
+          "cts" : 1752840755156,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1752840718708,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : "f"
+        }, {
+          "status" : "Review",
+          "cts" : 1752840701599,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1752838681254,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1752838615315,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1752838586081,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1752838539424,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1752838450711,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : "g"
+        }, {
+          "status" : "Review",
+          "cts" : 1752838307724,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1752838210510,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1752838061313,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1744028803408,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : "ok"
+        }, {
+          "status" : "Review",
+          "cts" : 1744028775973,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1744014929470,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : "ok"
+        }, {
+          "status" : "Review",
+          "cts" : 1744014852054,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1744010294342,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : "ok"
+        }, {
+          "status" : "Review",
+          "cts" : 1744010267621,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1744010233941,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : "ok"
+        }, {
+          "status" : "Review",
+          "cts" : 1744010212977,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1743767893540,
+          "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+          "description" : "OK"
+        }, {
+          "status" : "Draft",
+          "cts" : 1743767572652,
+          "lastModifiedBy" : "Akshatha sm",
+          "description" : "Created new proxy"
+        } ],
+        "virtualHostList" : [ {
+          "id" : "67ed20509ecb12099c749c7a",
+          "name" : "qa-dev",
+          "timeStamp" : 1753443338332,
+          "environmentId" : "68526682f358527f2e75b0ad",
+          "deployedBy" : "Akshatha SM"
+        } ],
+        "enableTracing" : true,
+        "environmentName" : "env",
+        "environmentId" : "68526682f358527f2e75b0ad",
+        "selectedVirtualHostName" : "qa-dev",
+        "selectedVirtualHostId" : "67ed20509ecb12099c749c7a",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "indexName" : "nw_logger",
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deployed" : true,
+        "deleted" : false
+      }
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -400,6 +775,13 @@
       "proxyid" : "69eb05e2966bab767ef81b93",
       "name" : "Testing_Loans",
       "attachedEnv" : "68526682f358527f2e75b0ad",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ "67efc814f13f990a07c8b934" ],
+      "attachedConnectors" : [ ]
+    }, {
+      "id" : "67efc814f13f990a07c8b934",
+      "proxyid" : "67efc814f13f990a07c8b933",
+      "name" : "GetUserDetails_B",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
       "attachedConnectors" : [ ]
