@@ -1,5 +1,5 @@
 {
-  "cts" : 1777025588761,
+  "cts" : 1777025787542,
   "name" : "Testing_Loans",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1777010146193,
         "createdUserName" : "Uday C",
         "modifiedUserName" : "Uday C",
-        "mts" : 1777025588750,
+        "mts" : 1777025787444,
         "createdBy" : "69e6ff196ccb9d65444a4d97",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -34,9 +34,10 @@
             "d45f7d35-0cfd-479c-bab0-976aa1ec3556" : [ "129a3325-384f-4956-9e32-eb76b2d8fced" ],
             "b19fbd59-e2d6-4eb8-a44c-defa88c423d4" : [ "8e5a90b2-09e7-4e49-abcf-c7f6549dba69" ],
             "482480a3-d602-409b-9a36-c2d1d10dd83f" : [ "d45f7d35-0cfd-479c-bab0-976aa1ec3556" ],
-            "780540f4-ede4-4bae-8dd8-130efecafacc" : [ "b19fbd59-e2d6-4eb8-a44c-defa88c423d4" ],
+            "7d11264a-8733-473e-adfe-4fdc63abf307" : [ "b19fbd59-e2d6-4eb8-a44c-defa88c423d4" ],
             "88e2de7c-30ae-4320-ac59-65e5856dae8f" : [ "8248fc0e-4c30-4ea0-b3c5-508186f2b9ae" ],
             "8248fc0e-4c30-4ea0-b3c5-508186f2b9ae" : [ "482480a3-d602-409b-9a36-c2d1d10dd83f" ],
+            "780540f4-ede4-4bae-8dd8-130efecafacc" : [ "7d11264a-8733-473e-adfe-4fdc63abf307" ],
             "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" : [ "1532535e-41b6-426a-a118-e2a7ed566ea3" ],
             "129a3325-384f-4956-9e32-eb76b2d8fced" : [ "1532535e-41b6-426a-a118-e2a7ed566ea3" ]
           },
@@ -47,50 +48,15 @@
             "129a3325-384f-4956-9e32-eb76b2d8fced" : [ "d45f7d35-0cfd-479c-bab0-976aa1ec3556" ],
             "8e5a90b2-09e7-4e49-abcf-c7f6549dba69" : [ "b19fbd59-e2d6-4eb8-a44c-defa88c423d4" ],
             "d45f7d35-0cfd-479c-bab0-976aa1ec3556" : [ "482480a3-d602-409b-9a36-c2d1d10dd83f" ],
-            "b19fbd59-e2d6-4eb8-a44c-defa88c423d4" : [ "780540f4-ede4-4bae-8dd8-130efecafacc" ],
+            "b19fbd59-e2d6-4eb8-a44c-defa88c423d4" : [ "7d11264a-8733-473e-adfe-4fdc63abf307" ],
             "8248fc0e-4c30-4ea0-b3c5-508186f2b9ae" : [ "88e2de7c-30ae-4320-ac59-65e5856dae8f" ],
             "482480a3-d602-409b-9a36-c2d1d10dd83f" : [ "8248fc0e-4c30-4ea0-b3c5-508186f2b9ae" ],
+            "7d11264a-8733-473e-adfe-4fdc63abf307" : [ "780540f4-ede4-4bae-8dd8-130efecafacc" ],
             "1532535e-41b6-426a-a118-e2a7ed566ea3" : [ "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2", "129a3325-384f-4956-9e32-eb76b2d8fced" ]
           },
-          "allNeighbours" : [ "482480a3-d602-409b-9a36-c2d1d10dd83f", "780540f4-ede4-4bae-8dd8-130efecafacc", "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2", "4c8c8bae-df3e-42c2-b886-59351078c391", "88e2de7c-30ae-4320-ac59-65e5856dae8f", "1532535e-41b6-426a-a118-e2a7ed566ea3", "d45f7d35-0cfd-479c-bab0-976aa1ec3556", "b19fbd59-e2d6-4eb8-a44c-defa88c423d4", "v1", "8e5a90b2-09e7-4e49-abcf-c7f6549dba69", "8248fc0e-4c30-4ea0-b3c5-508186f2b9ae", "129a3325-384f-4956-9e32-eb76b2d8fced" ]
+          "allNeighbours" : [ "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2", "1532535e-41b6-426a-a118-e2a7ed566ea3", "7d11264a-8733-473e-adfe-4fdc63abf307", "d45f7d35-0cfd-479c-bab0-976aa1ec3556", "b19fbd59-e2d6-4eb8-a44c-defa88c423d4", "129a3325-384f-4956-9e32-eb76b2d8fced", "482480a3-d602-409b-9a36-c2d1d10dd83f", "780540f4-ede4-4bae-8dd8-130efecafacc", "4c8c8bae-df3e-42c2-b886-59351078c391", "88e2de7c-30ae-4320-ac59-65e5856dae8f", "v1", "8e5a90b2-09e7-4e49-abcf-c7f6549dba69", "8248fc0e-4c30-4ea0-b3c5-508186f2b9ae" ]
         },
         "vertexHashMap" : {
-          "780540f4-ede4-4bae-8dd8-130efecafacc" : {
-            "vertexId" : "780540f4-ede4-4bae-8dd8-130efecafacc",
-            "vertexType" : "STOP",
-            "name" : "Stop",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 200,
-              "body" : {
-                "type" : "JSON"
-              }
-            }
-          },
-          "482480a3-d602-409b-9a36-c2d1d10dd83f" : {
-            "vertexId" : "482480a3-d602-409b-9a36-c2d1d10dd83f",
-            "vertexType" : "EXTRACTION",
-            "name" : "testing -Extraction",
-            "description" : "-",
-            "extractionData" : {
-              "skip" : false,
-              "showActualErrorMessage" : false,
-              "continueOnError" : false,
-              "errorResponse" : {
-                "statusCode" : 400,
-                "headers" : {
-                  "key" : "123"
-                },
-                "body" : {
-                  "data" : "",
-                  "type" : "json"
-                }
-              }
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
-          },
           "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" : {
             "vertexId" : "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2",
             "vertexType" : "VARIABLES",
@@ -142,30 +108,6 @@
             "imported" : false,
             "skipRuntimeVariables" : false
           },
-          "4c8c8bae-df3e-42c2-b886-59351078c391" : {
-            "vertexId" : "4c8c8bae-df3e-42c2-b886-59351078c391",
-            "vertexType" : "DELAY",
-            "name" : "Delay",
-            "delayData" : {
-              "delayUnit" : "SECONDS",
-              "delayAmount" : 10,
-              "skip" : true,
-              "showActualErrorMessage" : false
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
-          },
-          "88e2de7c-30ae-4320-ac59-65e5856dae8f" : {
-            "vertexId" : "88e2de7c-30ae-4320-ac59-65e5856dae8f",
-            "vertexType" : "OR_NODE",
-            "name" : "Or",
-            "description" : "",
-            "orNodeData" : {
-              "skip" : true
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
-          },
           "1532535e-41b6-426a-a118-e2a7ed566ea3" : {
             "vertexId" : "1532535e-41b6-426a-a118-e2a7ed566ea3",
             "vertexType" : "CONDITIONAL_FLOW",
@@ -206,6 +148,33 @@
             "imported" : false,
             "skipRuntimeVariables" : false
           },
+          "7d11264a-8733-473e-adfe-4fdc63abf307" : {
+            "vertexId" : "7d11264a-8733-473e-adfe-4fdc63abf307",
+            "vertexType" : "DATABASE",
+            "name" : "Testing_DB",
+            "databaseData" : {
+              "connectorId" : "69eb3ff7966bab767ef8229a",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"insert\",\"databaseName\":\"admin\",\"collection\":\"system.version\",\"documents\":[{\"_id\":\"\",\"version\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "Test",
+              "connectorName" : "Testing_DB",
+              "tenantName" : "admin",
+              "collectionName" : "system.version",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "d45f7d35-0cfd-479c-bab0-976aa1ec3556" : {
             "vertexId" : "d45f7d35-0cfd-479c-bab0-976aa1ec3556",
             "vertexType" : "INCREMENT_DECREMENT",
@@ -239,6 +208,117 @@
             "name" : "Logger",
             "description" : "-",
             "logData" : {
+              "skip" : true
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "129a3325-384f-4956-9e32-eb76b2d8fced" : {
+            "vertexId" : "129a3325-384f-4956-9e32-eb76b2d8fced",
+            "vertexType" : "VARIABLES",
+            "name" : "Set Variable",
+            "runtimeVariableList" : [ {
+              "name" : "a",
+              "value" : "a",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "vbc",
+              "value" : "b n ",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "user_id",
+              "value" : "6d04c530",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "name",
+              "value" : "stage",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "body_target_var",
+              "value" : "body_target_var",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "body",
+              "value" : "123",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "payload",
+              "value" : "{ \"message\" : \"messagede\"}",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "Key",
+              "value" : "Value",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "source" : "raw",
+              "override" : false
+            } ],
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "780540f4-ede4-4bae-8dd8-130efecafacc" : {
+            "vertexId" : "780540f4-ede4-4bae-8dd8-130efecafacc",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "482480a3-d602-409b-9a36-c2d1d10dd83f" : {
+            "vertexId" : "482480a3-d602-409b-9a36-c2d1d10dd83f",
+            "vertexType" : "EXTRACTION",
+            "name" : "testing -Extraction",
+            "description" : "-",
+            "extractionData" : {
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "headers" : {
+                  "key" : "123"
+                },
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "4c8c8bae-df3e-42c2-b886-59351078c391" : {
+            "vertexId" : "4c8c8bae-df3e-42c2-b886-59351078c391",
+            "vertexType" : "DELAY",
+            "name" : "Delay",
+            "delayData" : {
+              "delayUnit" : "SECONDS",
+              "delayAmount" : 10,
+              "skip" : true,
+              "showActualErrorMessage" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "88e2de7c-30ae-4320-ac59-65e5856dae8f" : {
+            "vertexId" : "88e2de7c-30ae-4320-ac59-65e5856dae8f",
+            "vertexType" : "OR_NODE",
+            "name" : "Or",
+            "description" : "",
+            "orNodeData" : {
               "skip" : true
             },
             "imported" : false,
@@ -441,57 +521,6 @@
             },
             "imported" : false,
             "skipRuntimeVariables" : false
-          },
-          "129a3325-384f-4956-9e32-eb76b2d8fced" : {
-            "vertexId" : "129a3325-384f-4956-9e32-eb76b2d8fced",
-            "vertexType" : "VARIABLES",
-            "name" : "Set Variable",
-            "runtimeVariableList" : [ {
-              "name" : "a",
-              "value" : "a",
-              "variableDataType" : "STRING",
-              "feelExpression" : false,
-              "override" : false
-            }, {
-              "name" : "vbc",
-              "value" : "b n ",
-              "feelExpression" : false,
-              "override" : false
-            }, {
-              "name" : "user_id",
-              "value" : "6d04c530",
-              "feelExpression" : false,
-              "override" : false
-            }, {
-              "name" : "name",
-              "value" : "stage",
-              "feelExpression" : false,
-              "override" : false
-            }, {
-              "name" : "body_target_var",
-              "value" : "body_target_var",
-              "feelExpression" : false,
-              "override" : false
-            }, {
-              "name" : "body",
-              "value" : "123",
-              "feelExpression" : false,
-              "override" : false
-            }, {
-              "name" : "payload",
-              "value" : "{ \"message\" : \"messagede\"}",
-              "feelExpression" : false,
-              "override" : false
-            }, {
-              "name" : "Key",
-              "value" : "Value",
-              "variableDataType" : "STRING",
-              "feelExpression" : false,
-              "source" : "raw",
-              "override" : false
-            } ],
-            "imported" : false,
-            "skipRuntimeVariables" : false
           }
         },
         "statusHistory" : [ {
@@ -514,6 +543,33 @@
         "deployed" : false,
         "deleted" : false
       }
+    }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MongoDb.Configuration",
+    "data" : {
+      "mongoDBConfigurationData" : {
+        "id" : "69eb3ff7966bab767ef8229a",
+        "cts" : 1777025015856,
+        "createdUserName" : "Uday C",
+        "modifiedUserName" : "Uday C",
+        "mts" : 1777025465558,
+        "createdBy" : "69e6ff196ccb9d65444a4d97",
+        "modifiedBy" : "69e6ff196ccb9d65444a4d97",
+        "name" : "Testing_DB",
+        "description" : "-",
+        "host" : "0.tcp.in.ngrok.io:12082",
+        "scheme" : "mongodb",
+        "url" : "mongodb://0.tcp.in.ngrok.io:12082/?tls=false",
+        "authentication" : {
+          "mongoDbAuthType" : "none"
+        },
+        "ssl" : {
+          "sslConnection" : false,
+          "tlsAllowInvalidHostnames" : false
+        }
+      },
+      "databaseType" : "MongoDb"
     }
   }, {
     "type" : "proxy",
@@ -857,7 +913,7 @@
       "attachedEnv" : "68526682f358527f2e75b0ad",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ "67efc814f13f990a07c8b934" ],
-      "attachedConnectors" : [ ]
+      "attachedConnectors" : [ "69eb3ff7966bab767ef8229a" ]
     }, {
       "id" : "67efc814f13f990a07c8b934",
       "proxyid" : "67efc814f13f990a07c8b933",
@@ -872,6 +928,9 @@
       "name" : "env"
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
-    "connectorMetadataDetailsDtoList" : [ ]
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "69eb3ff7966bab767ef8229a",
+      "name" : "Testing_DB"
+    } ]
   }
 }
