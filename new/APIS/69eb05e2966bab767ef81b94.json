@@ -1,5 +1,5 @@
 {
-  "cts" : 1777023850043,
+  "cts" : 1777023895767,
   "name" : "Testing_Loans",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1777010146193,
         "createdUserName" : "Uday C",
         "modifiedUserName" : "Uday C",
-        "mts" : 1777023849985,
+        "mts" : 1777023895765,
         "createdBy" : "69e6ff196ccb9d65444a4d97",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -31,15 +31,18 @@
             "4c8c8bae-df3e-42c2-b886-59351078c391" : [ "v1" ],
             "1532535e-41b6-426a-a118-e2a7ed566ea3" : [ "4c8c8bae-df3e-42c2-b886-59351078c391" ],
             "780540f4-ede4-4bae-8dd8-130efecafacc" : [ "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" ],
-            "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" : [ "1532535e-41b6-426a-a118-e2a7ed566ea3" ]
+            "8248fc0e-4c30-4ea0-b3c5-508186f2b9ae" : [ "129a3325-384f-4956-9e32-eb76b2d8fced" ],
+            "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" : [ "1532535e-41b6-426a-a118-e2a7ed566ea3" ],
+            "129a3325-384f-4956-9e32-eb76b2d8fced" : [ "1532535e-41b6-426a-a118-e2a7ed566ea3" ]
           },
           "outbound" : {
             "v1" : [ "4c8c8bae-df3e-42c2-b886-59351078c391" ],
             "4c8c8bae-df3e-42c2-b886-59351078c391" : [ "1532535e-41b6-426a-a118-e2a7ed566ea3" ],
             "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" : [ "780540f4-ede4-4bae-8dd8-130efecafacc" ],
-            "1532535e-41b6-426a-a118-e2a7ed566ea3" : [ "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2" ]
+            "129a3325-384f-4956-9e32-eb76b2d8fced" : [ "8248fc0e-4c30-4ea0-b3c5-508186f2b9ae" ],
+            "1532535e-41b6-426a-a118-e2a7ed566ea3" : [ "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2", "129a3325-384f-4956-9e32-eb76b2d8fced" ]
           },
-          "allNeighbours" : [ "780540f4-ede4-4bae-8dd8-130efecafacc", "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2", "4c8c8bae-df3e-42c2-b886-59351078c391", "1532535e-41b6-426a-a118-e2a7ed566ea3", "v1" ]
+          "allNeighbours" : [ "780540f4-ede4-4bae-8dd8-130efecafacc", "4cb0c5b3-5e31-4bc6-81b9-da972c5304a2", "4c8c8bae-df3e-42c2-b886-59351078c391", "1532535e-41b6-426a-a118-e2a7ed566ea3", "v1", "8248fc0e-4c30-4ea0-b3c5-508186f2b9ae", "129a3325-384f-4956-9e32-eb76b2d8fced" ]
         },
         "vertexHashMap" : {
           "780540f4-ede4-4bae-8dd8-130efecafacc" : {
@@ -153,7 +156,8 @@
                 "skip" : false,
                 "showActualErrorMessage" : false,
                 "continueOnError" : false
-              }
+              },
+              "flowVertexes" : [ "129a3325-384f-4956-9e32-eb76b2d8fced" ]
             } ],
             "imported" : false,
             "skipRuntimeVariables" : false
@@ -288,6 +292,84 @@
                 }
               }
             }
+          },
+          "8248fc0e-4c30-4ea0-b3c5-508186f2b9ae" : {
+            "vertexId" : "8248fc0e-4c30-4ea0-b3c5-508186f2b9ae",
+            "vertexType" : "ASSERTION",
+            "name" : "Assertion",
+            "assertion" : {
+              "expression" : "({0})",
+              "placeHolders" : [ {
+                "rule" : "EQUAL_TO",
+                "key" : "user_id",
+                "value" : "6d04c530",
+                "valueDataType" : "STRING"
+              } ],
+              "feelExpression" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "129a3325-384f-4956-9e32-eb76b2d8fced" : {
+            "vertexId" : "129a3325-384f-4956-9e32-eb76b2d8fced",
+            "vertexType" : "VARIABLES",
+            "name" : "Set Variable",
+            "runtimeVariableList" : [ {
+              "name" : "a",
+              "value" : "a",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "vbc",
+              "value" : "b n ",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "user_id",
+              "value" : "6d04c530",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "name",
+              "value" : "stage",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "body_target_var",
+              "value" : "body_target_var",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "body",
+              "value" : "123",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "payload",
+              "value" : "{ \"message\" : \"messagede\"}",
+              "feelExpression" : false,
+              "override" : false
+            }, {
+              "name" : "Key",
+              "value" : "Value",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "source" : "raw",
+              "override" : false
+            } ],
+            "imported" : false,
+            "skipRuntimeVariables" : false
           }
         },
         "statusHistory" : [ {
