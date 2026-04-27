@@ -1,5 +1,5 @@
 {
-  "cts" : 1777291103157,
+  "cts" : 1777291406917,
   "name" : "API_Testing",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1777290207662,
         "createdUserName" : "Uday C",
         "modifiedUserName" : "Uday C",
-        "mts" : 1777291103147,
+        "mts" : 1777291406913,
         "createdBy" : "69e6ff196ccb9d65444a4d97",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -28,12 +28,14 @@
         "lockedBy" : "Uday C",
         "nodeDataHashMap" : {
           "inbound" : {
-            "b58c3293-5d16-4b54-baab-922be6e3794f" : [ "v1" ]
+            "e2e22031-480d-4f7a-b4c9-dbf20d5e8fd6" : [ "v1" ],
+            "b58c3293-5d16-4b54-baab-922be6e3794f" : [ "e2e22031-480d-4f7a-b4c9-dbf20d5e8fd6" ]
           },
           "outbound" : {
-            "v1" : [ "b58c3293-5d16-4b54-baab-922be6e3794f" ]
+            "v1" : [ "e2e22031-480d-4f7a-b4c9-dbf20d5e8fd6" ],
+            "e2e22031-480d-4f7a-b4c9-dbf20d5e8fd6" : [ "b58c3293-5d16-4b54-baab-922be6e3794f" ]
           },
-          "allNeighbours" : [ "b58c3293-5d16-4b54-baab-922be6e3794f", "v1" ]
+          "allNeighbours" : [ "b58c3293-5d16-4b54-baab-922be6e3794f", "v1", "e2e22031-480d-4f7a-b4c9-dbf20d5e8fd6" ]
         },
         "vertexHashMap" : {
           "b58c3293-5d16-4b54-baab-922be6e3794f" : {
@@ -71,9 +73,50 @@
                 }
               }
             }
+          },
+          "e2e22031-480d-4f7a-b4c9-dbf20d5e8fd6" : {
+            "vertexId" : "e2e22031-480d-4f7a-b4c9-dbf20d5e8fd6",
+            "vertexType" : "JAVASCRIPT",
+            "name" : "Script _testing",
+            "description" : "-",
+            "javascriptData" : {
+              "targetVariable" : "response",
+              "variableDataType" : "STRING",
+              "javascript" : "var execute = function(input) { \n  console.log(input.foo);\n\n  return {\n    ...input,\n    message: \"Received 200 response\"\n  };\n};",
+              "variables" : {
+                "response" : "200"
+              },
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "headers" : {
+                  "h1" : "1"
+                },
+                "body" : {
+                  "data" : "{\n    \"Message\":\"Recieved 200 Response, Code\"\n}",
+                  "type" : "json"
+                }
+              },
+              "customResponseMapping" : false,
+              "responsePathMapping" : { }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1777291188873,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1777291115319,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "a"
+        }, {
           "status" : "Review",
           "cts" : 1777291085861,
           "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
