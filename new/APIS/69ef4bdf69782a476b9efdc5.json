@@ -1,5 +1,5 @@
 {
-  "cts" : 1777291406917,
+  "cts" : 1777291493876,
   "name" : "API_Testing",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1777290207662,
         "createdUserName" : "Uday C",
         "modifiedUserName" : "Uday C",
-        "mts" : 1777291406913,
+        "mts" : 1777291493874,
         "createdBy" : "69e6ff196ccb9d65444a4d97",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -90,7 +90,7 @@
               "showActualErrorMessage" : false,
               "continueOnError" : false,
               "errorResponse" : {
-                "statusCode" : 400,
+                "statusCode" : 200,
                 "headers" : {
                   "h1" : "1"
                 },
@@ -107,6 +107,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1777291481879,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1777291416392,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "a"
+        }, {
           "status" : "Review",
           "cts" : 1777291188873,
           "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
