@@ -1,5 +1,5 @@
 {
-  "cts" : 1777291030809,
+  "cts" : 1777291103157,
   "name" : "API_Testing",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1777290207662,
         "createdUserName" : "Uday C",
         "modifiedUserName" : "Uday C",
-        "mts" : 1777291030807,
+        "mts" : 1777291103147,
         "createdBy" : "69e6ff196ccb9d65444a4d97",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -21,9 +21,9 @@
         "description" : "",
         "apiType" : "RESTAPI",
         "apiMethod" : "GET",
-        "path" : "",
-        "pathArray" : [ ],
-        "revisionStatus" : "DRAFT",
+        "path" : "/get",
+        "pathArray" : [ "get" ],
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Uday C",
         "nodeDataHashMap" : {
@@ -74,6 +74,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1777291085861,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1777291047187,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "a"
+        }, {
           "status" : "Draft",
           "cts" : 1777291022781,
           "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
@@ -89,6 +99,7 @@
           "lastModifiedBy" : "Uday C",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : false,
         "environmentName" : "",
         "environmentId" : "",
