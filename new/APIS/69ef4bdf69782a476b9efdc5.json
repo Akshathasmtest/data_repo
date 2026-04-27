@@ -1,5 +1,5 @@
 {
-  "cts" : 1777294901719,
+  "cts" : 1777295102619,
   "name" : "API_Testing",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1777290207662,
         "createdUserName" : "Uday C",
         "modifiedUserName" : "Uday C",
-        "mts" : 1777294901655,
+        "mts" : 1777295102549,
         "createdBy" : "69e6ff196ccb9d65444a4d97",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -69,8 +69,8 @@
                 "targetVariable" : "encrypt",
                 "sourceVariable" : "response",
                 "sourceProvidedAtNode" : false,
-                "transformationKey" : "MySecretKey123\n",
-                "initializationVector" : "16-byte IV",
+                "transformationKey" : "1234567890123456",
+                "initializationVector" : "abcdefghijklmnop",
                 "algorithmType" : "AES",
                 "modeType" : "CBC",
                 "paddingType" : "PKCS5Padding"
@@ -145,6 +145,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1777294945428,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1777294910519,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "n"
+        }, {
           "status" : "Review",
           "cts" : 1777294803420,
           "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
