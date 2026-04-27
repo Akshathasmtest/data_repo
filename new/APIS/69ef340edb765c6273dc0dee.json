@@ -1,5 +1,5 @@
 {
-  "cts" : 1777284110167,
+  "cts" : 1777284289936,
   "name" : "GET - GETLoanFullRepaymentInq",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1777284110120,
         "createdUserName" : "Uday C",
         "modifiedUserName" : "Uday C",
-        "mts" : 1777284110120,
+        "mts" : 1777284289933,
         "createdBy" : "69e6ff196ccb9d65444a4d97",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -23,7 +23,7 @@
         "apiMethod" : "GET",
         "path" : "/api/v1/loans/{loan-product}/loanFullRepaymentInq",
         "pathArray" : [ "api", "v1", "loans", "*", "loanFullRepaymentInq" ],
-        "revisionStatus" : "DRAFT",
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Uday C",
         "nodeDataHashMap" : {
@@ -304,6 +304,7 @@
             "proxyResponse" : {
               "statusCode" : 504,
               "body" : {
+                "data" : "{\n    \"PAyment\":\"Time Out, Retry Again\"\n}",
                 "type" : "json"
               }
             }
@@ -373,11 +374,22 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1777284252432,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1777284145484,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "approved 1"
+        }, {
           "status" : "Draft",
           "cts" : 1777284110120,
           "lastModifiedBy" : "Uday C",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : true,
         "environmentName" : "uat",
         "environmentId" : "68ef29919d30e85f6e63cb8b",
