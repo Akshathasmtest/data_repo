@@ -1,5 +1,5 @@
 {
-  "cts" : 1777293727819,
+  "cts" : 1777293999220,
   "name" : "API_Testing",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1777290207662,
         "createdUserName" : "Uday C",
         "modifiedUserName" : "Uday C",
-        "mts" : 1777293727721,
+        "mts" : 1777293999218,
         "createdBy" : "69e6ff196ccb9d65444a4d97",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -52,7 +52,7 @@
                 "content-type" : "application/json"
               },
               "body" : {
-                "data" : "{{{response}}}",
+                "data" : "{{{encrypt}}}",
                 "type" : "json"
               }
             }
@@ -65,11 +65,11 @@
             "encryptionData" : {
               "encryptionDecryptionOperationList" : [ {
                 "operationName" : "encrypt",
-                "description" : "encrypts the password",
-                "targetVariable" : "response",
-                "sourceData" : "response",
-                "sourceProvidedAtNode" : true,
-                "transformationKey" : "qwe12se",
+                "description" : "encryption of password",
+                "targetVariable" : "encrypt",
+                "sourceVariable" : "response",
+                "sourceProvidedAtNode" : false,
+                "transformationKey" : "EncryptedPassword123",
                 "algorithmType" : "RSA",
                 "modeType" : "ECB",
                 "paddingType" : "PKCS1Padding"
@@ -80,7 +80,7 @@
               "errorResponse" : {
                 "statusCode" : 200,
                 "body" : {
-                  "data" : "{{{response}}}",
+                  "data" : "{\n    \"Message\":\"Encryption Successful\"\n}",
                   "type" : "json"
                 }
               }
@@ -144,6 +144,21 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1777293785150,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1777293738928,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "m"
+        }, {
+          "status" : "Approved",
+          "cts" : 1777293737818,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "m"
+        }, {
           "status" : "Review",
           "cts" : 1777293698931,
           "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
