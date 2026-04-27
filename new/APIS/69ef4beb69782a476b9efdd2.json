@@ -1,0 +1,259 @@
+{
+  "cts" : 1777290219974,
+  "name" : "loan approval workflow-04-27-2026 11:43:39",
+  "exportedBy" : "Uday C",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "69ef4beb69782a476b9efdd2",
+        "cts" : 1777290219961,
+        "createdUserName" : "Uday C",
+        "modifiedUserName" : "Uday C",
+        "mts" : 1777290219961,
+        "createdBy" : "69e6ff196ccb9d65444a4d97",
+        "modifiedBy" : "69e6ff196ccb9d65444a4d97",
+        "taggedTeams" : [ ],
+        "proxyId" : "69ef4beb69782a476b9efdd3",
+        "revision" : 1,
+        "name" : "loan approval workflow-04-27-2026 11:43:39",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/v1/loan/approval",
+        "pathArray" : [ "v1", "loan", "approval" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Uday C",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "04372186-0257-446a-b193-4384ea764671" : [ "v1" ],
+            "df1ef0a2-3090-4415-a1f6-682928cd4342" : [ "04372186-0257-446a-b193-4384ea764671" ],
+            "c148c511-0494-46a7-a508-21bca5c9d982" : [ "df1ef0a2-3090-4415-a1f6-682928cd4342" ]
+          },
+          "outbound" : {
+            "v1" : [ "04372186-0257-446a-b193-4384ea764671" ],
+            "04372186-0257-446a-b193-4384ea764671" : [ "df1ef0a2-3090-4415-a1f6-682928cd4342" ],
+            "df1ef0a2-3090-4415-a1f6-682928cd4342" : [ "c148c511-0494-46a7-a508-21bca5c9d982" ]
+          },
+          "allNeighbours" : [ "df1ef0a2-3090-4415-a1f6-682928cd4342", "04372186-0257-446a-b193-4384ea764671", "c148c511-0494-46a7-a508-21bca5c9d982", "v1" ]
+        },
+        "vertexHashMap" : {
+          "04372186-0257-446a-b193-4384ea764671" : {
+            "vertexId" : "04372186-0257-446a-b193-4384ea764671",
+            "vertexType" : "USER_TASK",
+            "name" : "loan approval task",
+            "description" : "",
+            "userTaskNodeData" : {
+              "taggedTeams" : [ ],
+              "mode" : "PORTAL_FORM_FILLING",
+              "formName" : "loan approval form 1",
+              "formFields" : [ {
+                "id" : "d4926f28-870e-42e3-b48c-43713e245449",
+                "targetVariable" : "adminName",
+                "targetVariableDataType" : "STRING",
+                "inputType" : "TEXT",
+                "label" : "enter admin name",
+                "placeHolder" : "eg : Akash",
+                "required" : true
+              }, {
+                "id" : "2b35f511-256c-4729-ae22-b2128dc91c99",
+                "targetVariable" : "loanApproved",
+                "targetVariableDataType" : "STRING",
+                "inputType" : "RADIO",
+                "label" : "loan approved",
+                "required" : true,
+                "options" : [ "yes", "no" ]
+              }, {
+                "id" : "13893ef2-40d3-40ef-b1ba-bb84a4819496",
+                "targetVariable" : "loanTenure",
+                "targetVariableDataType" : "STRING",
+                "inputType" : "DROPDOWN",
+                "label" : "loan tenure",
+                "placeHolder" : "enter loan tenure",
+                "required" : false,
+                "options" : [ "1-5 years", "5 - 7 years" ]
+              } ],
+              "additionalDataMap" : {
+                "customer name" : "{{customer_name}}",
+                "credit score" : "{{credit_score}}",
+                "security key" : "{{security_key}}"
+              },
+              "interimResponse" : {
+                "statusCode" : 200,
+                "body" : {
+                  "data" : "{\n    \"message\" : \"your request is under review, once done, you'll get an email shortly\"\n}",
+                  "type" : "JSON"
+                }
+              },
+              "expiryDuration" : 3600000,
+              "expiryDurationUnit" : "HOURS",
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "JSON"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "c148c511-0494-46a7-a508-21bca5c9d982" : {
+            "vertexId" : "c148c511-0494-46a7-a508-21bca5c9d982",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ {
+              "name" : "customer_name",
+              "reference" : "query-params",
+              "value" : "customer_name",
+              "variableDataType" : "STRING",
+              "active" : true,
+              "source" : "query-params",
+              "hide" : false,
+              "feelExpression" : false
+            }, {
+              "name" : "credit_score",
+              "reference" : "query-params",
+              "value" : "credit_score",
+              "variableDataType" : "STRING",
+              "active" : true,
+              "source" : "query-params",
+              "hide" : false,
+              "feelExpression" : false
+            }, {
+              "name" : "security_key",
+              "reference" : "query-params",
+              "value" : "security_key",
+              "variableDataType" : "STRING",
+              "active" : true,
+              "source" : "query-params",
+              "hide" : false,
+              "feelExpression" : false
+            } ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "df1ef0a2-3090-4415-a1f6-682928cd4342" : {
+            "vertexId" : "df1ef0a2-3090-4415-a1f6-682928cd4342",
+            "vertexType" : "EMAIL_CONNECTOR",
+            "name" : "send loan response",
+            "description" : "",
+            "mailConnectorData" : {
+              "mailTemplate" : {
+                "toMailIds" : [ "pranav.a@apiwiz.com" ],
+                "body" : "<p>loan approved</p>\n",
+                "subject" : "loan approval form reg.",
+                "rtfValue" : "loan approved"
+              },
+              "mailProperty" : {
+                "tenantId" : "68c7cf719f1f251b4c0b6e63",
+                "mailPort" : "587",
+                "mailHost" : "smtp.gmail.com",
+                "smtpAuth" : true,
+                "userName" : "notification@apiwiz.com",
+                "password" : "null",
+                "connectionTimeOut" : 100,
+                "timeOut" : 10,
+                "writeTimeOut" : 1000,
+                "enableStartTLS" : true,
+                "mailFromAddress" : "notification@apiwiz.com",
+                "cts" : 1757925233313,
+                "mts" : 1763632458907,
+                "createdBy" : "63cf749921c7bb55c7368952",
+                "modifiedBy" : "6655a103339aa715119d5a13",
+                "createdUserName" : "divakar v",
+                "modifiedUserName" : "Pranav Ananth"
+              },
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1777290219961,
+          "lastModifiedBy" : "Uday C",
+          "description" : "Duplicated proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.Mail",
+    "data" : { }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "69ef4beb69782a476b9efdd2",
+      "proxyid" : "69ef4beb69782a476b9efdd3",
+      "name" : "loan approval workflow-04-27-2026 11:43:39",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
