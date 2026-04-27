@@ -1,0 +1,84 @@
+{
+  "id" : "69ef48000727c910fb119767",
+  "cts" : 1777289216627,
+  "mts" : 1777289216627,
+  "createdBy" : "Elanie tom",
+  "modifiedBy" : "Elanie tom",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+  "runtime" : "chinmayee-test1",
+  "workspace" : "default",
+  "swaggerId" : "",
+  "serviceName" : "new-service",
+  "revision" : 0,
+  "swaggerVersion" : "",
+  "swaggerName" : "",
+  "serviceId" : "b608df0b-ba35-4015-8702-f6a381062048",
+  "service" : {
+    "serviceId" : "",
+    "serviceName" : "new-service",
+    "protocol" : "https",
+    "host" : "mock.apiwiz.io",
+    "hosts" : [ ],
+    "basePath" : "/",
+    "basePaths" : [ ],
+    "port" : 443,
+    "ports" : [ ],
+    "metadata" : { },
+    "tags" : [ "new-service" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "89bfdfb5-f89f-4b38-aee3-c74c69373ae2",
+    "routeName" : "additional-path",
+    "service" : {
+      "_id" : "b608df0b-ba35-4015-8702-f6a381062048"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/new/path" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "6887457f0a35223ee1607332",
+      "name" : "chinmayee-test1",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "new-service" ]
+  } ],
+  "plugins" : [ {
+    "id" : "1f841bb5-7966-4de1-a4ee-c6b0e3ca807f",
+    "pluginName" : "basic-auth",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "serviceName" : "new-service",
+    "kongName" : "basic-auth",
+    "configs" : { },
+    "tags" : [ "new-service" ]
+  }, {
+    "pluginName" : "ip-restriction",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "serviceName" : "new-service",
+    "kongName" : "ip-restriction",
+    "configs" : { },
+    "tags" : [ "new-service" ]
+  } ],
+  "errors" : [ {
+    "message" : "400 Bad Request: \"{\"message\":\"schema violation (at least one of these fields must be non-empty: 'config.allow', 'config.deny')\",\"name\":\"schema violation\",\"fields\":{\"@entity\":[\"at least one of these fields must be non-empty: 'config.allow', 'config.deny'\"]},\"code\":2}\"",
+    "name" : "ip-restriction",
+    "type" : "SERVICE_PLUGIN"
+  } ]
+}
