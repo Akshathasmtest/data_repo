@@ -1,5 +1,5 @@
 {
-  "cts" : 1777284289936,
+  "cts" : 1777284426073,
   "name" : "GET - GETLoanFullRepaymentInq",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1777284110120,
         "createdUserName" : "Uday C",
         "modifiedUserName" : "Uday C",
-        "mts" : 1777284289933,
+        "mts" : 1777284426036,
         "createdBy" : "69e6ff196ccb9d65444a4d97",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -326,7 +326,16 @@
             "vertexId" : "v1",
             "vertexType" : "START",
             "name" : "Request",
-            "requestVariables" : [ ],
+            "requestVariables" : [ {
+              "name" : "ext-b1",
+              "reference" : "body",
+              "value" : "$",
+              "variableDataType" : "STRING",
+              "active" : true,
+              "source" : "raw",
+              "hide" : false,
+              "feelExpression" : false
+            } ],
             "mandatoryHeaders" : [ "x-h1" ],
             "mandatoryQueryParams" : [ "x-q1" ],
             "imported" : true,
@@ -374,6 +383,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1777284403585,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1777284305927,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "u"
+        }, {
           "status" : "Review",
           "cts" : 1777284252432,
           "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
