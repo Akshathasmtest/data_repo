@@ -1,0 +1,420 @@
+{
+  "cts" : 1777286058746,
+  "name" : "PATCH - PATCHUpdateAppRating",
+  "exportedBy" : "Uday C",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "69ef3baadb765c6273dc0ff0",
+        "cts" : 1777286058721,
+        "createdUserName" : "Uday C",
+        "modifiedUserName" : "Uday C",
+        "mts" : 1777286058721,
+        "createdBy" : "69e6ff196ccb9d65444a4d97",
+        "modifiedBy" : "69e6ff196ccb9d65444a4d97",
+        "taggedTeams" : [ ],
+        "proxyId" : "69ef3baadb765c6273dc0fef",
+        "revision" : 1,
+        "name" : "PATCH - PATCHUpdateAppRating",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "PATCH",
+        "path" : "/api/v1/loans/{loan-product}/app-rating",
+        "pathArray" : [ "api", "v1", "loans", "*", "app-rating" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Uday C",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "842a6152-d062-4d71-8ea9-815db0602f6e" : [ "v1" ],
+            "6b9f733a-8ec8-4ef0-95ad-30cbd92a9363" : [ "842a6152-d062-4d71-8ea9-815db0602f6e" ],
+            "83c38e6d-3686-401d-8ef4-d7585ca6fa89" : [ "842a6152-d062-4d71-8ea9-815db0602f6e" ],
+            "896e0134-a65c-4811-a158-f915a883ca1e" : [ "842a6152-d062-4d71-8ea9-815db0602f6e" ],
+            "8100a0b9-ef4c-4515-b8b8-0e4e865f4344" : [ "842a6152-d062-4d71-8ea9-815db0602f6e" ],
+            "aef91cde-aec4-417c-a67d-da0ba4f2fe8b" : [ "842a6152-d062-4d71-8ea9-815db0602f6e" ],
+            "4c1a3f6b-b276-46a6-a1c9-6e8424f66d96" : [ "842a6152-d062-4d71-8ea9-815db0602f6e" ],
+            "baadce5f-dc26-44c9-8b35-5c4618a96cac" : [ "842a6152-d062-4d71-8ea9-815db0602f6e" ],
+            "07f90556-47fc-4912-9f3c-da484e7181a0" : [ "842a6152-d062-4d71-8ea9-815db0602f6e" ],
+            "7103adfa-d2d8-4042-9c70-70802d2a596c" : [ "842a6152-d062-4d71-8ea9-815db0602f6e" ],
+            "4915a6e8-ae28-403d-bfff-f2673ff6da39" : [ "842a6152-d062-4d71-8ea9-815db0602f6e" ],
+            "aeea24eb-3f80-4474-91fe-ffafca08ca1d" : [ "842a6152-d062-4d71-8ea9-815db0602f6e" ],
+            "f837df28-e6f0-441b-b7dd-fb437c4e7736" : [ "842a6152-d062-4d71-8ea9-815db0602f6e" ],
+            "50d723f0-6e18-46c7-9834-75a00f114887" : [ "842a6152-d062-4d71-8ea9-815db0602f6e" ]
+          },
+          "outbound" : {
+            "v1" : [ "842a6152-d062-4d71-8ea9-815db0602f6e" ],
+            "842a6152-d062-4d71-8ea9-815db0602f6e" : [ "8100a0b9-ef4c-4515-b8b8-0e4e865f4344", "83c38e6d-3686-401d-8ef4-d7585ca6fa89", "4c1a3f6b-b276-46a6-a1c9-6e8424f66d96", "aef91cde-aec4-417c-a67d-da0ba4f2fe8b", "6b9f733a-8ec8-4ef0-95ad-30cbd92a9363", "f837df28-e6f0-441b-b7dd-fb437c4e7736", "50d723f0-6e18-46c7-9834-75a00f114887", "07f90556-47fc-4912-9f3c-da484e7181a0", "4915a6e8-ae28-403d-bfff-f2673ff6da39", "baadce5f-dc26-44c9-8b35-5c4618a96cac", "896e0134-a65c-4811-a158-f915a883ca1e", "7103adfa-d2d8-4042-9c70-70802d2a596c", "aeea24eb-3f80-4474-91fe-ffafca08ca1d" ]
+          },
+          "allNeighbours" : [ "8100a0b9-ef4c-4515-b8b8-0e4e865f4344", "83c38e6d-3686-401d-8ef4-d7585ca6fa89", "4c1a3f6b-b276-46a6-a1c9-6e8424f66d96", "aef91cde-aec4-417c-a67d-da0ba4f2fe8b", "6b9f733a-8ec8-4ef0-95ad-30cbd92a9363", "f837df28-e6f0-441b-b7dd-fb437c4e7736", "842a6152-d062-4d71-8ea9-815db0602f6e", "50d723f0-6e18-46c7-9834-75a00f114887", "07f90556-47fc-4912-9f3c-da484e7181a0", "4915a6e8-ae28-403d-bfff-f2673ff6da39", "baadce5f-dc26-44c9-8b35-5c4618a96cac", "v1", "896e0134-a65c-4811-a158-f915a883ca1e", "7103adfa-d2d8-4042-9c70-70802d2a596c", "aeea24eb-3f80-4474-91fe-ffafca08ca1d" ]
+        },
+        "vertexHashMap" : {
+          "8100a0b9-ef4c-4515-b8b8-0e4e865f4344" : {
+            "vertexId" : "8100a0b9-ef4c-4515-b8b8-0e4e865f4344",
+            "vertexType" : "STOP",
+            "name" : "403 - Forbidden",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 403,
+              "body" : {
+                "type" : "json"
+              }
+            }
+          },
+          "83c38e6d-3686-401d-8ef4-d7585ca6fa89" : {
+            "vertexId" : "83c38e6d-3686-401d-8ef4-d7585ca6fa89",
+            "vertexType" : "STOP",
+            "name" : "400 - Bad request",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 400,
+              "body" : {
+                "type" : "json"
+              }
+            }
+          },
+          "4c1a3f6b-b276-46a6-a1c9-6e8424f66d96" : {
+            "vertexId" : "4c1a3f6b-b276-46a6-a1c9-6e8424f66d96",
+            "vertexType" : "STOP",
+            "name" : "405 - Method Not Allowed",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 405,
+              "body" : {
+                "type" : "json"
+              }
+            }
+          },
+          "aef91cde-aec4-417c-a67d-da0ba4f2fe8b" : {
+            "vertexId" : "aef91cde-aec4-417c-a67d-da0ba4f2fe8b",
+            "vertexType" : "STOP",
+            "name" : "404 - Resource not found",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 404,
+              "body" : {
+                "type" : "json"
+              }
+            }
+          },
+          "6b9f733a-8ec8-4ef0-95ad-30cbd92a9363" : {
+            "vertexId" : "6b9f733a-8ec8-4ef0-95ad-30cbd92a9363",
+            "vertexType" : "STOP",
+            "name" : "200 - Ok",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "json"
+              }
+            }
+          },
+          "f837df28-e6f0-441b-b7dd-fb437c4e7736" : {
+            "vertexId" : "f837df28-e6f0-441b-b7dd-fb437c4e7736",
+            "vertexType" : "STOP",
+            "name" : "502 - Bad Gateway",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 502,
+              "body" : {
+                "type" : "json"
+              }
+            }
+          },
+          "842a6152-d062-4d71-8ea9-815db0602f6e" : {
+            "vertexId" : "842a6152-d062-4d71-8ea9-815db0602f6e",
+            "vertexType" : "CONDITIONAL_FLOW",
+            "name" : "Condition",
+            "conditionalFlow" : [ {
+              "condition" : "if",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              },
+              "flowVertexes" : [ "6b9f733a-8ec8-4ef0-95ad-30cbd92a9363" ]
+            }, {
+              "condition" : "else-if",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              },
+              "flowVertexes" : [ "83c38e6d-3686-401d-8ef4-d7585ca6fa89" ]
+            }, {
+              "condition" : "else-if",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              },
+              "flowVertexes" : [ "896e0134-a65c-4811-a158-f915a883ca1e" ]
+            }, {
+              "condition" : "else-if",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              },
+              "flowVertexes" : [ "8100a0b9-ef4c-4515-b8b8-0e4e865f4344" ]
+            }, {
+              "condition" : "else-if",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              },
+              "flowVertexes" : [ "aef91cde-aec4-417c-a67d-da0ba4f2fe8b" ]
+            }, {
+              "condition" : "else-if",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              },
+              "flowVertexes" : [ "4c1a3f6b-b276-46a6-a1c9-6e8424f66d96" ]
+            }, {
+              "condition" : "else-if",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              },
+              "flowVertexes" : [ "baadce5f-dc26-44c9-8b35-5c4618a96cac" ]
+            }, {
+              "condition" : "else-if",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              },
+              "flowVertexes" : [ "07f90556-47fc-4912-9f3c-da484e7181a0" ]
+            }, {
+              "condition" : "else-if",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              },
+              "flowVertexes" : [ "7103adfa-d2d8-4042-9c70-70802d2a596c" ]
+            }, {
+              "condition" : "else-if",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              },
+              "flowVertexes" : [ "4915a6e8-ae28-403d-bfff-f2673ff6da39" ]
+            }, {
+              "condition" : "else-if",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              },
+              "flowVertexes" : [ "aeea24eb-3f80-4474-91fe-ffafca08ca1d" ]
+            }, {
+              "condition" : "else-if",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              },
+              "flowVertexes" : [ "f837df28-e6f0-441b-b7dd-fb437c4e7736" ]
+            }, {
+              "condition" : "else",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              },
+              "flowVertexes" : [ "50d723f0-6e18-46c7-9834-75a00f114887" ]
+            } ],
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "50d723f0-6e18-46c7-9834-75a00f114887" : {
+            "vertexId" : "50d723f0-6e18-46c7-9834-75a00f114887",
+            "vertexType" : "STOP",
+            "name" : "504 - Gateway Timeout",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 504,
+              "body" : {
+                "type" : "json"
+              }
+            }
+          },
+          "07f90556-47fc-4912-9f3c-da484e7181a0" : {
+            "vertexId" : "07f90556-47fc-4912-9f3c-da484e7181a0",
+            "vertexType" : "STOP",
+            "name" : "415 - Unsupported Media Type",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 415,
+              "body" : {
+                "type" : "json"
+              }
+            }
+          },
+          "4915a6e8-ae28-403d-bfff-f2673ff6da39" : {
+            "vertexId" : "4915a6e8-ae28-403d-bfff-f2673ff6da39",
+            "vertexType" : "STOP",
+            "name" : "500 - Internal Server Error",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 500,
+              "body" : {
+                "type" : "json"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ {
+              "name" : "h1",
+              "reference" : "body",
+              "value" : "11",
+              "variableDataType" : "STRING",
+              "active" : true,
+              "source" : "raw",
+              "hide" : false,
+              "feelExpression" : false
+            } ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "baadce5f-dc26-44c9-8b35-5c4618a96cac" : {
+            "vertexId" : "baadce5f-dc26-44c9-8b35-5c4618a96cac",
+            "vertexType" : "STOP",
+            "name" : "406 - Not Acceptable media type",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 406,
+              "body" : {
+                "type" : "json"
+              }
+            }
+          },
+          "896e0134-a65c-4811-a158-f915a883ca1e" : {
+            "vertexId" : "896e0134-a65c-4811-a158-f915a883ca1e",
+            "vertexType" : "STOP",
+            "name" : "401 - Unauthorized",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 401,
+              "body" : {
+                "type" : "json"
+              }
+            }
+          },
+          "7103adfa-d2d8-4042-9c70-70802d2a596c" : {
+            "vertexId" : "7103adfa-d2d8-4042-9c70-70802d2a596c",
+            "vertexType" : "STOP",
+            "name" : "429 - Too many requests",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 429,
+              "body" : {
+                "type" : "json"
+              }
+            }
+          },
+          "aeea24eb-3f80-4474-91fe-ffafca08ca1d" : {
+            "vertexId" : "aeea24eb-3f80-4474-91fe-ffafca08ca1d",
+            "vertexType" : "STOP",
+            "name" : "501 - Not Implemented",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 501,
+              "body" : {
+                "type" : "json"
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1777286058721,
+          "lastModifiedBy" : "Uday C",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "env",
+        "environmentId" : "68526682f358527f2e75b0ad",
+        "selectedVirtualHostName" : "qa-dev",
+        "selectedVirtualHostId" : "67ed20509ecb12099c749c7a",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "69ef3baadb765c6273dc0ff0",
+      "proxyid" : "69ef3baadb765c6273dc0fef",
+      "name" : "PATCH - PATCHUpdateAppRating",
+      "attachedEnv" : "68526682f358527f2e75b0ad",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "68526682f358527f2e75b0ad",
+      "name" : "env"
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
