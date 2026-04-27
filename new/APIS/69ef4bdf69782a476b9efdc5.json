@@ -1,5 +1,5 @@
 {
-  "cts" : 1777293044057,
+  "cts" : 1777293235925,
   "name" : "API_Testing",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1777290207662,
         "createdUserName" : "Uday C",
         "modifiedUserName" : "Uday C",
-        "mts" : 1777293044001,
+        "mts" : 1777293235829,
         "createdBy" : "69e6ff196ccb9d65444a4d97",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -120,7 +120,7 @@
             "javascriptData" : {
               "targetVariable" : "response",
               "variableDataType" : "STRING",
-              "javascript" : "function execute(input) {\n  console.log(input.foo);\n\n  input.message = \"Received 200 response\";\n  return input;\n}",
+              "javascript" : "function execute(input) {\n  return {\n    password: input && input.password\n  };\n}",
               "variables" : {
                 "input" : "200"
               },
@@ -272,8 +272,8 @@
         "enableLogging" : false,
         "misconfigurationMessages" : [ ],
         "validated" : true,
-        "deleted" : false,
-        "deployed" : false
+        "deployed" : false,
+        "deleted" : false
       }
     }
   } ],
