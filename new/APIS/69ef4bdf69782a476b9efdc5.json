@@ -1,5 +1,5 @@
 {
-  "cts" : 1777293318459,
+  "cts" : 1777293448919,
   "name" : "API_Testing",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1777290207662,
         "createdUserName" : "Uday C",
         "modifiedUserName" : "Uday C",
-        "mts" : 1777293318453,
+        "mts" : 1777293448876,
         "createdBy" : "69e6ff196ccb9d65444a4d97",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -65,15 +65,14 @@
             "encryptionData" : {
               "encryptionDecryptionOperationList" : [ {
                 "operationName" : "encrypt",
-                "description" : "-",
+                "description" : "encrypts the password",
                 "targetVariable" : "response",
-                "sourceVariable" : "response",
-                "sourceProvidedAtNode" : false,
-                "transformationKey" : "AES",
-                "initializationVector" : "PKCS5Padding",
-                "algorithmType" : "AES",
-                "modeType" : "CBC",
-                "paddingType" : "PKCS5Padding"
+                "sourceData" : "response",
+                "sourceProvidedAtNode" : true,
+                "transformationKey" : "qwe12se",
+                "algorithmType" : "RSA",
+                "modeType" : "ECB",
+                "paddingType" : "PKCS1Padding"
               } ],
               "skip" : false,
               "showActualErrorMessage" : false,
@@ -145,6 +144,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1777293371224,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1777293330381,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "jj"
+        }, {
           "status" : "Review",
           "cts" : 1777293297334,
           "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
