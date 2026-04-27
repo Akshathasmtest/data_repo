@@ -1,0 +1,60 @@
+{
+  "id" : "69ef3feb0727c910fb119729",
+  "cts" : 1777287147736,
+  "mts" : 1777287147736,
+  "createdBy" : "Elanie tom",
+  "modifiedBy" : "Elanie tom",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+  "runtime" : "chinmayee-test1",
+  "workspace" : "default",
+  "serviceName" : "172.16.87.8",
+  "revision" : 0,
+  "serviceId" : "1585466a-1d83-4c82-b6ac-67d7db2baa0d",
+  "service" : {
+    "serviceName" : "172.16.87.8",
+    "protocol" : "http",
+    "host" : "172.16.87.8",
+    "basePath" : "/",
+    "port" : 3027,
+    "metadata" : {
+      "retries" : 5,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    },
+    "tags" : [ "172.16.87.8" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "6ade034b-4c75-40e4-888e-a812453ae284",
+    "routeName" : "172.16.87.8--fee-POST",
+    "service" : {
+      "_id" : "1585466a-1d83-4c82-b6ac-67d7db2baa0d"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/fee" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : true,
+      "headers" : [ ]
+    },
+    "kongRuntime" : {
+      "id" : "6887457f0a35223ee1607332",
+      "name" : "chinmayee-test1",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "172.16.87.8" ]
+  } ],
+  "plugins" : [ ],
+  "errors" : [ ]
+}
