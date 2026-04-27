@@ -1,5 +1,5 @@
 {
-  "cts" : 1777294368316,
+  "cts" : 1777294611319,
   "name" : "API_Testing",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1777290207662,
         "createdUserName" : "Uday C",
         "modifiedUserName" : "Uday C",
-        "mts" : 1777294368228,
+        "mts" : 1777294611258,
         "createdBy" : "69e6ff196ccb9d65444a4d97",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -64,15 +64,16 @@
             "description" : "--",
             "encryptionData" : {
               "encryptionDecryptionOperationList" : [ {
-                "operationName" : "encrypt",
-                "description" : "encryption of password",
+                "operationName" : "encryption",
+                "description" : "-",
                 "targetVariable" : "encrypt",
                 "sourceVariable" : "response",
                 "sourceProvidedAtNode" : false,
-                "transformationKey" : "EncryptedPassword123",
-                "algorithmType" : "RSA",
-                "modeType" : "ECB",
-                "paddingType" : "PKCS1Padding"
+                "transformationKey" : "MySecureKey123",
+                "initializationVector" : "16-byte VI",
+                "algorithmType" : "AES",
+                "modeType" : "CBC",
+                "paddingType" : "PKCS5Padding"
               } ],
               "skip" : false,
               "showActualErrorMessage" : false,
@@ -80,7 +81,7 @@
               "errorResponse" : {
                 "statusCode" : 200,
                 "body" : {
-                  "data" : "{\n    \"Message\":\"Encryption Successful\"\n}",
+                  "data" : "\"failed\"",
                   "type" : "json"
                 }
               }
@@ -144,6 +145,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1777294449347,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1777294379318,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "u"
+        }, {
           "status" : "Review",
           "cts" : 1777294086623,
           "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
