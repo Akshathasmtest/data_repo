@@ -1,6 +1,6 @@
 {
-  "cts" : 1777374086960,
-  "name" : "SAMPLEAPICALL",
+  "cts" : 1777374392285,
+  "name" : "SAMPLEAPICALLtest",
   "exportedBy" : "AnkitTeamUser IT",
   "data" : [ {
     "type" : "proxy",
@@ -11,13 +11,13 @@
         "cts" : 1777372485070,
         "createdUserName" : "AnkitTeamUser IT",
         "modifiedUserName" : "AnkitTeamUser IT",
-        "mts" : 1777374086948,
+        "mts" : 1777374392270,
         "createdBy" : "67c562eba649de63bf3835e4",
         "modifiedBy" : "67c562eba649de63bf3835e4",
         "taggedTeams" : [ ],
         "proxyId" : "69f08d45b4ee97457b1f6d06",
         "revision" : 1,
-        "name" : "SAMPLEAPICALL",
+        "name" : "SAMPLEAPICALLtest",
         "description" : "",
         "apiType" : "RESTAPI",
         "apiMethod" : "GET",
@@ -26,17 +26,6 @@
         "revisionStatus" : "DRAFT",
         "locked" : true,
         "lockedBy" : "AnkitTeamUser IT",
-        "nodeDataHashMap" : {
-          "inbound" : {
-            "99e9aa86-3b6d-4d71-926c-2cab1bf230ba" : [ "v1" ],
-            "4e56f06b-84e0-49cc-8d7d-27e4a09fbb7c" : [ "99e9aa86-3b6d-4d71-926c-2cab1bf230ba" ]
-          },
-          "outbound" : {
-            "v1" : [ "99e9aa86-3b6d-4d71-926c-2cab1bf230ba" ],
-            "99e9aa86-3b6d-4d71-926c-2cab1bf230ba" : [ "4e56f06b-84e0-49cc-8d7d-27e4a09fbb7c" ]
-          },
-          "allNeighbours" : [ "4e56f06b-84e0-49cc-8d7d-27e4a09fbb7c", "99e9aa86-3b6d-4d71-926c-2cab1bf230ba", "v1" ]
-        },
         "vertexHashMap" : {
           "4e56f06b-84e0-49cc-8d7d-27e4a09fbb7c" : {
             "vertexId" : "4e56f06b-84e0-49cc-8d7d-27e4a09fbb7c",
@@ -110,13 +99,6 @@
           "description" : "Created new proxy"
         } ],
         "enableTracing" : false,
-        "environmentName" : "",
-        "environmentId" : "",
-        "selectedVirtualHostName" : "",
-        "selectedVirtualHostId" : "",
-        "kafkaConnectorId" : "",
-        "kafkaTopic" : "",
-        "kafkaGroupId" : "",
         "enableLogging" : false,
         "misconfigurationMessages" : [ ],
         "validated" : true,
@@ -129,17 +111,13 @@
     "proxyMetadataDetailsDtoList" : [ {
       "id" : "69f08d45b4ee97457b1f6d07",
       "proxyid" : "69f08d45b4ee97457b1f6d06",
-      "name" : "SAMPLEAPICALL",
-      "attachedEnv" : "",
+      "name" : "SAMPLEAPICALLtest",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
       "attachedConnectors" : [ ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
-    "environmentMetadataDetailsDtoList" : [ {
-      "id" : "",
-      "name" : ""
-    } ],
+    "environmentMetadataDetailsDtoList" : [ ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
     "connectorMetadataDetailsDtoList" : [ ]
   }
