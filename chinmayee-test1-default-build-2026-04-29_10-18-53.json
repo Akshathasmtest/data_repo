@@ -1,0 +1,63 @@
+{
+  "id" : "69f1db0d0727c910fb11a1a4",
+  "cts" : 1777457933320,
+  "mts" : 1777457933320,
+  "createdBy" : "Elanie tom",
+  "modifiedBy" : "Elanie tom",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+  "runtime" : "chinmayee-test1",
+  "workspace" : "default",
+  "swaggerId" : "",
+  "serviceName" : "Sampletestapi",
+  "revision" : 0,
+  "swaggerVersion" : "",
+  "swaggerName" : "",
+  "serviceId" : "aa12e6f9-440b-4421-9ad4-570de146c5bb",
+  "service" : {
+    "serviceId" : "",
+    "serviceName" : "Sampletestapi",
+    "protocol" : "https",
+    "host" : "acme-team-production-xwzg.apiwiz.io",
+    "hosts" : [ ],
+    "basePath" : "/",
+    "basePaths" : [ ],
+    "port" : 443,
+    "ports" : [ ],
+    "metadata" : { },
+    "tags" : [ "Sampletestapi" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "f949fe3a-c3c5-4a9f-9698-b647953cc117",
+    "routeName" : "sampleroutedetails",
+    "service" : {
+      "_id" : "aa12e6f9-440b-4421-9ad4-570de146c5bb"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/sampletestapi" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "6887457f0a35223ee1607332",
+      "name" : "chinmayee-test1",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "Sampletestapi" ]
+  } ],
+  "plugins" : [ ],
+  "errors" : [ ]
+}
