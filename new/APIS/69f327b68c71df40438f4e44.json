@@ -1,5 +1,5 @@
 {
-  "cts" : 1777543094320,
+  "cts" : 1777543156461,
   "name" : "GET - GETLoanFullRepaymentInq",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1777543094162,
         "createdUserName" : "Uday C",
         "modifiedUserName" : "Uday C",
-        "mts" : 1777543094162,
+        "mts" : 1777543156454,
         "createdBy" : "69e6ff196ccb9d65444a4d97",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -28,295 +28,27 @@
         "lockedBy" : "Uday C",
         "nodeDataHashMap" : {
           "inbound" : {
-            "577a48ea-45f9-4638-bf7f-96a850bdf839" : [ "v1" ],
-            "4bc6c3ae-f842-4d67-a0d5-a3e925cad89a" : [ "577a48ea-45f9-4638-bf7f-96a850bdf839" ],
-            "cce92e2c-3c5c-4cb0-ad55-3f0a0f8416b3" : [ "577a48ea-45f9-4638-bf7f-96a850bdf839" ],
-            "701c3b2a-1cdd-4324-b886-5088a06fd2e6" : [ "577a48ea-45f9-4638-bf7f-96a850bdf839" ],
-            "efe94fa8-b2e5-4fa1-9591-8582b74b5a31" : [ "577a48ea-45f9-4638-bf7f-96a850bdf839" ],
-            "bcd319e5-0931-4c72-82d8-0ecc952cef6e" : [ "577a48ea-45f9-4638-bf7f-96a850bdf839" ],
-            "cca09d2a-19ba-4e39-baf9-32c226493bdf" : [ "577a48ea-45f9-4638-bf7f-96a850bdf839" ],
-            "2a5a532e-9f63-4bde-afba-b5d98a817ddf" : [ "577a48ea-45f9-4638-bf7f-96a850bdf839" ],
-            "b671b7df-1ea5-4c46-87c4-74defac3a0b2" : [ "577a48ea-45f9-4638-bf7f-96a850bdf839" ],
-            "74993408-a7e7-4545-a869-3de30ffcc193" : [ "577a48ea-45f9-4638-bf7f-96a850bdf839" ],
-            "5332e7bb-2539-45ed-bb5d-22e17714b616" : [ "577a48ea-45f9-4638-bf7f-96a850bdf839" ],
-            "436cb13d-acde-44e0-a09d-9d65600661ad" : [ "577a48ea-45f9-4638-bf7f-96a850bdf839" ],
-            "d0ab19df-d451-4d5e-9bc5-6483d3dbd929" : [ "577a48ea-45f9-4638-bf7f-96a850bdf839" ],
-            "4396f192-a7e2-4055-bc30-62578e28c346" : [ "577a48ea-45f9-4638-bf7f-96a850bdf839" ]
+            "589d07cf-be9d-478d-881f-89fdad6bc7f5" : [ "v1" ]
           },
           "outbound" : {
-            "v1" : [ "577a48ea-45f9-4638-bf7f-96a850bdf839" ],
-            "577a48ea-45f9-4638-bf7f-96a850bdf839" : [ "5332e7bb-2539-45ed-bb5d-22e17714b616", "bcd319e5-0931-4c72-82d8-0ecc952cef6e", "cca09d2a-19ba-4e39-baf9-32c226493bdf", "4bc6c3ae-f842-4d67-a0d5-a3e925cad89a", "efe94fa8-b2e5-4fa1-9591-8582b74b5a31", "74993408-a7e7-4545-a869-3de30ffcc193", "b671b7df-1ea5-4c46-87c4-74defac3a0b2", "701c3b2a-1cdd-4324-b886-5088a06fd2e6", "4396f192-a7e2-4055-bc30-62578e28c346", "436cb13d-acde-44e0-a09d-9d65600661ad", "d0ab19df-d451-4d5e-9bc5-6483d3dbd929", "cce92e2c-3c5c-4cb0-ad55-3f0a0f8416b3", "2a5a532e-9f63-4bde-afba-b5d98a817ddf" ]
+            "v1" : [ "589d07cf-be9d-478d-881f-89fdad6bc7f5" ]
           },
-          "allNeighbours" : [ "5332e7bb-2539-45ed-bb5d-22e17714b616", "bcd319e5-0931-4c72-82d8-0ecc952cef6e", "cca09d2a-19ba-4e39-baf9-32c226493bdf", "4bc6c3ae-f842-4d67-a0d5-a3e925cad89a", "efe94fa8-b2e5-4fa1-9591-8582b74b5a31", "74993408-a7e7-4545-a869-3de30ffcc193", "b671b7df-1ea5-4c46-87c4-74defac3a0b2", "701c3b2a-1cdd-4324-b886-5088a06fd2e6", "4396f192-a7e2-4055-bc30-62578e28c346", "436cb13d-acde-44e0-a09d-9d65600661ad", "d0ab19df-d451-4d5e-9bc5-6483d3dbd929", "577a48ea-45f9-4638-bf7f-96a850bdf839", "cce92e2c-3c5c-4cb0-ad55-3f0a0f8416b3", "v1", "2a5a532e-9f63-4bde-afba-b5d98a817ddf" ]
+          "allNeighbours" : [ "589d07cf-be9d-478d-881f-89fdad6bc7f5", "v1" ]
         },
         "vertexHashMap" : {
-          "5332e7bb-2539-45ed-bb5d-22e17714b616" : {
-            "vertexId" : "5332e7bb-2539-45ed-bb5d-22e17714b616",
+          "589d07cf-be9d-478d-881f-89fdad6bc7f5" : {
+            "vertexId" : "589d07cf-be9d-478d-881f-89fdad6bc7f5",
             "vertexType" : "STOP",
-            "name" : "500 - Internal Server Error",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 500,
-              "body" : {
-                "type" : "json"
-              }
-            }
-          },
-          "bcd319e5-0931-4c72-82d8-0ecc952cef6e" : {
-            "vertexId" : "bcd319e5-0931-4c72-82d8-0ecc952cef6e",
-            "vertexType" : "STOP",
-            "name" : "404 - Resource not found",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 404,
-              "body" : {
-                "type" : "json"
-              }
-            }
-          },
-          "cca09d2a-19ba-4e39-baf9-32c226493bdf" : {
-            "vertexId" : "cca09d2a-19ba-4e39-baf9-32c226493bdf",
-            "vertexType" : "STOP",
-            "name" : "405 - Method Not Allowed",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 405,
-              "body" : {
-                "type" : "json"
-              }
-            }
-          },
-          "4bc6c3ae-f842-4d67-a0d5-a3e925cad89a" : {
-            "vertexId" : "4bc6c3ae-f842-4d67-a0d5-a3e925cad89a",
-            "vertexType" : "STOP",
-            "name" : "200 - Ok",
+            "name" : "Stop",
             "imported" : false,
             "skipRuntimeVariables" : false,
             "proxyResponse" : {
               "statusCode" : 200,
               "body" : {
-                "type" : "json"
+                "data" : "{\n    \"message\":\"Successful:\n}",
+                "type" : "JSON"
               }
             }
-          },
-          "efe94fa8-b2e5-4fa1-9591-8582b74b5a31" : {
-            "vertexId" : "efe94fa8-b2e5-4fa1-9591-8582b74b5a31",
-            "vertexType" : "STOP",
-            "name" : "403 - Forbidden",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 403,
-              "body" : {
-                "type" : "json"
-              }
-            }
-          },
-          "74993408-a7e7-4545-a869-3de30ffcc193" : {
-            "vertexId" : "74993408-a7e7-4545-a869-3de30ffcc193",
-            "vertexType" : "STOP",
-            "name" : "429 - Too many requests",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 429,
-              "body" : {
-                "type" : "json"
-              }
-            }
-          },
-          "b671b7df-1ea5-4c46-87c4-74defac3a0b2" : {
-            "vertexId" : "b671b7df-1ea5-4c46-87c4-74defac3a0b2",
-            "vertexType" : "STOP",
-            "name" : "415 - Unsupported Media Type",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 415,
-              "body" : {
-                "type" : "json"
-              }
-            }
-          },
-          "701c3b2a-1cdd-4324-b886-5088a06fd2e6" : {
-            "vertexId" : "701c3b2a-1cdd-4324-b886-5088a06fd2e6",
-            "vertexType" : "STOP",
-            "name" : "401 - Unauthorized",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 401,
-              "body" : {
-                "type" : "json"
-              }
-            }
-          },
-          "4396f192-a7e2-4055-bc30-62578e28c346" : {
-            "vertexId" : "4396f192-a7e2-4055-bc30-62578e28c346",
-            "vertexType" : "STOP",
-            "name" : "504 - Gateway Timeout",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 504,
-              "body" : {
-                "type" : "json"
-              }
-            }
-          },
-          "436cb13d-acde-44e0-a09d-9d65600661ad" : {
-            "vertexId" : "436cb13d-acde-44e0-a09d-9d65600661ad",
-            "vertexType" : "STOP",
-            "name" : "501 - Not Implemented",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 501,
-              "body" : {
-                "type" : "json"
-              }
-            }
-          },
-          "d0ab19df-d451-4d5e-9bc5-6483d3dbd929" : {
-            "vertexId" : "d0ab19df-d451-4d5e-9bc5-6483d3dbd929",
-            "vertexType" : "STOP",
-            "name" : "502 - Bad Gateway",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 502,
-              "body" : {
-                "type" : "json"
-              }
-            }
-          },
-          "577a48ea-45f9-4638-bf7f-96a850bdf839" : {
-            "vertexId" : "577a48ea-45f9-4638-bf7f-96a850bdf839",
-            "vertexType" : "CONDITIONAL_FLOW",
-            "name" : "Condition",
-            "conditionalFlow" : [ {
-              "condition" : "if",
-              "assertion" : {
-                "feelExpression" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false
-              },
-              "flowVertexes" : [ "4bc6c3ae-f842-4d67-a0d5-a3e925cad89a" ]
-            }, {
-              "condition" : "else-if",
-              "assertion" : {
-                "feelExpression" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false
-              },
-              "flowVertexes" : [ "cce92e2c-3c5c-4cb0-ad55-3f0a0f8416b3" ]
-            }, {
-              "condition" : "else-if",
-              "assertion" : {
-                "feelExpression" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false
-              },
-              "flowVertexes" : [ "701c3b2a-1cdd-4324-b886-5088a06fd2e6" ]
-            }, {
-              "condition" : "else-if",
-              "assertion" : {
-                "feelExpression" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false
-              },
-              "flowVertexes" : [ "efe94fa8-b2e5-4fa1-9591-8582b74b5a31" ]
-            }, {
-              "condition" : "else-if",
-              "assertion" : {
-                "feelExpression" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false
-              },
-              "flowVertexes" : [ "bcd319e5-0931-4c72-82d8-0ecc952cef6e" ]
-            }, {
-              "condition" : "else-if",
-              "assertion" : {
-                "feelExpression" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false
-              },
-              "flowVertexes" : [ "cca09d2a-19ba-4e39-baf9-32c226493bdf" ]
-            }, {
-              "condition" : "else-if",
-              "assertion" : {
-                "feelExpression" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false
-              },
-              "flowVertexes" : [ "2a5a532e-9f63-4bde-afba-b5d98a817ddf" ]
-            }, {
-              "condition" : "else-if",
-              "assertion" : {
-                "feelExpression" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false
-              },
-              "flowVertexes" : [ "b671b7df-1ea5-4c46-87c4-74defac3a0b2" ]
-            }, {
-              "condition" : "else-if",
-              "assertion" : {
-                "feelExpression" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false
-              },
-              "flowVertexes" : [ "74993408-a7e7-4545-a869-3de30ffcc193" ]
-            }, {
-              "condition" : "else-if",
-              "assertion" : {
-                "feelExpression" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false
-              },
-              "flowVertexes" : [ "5332e7bb-2539-45ed-bb5d-22e17714b616" ]
-            }, {
-              "condition" : "else-if",
-              "assertion" : {
-                "feelExpression" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false
-              },
-              "flowVertexes" : [ "436cb13d-acde-44e0-a09d-9d65600661ad" ]
-            }, {
-              "condition" : "else-if",
-              "assertion" : {
-                "feelExpression" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false
-              },
-              "flowVertexes" : [ "d0ab19df-d451-4d5e-9bc5-6483d3dbd929" ]
-            }, {
-              "condition" : "else",
-              "assertion" : {
-                "feelExpression" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false
-              },
-              "flowVertexes" : [ "4396f192-a7e2-4055-bc30-62578e28c346" ]
-            } ],
-            "imported" : false,
-            "skipRuntimeVariables" : false
           },
           "v1" : {
             "vertexId" : "v1",
@@ -338,32 +70,6 @@
                   "data" : "",
                   "type" : "json"
                 }
-              }
-            }
-          },
-          "cce92e2c-3c5c-4cb0-ad55-3f0a0f8416b3" : {
-            "vertexId" : "cce92e2c-3c5c-4cb0-ad55-3f0a0f8416b3",
-            "vertexType" : "STOP",
-            "name" : "400 - Bad request",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 400,
-              "body" : {
-                "type" : "json"
-              }
-            }
-          },
-          "2a5a532e-9f63-4bde-afba-b5d98a817ddf" : {
-            "vertexId" : "2a5a532e-9f63-4bde-afba-b5d98a817ddf",
-            "vertexType" : "STOP",
-            "name" : "406 - Not Acceptable media type",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 406,
-              "body" : {
-                "type" : "json"
               }
             }
           }
