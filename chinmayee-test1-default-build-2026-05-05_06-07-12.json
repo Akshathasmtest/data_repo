@@ -1,0 +1,99 @@
+{
+  "id" : "69f989106f5c6e7e1e4a853d",
+  "cts" : 1777961232240,
+  "mts" : 1777961232240,
+  "createdBy" : "Elanie tom",
+  "modifiedBy" : "Elanie tom",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+  "runtime" : "chinmayee-test1",
+  "workspace" : "default",
+  "swaggerId" : "",
+  "serviceName" : "new-service2",
+  "revision" : 0,
+  "swaggerVersion" : "",
+  "swaggerName" : "",
+  "serviceId" : "4598020b-db64-4c8a-ab2a-62b78e11e14e",
+  "service" : {
+    "serviceId" : "",
+    "serviceName" : "new-service2",
+    "protocol" : "https",
+    "host" : "mock.apiwiz.io",
+    "hosts" : [ ],
+    "basePath" : "/new-timeout",
+    "basePaths" : [ ],
+    "port" : 443,
+    "ports" : [ ],
+    "metadata" : { },
+    "tags" : [ "new-service2" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "8d6cbc1d-05a8-4db7-a2e6-8d96a42402fa",
+    "routeName" : "get-timeout",
+    "service" : {
+      "_id" : "4598020b-db64-4c8a-ab2a-62b78e11e14e"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/path/timeout" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "6887457f0a35223ee1607332",
+      "name" : "chinmayee-test1",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "new-service2" ]
+  } ],
+  "plugins" : [ {
+    "id" : "a9d19414-b7b5-4c53-a16f-00f23445bfbe",
+    "pluginName" : "basic-auth",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "serviceName" : "new-service2",
+    "kongName" : "basic-auth",
+    "configs" : { },
+    "tags" : [ "new-service2" ]
+  }, {
+    "pluginName" : "ip-restriction",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "serviceName" : "new-service2",
+    "kongName" : "ip-restriction",
+    "configs" : {
+      "allow" : "19.1.2.3.0",
+      "deny" : "19.1.2.3.1"
+    },
+    "tags" : [ "new-service2" ]
+  }, {
+    "pluginName" : "ip-restriction",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "serviceName" : "new-service2",
+    "kongName" : "ip-restriction",
+    "configs" : { },
+    "tags" : [ "new-service2" ]
+  } ],
+  "errors" : [ {
+    "message" : "400 Bad Request: \"{\"message\":\"2 schema violations (config.allow: {\\n  \\\"invalid ip or cidr range: '19.1.2.3.0'\\\"\\n}; config.deny: expected an array)\",\"name\":\"schema violation\",\"fields\":{\"config\":{\"allow\":[\"invalid ip or cidr range: '19.1.2.3.0'\"],\"deny\":\"expected an array\"}},\"code\":2}\"",
+    "name" : "ip-restriction",
+    "type" : "SERVICE_PLUGIN"
+  }, {
+    "message" : "400 Bad Request: \"{\"message\":\"schema violation (at least one of these fields must be non-empty: 'config.allow', 'config.deny')\",\"name\":\"schema violation\",\"fields\":{\"@entity\":[\"at least one of these fields must be non-empty: 'config.allow', 'config.deny'\"]},\"code\":2}\"",
+    "name" : "ip-restriction",
+    "type" : "SERVICE_PLUGIN"
+  } ]
+}
