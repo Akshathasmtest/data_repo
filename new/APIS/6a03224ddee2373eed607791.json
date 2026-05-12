@@ -1,5 +1,5 @@
 {
-  "cts" : 1778590285955,
+  "cts" : 1778590386758,
   "name" : "prefunction",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1778590285822,
         "createdUserName" : "Uday C",
         "modifiedUserName" : "Uday C",
-        "mts" : 1778590285822,
+        "mts" : 1778590386752,
         "createdBy" : "69e6ff196ccb9d65444a4d97",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -23,7 +23,7 @@
         "apiMethod" : "GET",
         "path" : "/customer/v1/new",
         "pathArray" : [ "customer", "v1", "new" ],
-        "revisionStatus" : "DRAFT",
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Uday C",
         "nodeDataHashMap" : {
@@ -45,6 +45,7 @@
             "proxyResponse" : {
               "statusCode" : 200,
               "body" : {
+                "data" : "{\n    \"message\":\"Success\"\n}",
                 "type" : "JSON"
               }
             }
@@ -74,11 +75,22 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1778590366476,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1778590322453,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "Approved"
+        }, {
           "status" : "Draft",
           "cts" : 1778590285822,
           "lastModifiedBy" : "Uday C",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : true,
         "environmentName" : "",
         "environmentId" : "",
