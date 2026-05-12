@@ -1,0 +1,79 @@
+{
+  "id" : "6a032557c465260937df79a5",
+  "cts" : 1778591063727,
+  "mts" : 1778591063727,
+  "createdBy" : "Uday C",
+  "modifiedBy" : "Uday C",
+  "kongAdminHost" : "https://test-kong-admin.apiwiz.io/",
+  "runtime" : "kong-test",
+  "workspace" : "default",
+  "swaggerId" : "",
+  "serviceName" : "prefunctionn",
+  "revision" : 0,
+  "swaggerVersion" : "",
+  "swaggerName" : "",
+  "serviceId" : "63208a93-4538-4ca2-bbed-cde5100cebc8",
+  "service" : {
+    "serviceId" : "",
+    "serviceName" : "prefunctionn",
+    "protocol" : "http",
+    "host" : "qa-dev-lmxz.apiwiz.io",
+    "hosts" : [ ],
+    "basePath" : "/",
+    "basePaths" : [ ],
+    "port" : 426,
+    "ports" : [ ],
+    "metadata" : { },
+    "tags" : [ "prefunctionn" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "a0fab67c-3109-47e7-93cb-61e65b30d119",
+    "routeName" : "pre",
+    "service" : {
+      "_id" : "63208a93-4538-4ca2-bbed-cde5100cebc8"
+    },
+    "protocols" : [ "http", "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/customers/v1/new1" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : true,
+      "strip_path" : true
+    },
+    "kongRuntime" : {
+      "id" : "681aed5c68efcb19bdec351e",
+      "name" : "kong-test",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "https://test-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 1,
+      "dbless" : false
+    },
+    "tags" : [ "prefunctionn" ]
+  } ],
+  "plugins" : [ {
+    "id" : "8d24d599-6842-4b0c-84d3-31fc6ab91fa9",
+    "pluginName" : "pre-function",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "serviceName" : "prefunctionn",
+    "kongName" : "pre-function",
+    "configs" : {
+      "access" : [ "local route = kong.router.get_route()local service = kong.router.get_service()-- Hardcoded scope policy map-- Route name takes precedence over service namelocal scope_policy_map = {  -- Route-level policies  [\"migration-check\"] = { \"vip\" },  [\"payments-route\"] = { \"premium\" },  -- Service-level policies  [\"mig-service\"] = { \"vip\" },  [\"customer-service\"] = { \"basic\", \"vip\" },  [\"billing-service\"] = { \"premium\" }}local allowed_scopes = nillocal policy_key = nil-- Route-level policy takes precedenceif route and route.name and type(scope_policy_map[route.name]) == \"table\" then  allowed_scopes = scope_policy_map[route.name]  policy_key = route.nameelseif service and service.name and type(scope_policy_map[service.name]) == \"table\" then  allowed_scopes = scope_policy_map[service.name]  policy_key = service.nameelse  -- No scope policy configured for this route/service  returnendlocal scope_header = kong.request.get_header(\"x-authenticated-scope\")if not scope_header or scope_header == \"\" then  return kong.response.exit(403, {    message = \"Missing authenticated scope\"  })end-- Convert allowed scopes array into lookup setlocal allowed_scope_set = {}for _, s in ipairs(allowed_scopes) do  if type(s) == \"string\" and s ~= \"\" then    allowed_scope_set[s] = true  endendlocal matched = falsefor s in string.gmatch(scope_header, \"([^,%s]+)\") do  if allowed_scope_set[s] then    matched = true    break  endendif not matched then  return kong.response.exit(403, {    message = \"Insufficient scope for policy key: \" .. policy_key  })end" ],
+      "body_filter" : [ ],
+      "certificate" : [ ],
+      "header_filter" : [ ],
+      "log" : [ ],
+      "rewrite" : [ ]
+    },
+    "tags" : [ "prefunctionn" ]
+  } ],
+  "errors" : [ ]
+}
