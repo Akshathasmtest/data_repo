@@ -1,0 +1,116 @@
+{
+  "cts" : 1778561529421,
+  "name" : "Builder-tester-1193959466",
+  "exportedBy" : "Uday C",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "6a02b1f94030de15a81d5519",
+        "cts" : 1778561529408,
+        "createdUserName" : "Uday C",
+        "modifiedUserName" : "Uday C",
+        "mts" : 1778561529408,
+        "createdBy" : "69e6ff196ccb9d65444a4d97",
+        "modifiedBy" : "69e6ff196ccb9d65444a4d97",
+        "taggedTeams" : [ ],
+        "proxyId" : "6a02b1f94030de15a81d5518",
+        "revision" : 1,
+        "name" : "Builder-tester-1193959466",
+        "description" : "BUilder testing through Selenium",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/base",
+        "pathArray" : [ "base" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Uday C",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "d3abeea0-2d4d-4609-ab32-8ee7cdf13b1b" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "d3abeea0-2d4d-4609-ab32-8ee7cdf13b1b" ]
+          },
+          "allNeighbours" : [ "d3abeea0-2d4d-4609-ab32-8ee7cdf13b1b", "v1" ]
+        },
+        "vertexHashMap" : {
+          "d3abeea0-2d4d-4609-ab32-8ee7cdf13b1b" : {
+            "vertexId" : "d3abeea0-2d4d-4609-ab32-8ee7cdf13b1b",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1778561529408,
+          "lastModifiedBy" : "Uday C",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deployed" : false,
+        "deleted" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "6a02b1f94030de15a81d5519",
+      "proxyid" : "6a02b1f94030de15a81d5518",
+      "name" : "Builder-tester-1193959466",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
