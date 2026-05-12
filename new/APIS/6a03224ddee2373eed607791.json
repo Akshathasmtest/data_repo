@@ -1,5 +1,5 @@
 {
-  "cts" : 1778590761073,
+  "cts" : 1778590869676,
   "name" : "prefunction",
   "exportedBy" : "Uday C",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1778590285822,
         "createdUserName" : "Uday C",
         "modifiedUserName" : "Uday C",
-        "mts" : 1778590761062,
+        "mts" : 1778590868853,
         "createdBy" : "69e6ff196ccb9d65444a4d97",
         "modifiedBy" : "69e6ff196ccb9d65444a4d97",
         "taggedTeams" : [ ],
@@ -21,8 +21,8 @@
         "description" : "Prefunction testing",
         "apiType" : "RESTAPI",
         "apiMethod" : "GET",
-        "path" : "/customer/v1/new1",
-        "pathArray" : [ "customer", "v1", "new1" ],
+        "path" : "/customers/v1/new1",
+        "pathArray" : [ "customers", "v1", "new1" ],
         "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Uday C",
@@ -75,6 +75,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1778590855574,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1778590789585,
+          "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
+          "description" : "approved"
+        }, {
           "status" : "Review",
           "cts" : 1778590746252,
           "lastModifiedBy" : "69e6ff196ccb9d65444a4d97",
