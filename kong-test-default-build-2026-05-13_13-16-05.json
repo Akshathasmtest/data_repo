@@ -1,0 +1,170 @@
+{
+  "id" : "6a047995c465260937df7abb",
+  "cts" : 1778678164999,
+  "mts" : 1778678164999,
+  "createdBy" : "Chinmayee Jagadeesh",
+  "modifiedBy" : "Chinmayee Jagadeesh",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+  "runtime" : "kong-test",
+  "workspace" : "default",
+  "swaggerId" : "699be8b56f930a0aaf3f2f68",
+  "serviceName" : "e-commerce-api",
+  "revision" : 2,
+  "swaggerVersion" : "3.0",
+  "swaggerName" : "E-Commerce API",
+  "serviceId" : "1fd0ebcc-8818-419c-bc0c-bf9d4ea67ab7",
+  "service" : {
+    "serviceId" : "",
+    "serviceName" : "e-commerce-api",
+    "protocol" : "https",
+    "host" : "acme-team-production-jjgl.apiwiz.io",
+    "hosts" : [ "acme-team-production-jjgl.apiwiz.io", "stage-data-gujl.apiwiz.io" ],
+    "basePath" : "/v1/uat",
+    "basePaths" : [ "/v1/uat", "/v1/prod1" ],
+    "port" : 443,
+    "ports" : [ -1 ],
+    "metadata" : {
+      "retries" : 5,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    },
+    "tags" : [ "e-commerce-api" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "4864fa99-c30d-44e8-960a-1f114c02cf65",
+    "routeName" : "asdsdsD",
+    "service" : {
+      "_id" : "1fd0ebcc-8818-419c-bc0c-bf9d4ea67ab7"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/auth/login" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 0,
+      "dbless" : false
+    },
+    "tags" : [ "e-commerce-api" ]
+  }, {
+    "routeId" : "0923b9cd-7405-4784-9f1d-5ca8f0bc008d",
+    "routeName" : "asdsd",
+    "service" : {
+      "_id" : "1fd0ebcc-8818-419c-bc0c-bf9d4ea67ab7"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/products/{id}" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 0,
+      "dbless" : false
+    },
+    "tags" : [ "e-commerce-api" ]
+  }, {
+    "routeId" : "355e29e0-f470-4940-86d7-fcc3f73f8e4e",
+    "routeName" : "zsdsds",
+    "service" : {
+      "_id" : "1fd0ebcc-8818-419c-bc0c-bf9d4ea67ab7"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/products" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 0,
+      "dbless" : false
+    },
+    "tags" : [ "e-commerce-api" ]
+  }, {
+    "routeId" : "ec2d4098-4eaa-435a-bd36-d74d4d86e9e5",
+    "routeName" : "zdszdsd",
+    "service" : {
+      "_id" : "1fd0ebcc-8818-419c-bc0c-bf9d4ea67ab7"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/products" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 0,
+      "dbless" : false
+    },
+    "tags" : [ "e-commerce-api" ]
+  } ],
+  "plugins" : [ {
+    "id" : "ec0c6967-0686-46a5-85c4-04324dfb4da6",
+    "pluginName" : "key-auth",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "serviceName" : "e-commerce-api",
+    "configs" : {
+      "key_names" : [ "x-api-key" ],
+      "key_in_header" : true,
+      "run_on_preflight" : true
+    },
+    "tags" : [ "e-commerce-api" ]
+  } ],
+  "errors" : [ ]
+}
