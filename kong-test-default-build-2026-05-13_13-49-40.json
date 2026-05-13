@@ -1,0 +1,80 @@
+{
+  "id" : "6a048174c465260937df7ae8",
+  "cts" : 1778680180392,
+  "mts" : 1778680180392,
+  "createdBy" : "Chinmayee Jagadeesh",
+  "modifiedBy" : "Chinmayee Jagadeesh",
+  "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+  "runtime" : "kong-test",
+  "workspace" : "default",
+  "swaggerId" : "69a6a8a13a735a7d23426817",
+  "serviceName" : "test_sample_oas",
+  "revision" : 1,
+  "swaggerVersion" : "3.0",
+  "swaggerName" : "test_sample_oas",
+  "serviceId" : "fd576576-07c6-44fa-bca3-1c52b846d5e9",
+  "service" : {
+    "serviceId" : "",
+    "serviceName" : "test_sample_oas",
+    "protocol" : "https",
+    "host" : "test.apiwiz.io",
+    "hosts" : [ "test.apiwiz.io" ],
+    "basePath" : "/v2/sample_test_api",
+    "basePaths" : [ "/v2/sample_test_api" ],
+    "port" : 443,
+    "ports" : [ -1 ],
+    "metadata" : {
+      "retries" : 5,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    },
+    "tags" : [ "test_sample_oas" ],
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "b0fb67df-fed9-4fce-b74e-350493a6d8b1",
+    "routeName" : "sampletest",
+    "service" : {
+      "_id" : "fd576576-07c6-44fa-bca3-1c52b846d5e9"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/operation" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "692e900cd553fd6913eac646",
+      "name" : "kong-test",
+      "kongAdminToken" : "",
+      "kongAdminHost" : "https://test1-kong-admin.apiwiz.io/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 0,
+      "dbless" : false
+    },
+    "tags" : [ "test_sample_oas" ]
+  } ],
+  "plugins" : [ {
+    "id" : "f93e8158-01ca-4eab-8b6d-f27f3f72ba00",
+    "pluginName" : "key-auth",
+    "enabled" : true,
+    "workspaceName" : "default",
+    "serviceName" : "test_sample_oas",
+    "configs" : {
+      "key_names" : [ "x-api-key" ],
+      "key_in_header" : true,
+      "run_on_preflight" : true
+    },
+    "tags" : [ "test_sample_oas" ]
+  } ],
+  "errors" : [ ]
+}
